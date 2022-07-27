@@ -23,16 +23,21 @@ body {
 }
 
 .outer-container {
-  padding: 20px 0;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: initial;
+  padding: 20px 15px;
 }
 
 .container {
-  max-width: auto;
   display: grid;
-  padding-left: 15px;
-  padding-right: 15px;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 10px;
+  flex-direction: column;
+  padding-left: -15px;
+  padding-right: -15px;
+  grid-template-columns: 70% auto auto;
+  grid-row-gap: 10px;
+  grid-template-rows: auto auto auto;
+  justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
 }
@@ -41,11 +46,20 @@ body {
   display: grid;
   width: 100%;
   grid-template-columns: auto;
+  border: none;
+  margin-right: auto;
 }
 
 .input-group-mb-3 {
   display: grid;
-  grid-template-columns: 75% auto;
+  grid-template-columns: 80% auto;
+  cursor: pointer;
+  border: white;
+}
+
+#button-addon2 {
+  border-left: none;
+  border-color: #ccc;
 }
 
 #netmatters {
@@ -66,7 +80,8 @@ body {
   width: 100%;
   padding: 10px;
   background-color: #e5e5e5;
-  border-color: #ccc;
+  border-color: #e5e5e5;
+  cursor: pointer;
 }
 
 .search-bar {
@@ -79,6 +94,7 @@ body {
   font-weight: lighter;
   font-size: 14px;
   color: #ccc;
+  cursor: pointer;
 }
 
 #main-photo {
@@ -100,7 +116,7 @@ h1 {
 }
 
 .image {
-  position: relative;
+  position: absolute;
   width: 20%;
 }
 
@@ -913,7 +929,7 @@ footer {
 }
 
 /*Media Queries*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   .outer-container {
     max-width: auto;
     display: grid;
