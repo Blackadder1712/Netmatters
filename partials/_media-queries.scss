@@ -1,6 +1,16 @@
 /*Media Queries*/
 
 @media screen and (min-width: 769px) {
+
+.outer-container {
+  max-width: auto;
+    display: grid;
+    padding: 20px 20px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 30px;
+    margin: 0;
+}
+
   
   .fa-phone-volume {
     display: none;
@@ -59,6 +69,8 @@ caption {
 
 
 }
+
+
 
 
 
