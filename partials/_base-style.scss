@@ -1,4 +1,9 @@
 //*--Base Element Styles--*/
+
+*
+{box-sizing: border-box;}
+
+
 body {
   font-family:$main-page-font-family;
 }
@@ -10,6 +15,7 @@ padding: auto;
 width: auto;
 margin: 0 auto;
 }
+
 
 .nav-link {
 display: none;
@@ -23,7 +29,7 @@ margin: 0 auto;
    
 .outer-container {
   width:100%;
-  overflow-y: scroll;
+  
   overflow-x: initial;
   padding: 20px 15px;
 
@@ -124,12 +130,7 @@ border-color:#ccc;
 
 
 
-#main-photo {
-  margin-top:10px;
-  width: 100%;
-  height: 100%;
 
-}
   
 h1 {
  font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -143,11 +144,16 @@ h1 {
   flex-grow: 1;
 }
 
+.page-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
-
-.image { 
  
-  width: 20%;
+ 
+  .main-image {
+    width : 100%;
   align-items:center;
   justify-content: center;
   background: black;
@@ -561,6 +567,7 @@ font-family:$main-font-family;
     grid-column-gap: 30px;
     margin: 0;
     cursor: pointer;
+    overflow-x: hidden;
   }
 
     .logo-item-1 {
@@ -714,7 +721,7 @@ width: 200%
 
 .cards {
 
-  max-width: auto;
+  width: 100%;
   display:grid;
   font-family: $main-font-family;
   margin: $card-margin;
@@ -724,6 +731,7 @@ width: 200%
   grid-template-rows: auto auto auto ;
   text-decoration: none;
 
+ 
 
   
   
@@ -733,14 +741,14 @@ width: 200%
 }
 
 .card-img {
-  max-width:auto;
+  max-width:100%;
   display: grid;
   padding: 10px;
 }
 
 
 .card-title-1  {
-
+  width: 100%;
   color: $hover-color-blue;
   font-size: medium;
   margin:10px;
@@ -749,6 +757,7 @@ width: 200%
 }
  
 .card-text {
+  width: 100%;
  color: grey;
  margin:10px;
  text-decoration: none;
@@ -802,7 +811,7 @@ hr {
   
 }
 
-.card-img-2 {
+.card-img{
   margin: $card-img-margin;
   width: $card-img-width;
 }
@@ -843,10 +852,7 @@ hr {
   
 }
 
-.card-img-3 {
-  margin: $card-img-margin;
-  width: $card-img-width;
-}
+
 
 .card-title-3  {
 

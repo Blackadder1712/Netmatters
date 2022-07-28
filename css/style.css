@@ -2,6 +2,10 @@
 /* colours used when hovering over main buttons*/
 /*button variables */
 /* card variables*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Poppins, sans-serif;
 }
@@ -24,7 +28,6 @@ body {
 
 .outer-container {
   width: 100%;
-  overflow-y: scroll;
   overflow-x: initial;
   padding: 20px 15px;
 }
@@ -97,12 +100,6 @@ body {
   cursor: pointer;
 }
 
-#main-photo {
-  margin-top: 10px;
-  width: 100%;
-  height: 100%;
-}
-
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 30px;
@@ -115,8 +112,15 @@ h1 {
   flex-grow: 1;
 }
 
-.image {
-  width: 20%;
+.page-image {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-image {
+  width: 100%;
   align-items: center;
   justify-content: center;
   background: black;
@@ -452,6 +456,7 @@ caption {
   grid-column-gap: 30px;
   margin: 0;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 .logo-item-1 {
@@ -588,7 +593,7 @@ h4 {
 }
 
 .cards {
-  max-width: auto;
+  width: 100%;
   display: grid;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 20px;
@@ -600,12 +605,13 @@ h4 {
 }
 
 .card-img {
-  max-width: auto;
+  max-width: 100%;
   display: grid;
   padding: 10px;
 }
 
 .card-title-1 {
+  width: 100%;
   color: #67809f;
   font-size: medium;
   margin: 10px;
@@ -613,6 +619,7 @@ h4 {
 }
 
 .card-text {
+  width: 100%;
   color: grey;
   margin: 10px;
   text-decoration: none;
@@ -662,7 +669,7 @@ hr {
   border-radius: 2%;
 }
 
-.card-img-2 {
+.card-img {
   margin: 10px;
   width: 150%;
 }
@@ -695,11 +702,6 @@ hr {
   padding-right: 5px;
   border: solid gray thin;
   border-radius: 2%;
-}
-
-.card-img-3 {
-  margin: 10px;
-  width: 150%;
 }
 
 .card-title-3 {
