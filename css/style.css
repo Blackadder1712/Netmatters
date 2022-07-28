@@ -10,23 +10,7 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-.nav-item {
-  display: none;
-  padding: auto;
-  width: auto;
-  margin: 0 auto;
-}
-
-.nav-link {
-  display: none;
-  font-family: Poppins, sans-serif;
-  text-decoration: none;
-  color: white;
-  width: auto;
-  margin: 0 auto;
-}
-
-.outer-container {
+header {
   width: 100%;
   overflow-x: initial;
   padding: 20px 15px;
@@ -88,28 +72,20 @@ body {
   cursor: pointer;
 }
 
-.search-bar {
-  padding-left: 10px;
-  height: 47px;
+.nav-item {
+  display: none;
+  padding: auto;
   width: auto;
-  margin-top: 11px;
-  position: relative;
-  margin-bottom: 11px;
-  font-weight: lighter;
-  font-size: 14px;
-  cursor: pointer;
+  margin: 0 auto;
 }
 
-h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: 30px;
-}
-
-.adverts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+.nav-link {
+  display: none;
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  color: white;
+  width: auto;
+  margin: 0 auto;
 }
 
 .page-image {
@@ -132,12 +108,15 @@ h1 {
 caption {
   position: absolute;
   top: 400px;
-  left: 10px;
-  width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   color: white;
   font-weight: bold;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 30px;
 }
 
 .main-buttons {
@@ -149,6 +128,152 @@ caption {
   padding: 20px 20px;
   grid-template-rows: auto auto auto auto auto auto auto;
   grid-row-gap: 30px;
+}
+
+.adverts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.small-logos {
+  max-width: auto;
+  display: grid;
+  padding: 20px 20px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-column-gap: 30px;
+  margin: 0;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+.logo-item-1 {
+  -webkit-filter: grayscale(100%);
+}
+
+.logo-item-1:hover {
+  -webkit-filter: none;
+}
+
+.logo-item-2 {
+  -webkit-filter: grayscale(100%);
+}
+
+.logo-item-2:hover {
+  -webkit-filter: none;
+}
+
+.logo-item-3 {
+  -webkit-filter: grayscale(100%);
+}
+
+.logo-item-3:hover {
+  -webkit-filter: none;
+}
+
+.logo-item-4 {
+  -webkit-filter: grayscale(100%);
+}
+
+.logo-item-4:hover {
+  -webkit-filter: none;
+}
+
+.logo-item-5 {
+  -webkit-filter: grayscale(100%);
+}
+
+.logo-item-5:hover {
+  -webkit-filter: none;
+}
+
+.logo-item-6 {
+  -webkit-filter: grayscale(100%);
+}
+
+.logo-item-6:hover {
+  -webkit-filter: none;
+}
+
+.welcome {
+  background-color: #333645;
+  max-width: 100%;
+  display: grid;
+  color: white;
+  padding-right: 5px;
+  text-align: left;
+}
+
+.info h1 {
+  display: block;
+  border-radius: 10%;
+  width: 96%;
+  max-height: 600px;
+  margin: 2%;
+  margin-left: 30 px;
+  cursor: pointer;
+}
+
+.clients h1 {
+  margin-left: 5px;
+  text-align: left;
+}
+
+.clients h3 {
+  font-style: italic;
+  text-align: left;
+}
+
+.fa-star {
+  color: rgb(255, 238, 0);
+  font-size: 50px;
+  padding-right: 20px;
+}
+
+.btn-primary-welcome {
+  border-radius: 8%;
+  background-color: #232530;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gray;
+}
+
+.btn-primary-client {
+  border-radius: 8%;
+  background-color: #232530;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.btn-primary-client2 {
+  border-radius: 8%;
+  background-color: rgb(2, 168, 2);
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border-width: 0px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -448,145 +573,6 @@ caption {
   font-weight: 1;
 }
 
-.small-logos {
-  max-width: auto;
-  display: grid;
-  padding: 20px 20px;
-  grid-template-columns: auto auto auto auto auto auto auto;
-  grid-column-gap: 30px;
-  margin: 0;
-  cursor: pointer;
-  overflow-x: hidden;
-}
-
-.logo-item-1 {
-  -webkit-filter: grayscale(100%);
-}
-
-.logo-item-1:hover {
-  -webkit-filter: none;
-}
-
-.logo-item-2 {
-  -webkit-filter: grayscale(100%);
-}
-
-.logo-item-2:hover {
-  -webkit-filter: none;
-}
-
-.logo-item-3 {
-  -webkit-filter: grayscale(100%);
-}
-
-.logo-item-3:hover {
-  -webkit-filter: none;
-}
-
-.logo-item-4 {
-  -webkit-filter: grayscale(100%);
-}
-
-.logo-item-4:hover {
-  -webkit-filter: none;
-}
-
-.logo-item-5 {
-  -webkit-filter: grayscale(100%);
-}
-
-.logo-item-5:hover {
-  -webkit-filter: none;
-}
-
-.logo-item-6 {
-  -webkit-filter: grayscale(100%);
-}
-
-.logo-item-6:hover {
-  -webkit-filter: none;
-}
-
-.welcome {
-  background-color: #333645;
-  max-width: 100%;
-  display: grid;
-  color: white;
-  padding-right: 5px;
-  text-align: left;
-}
-
-.info h1 {
-  display: block;
-  border-radius: 10%;
-  width: 96%;
-  max-height: 600px;
-  margin: 2%;
-  margin-left: 30 px;
-  cursor: pointer;
-}
-
-.clients h1 {
-  margin-left: 5px;
-  text-align: left;
-}
-
-.clients h3 {
-  font-style: italic;
-  text-align: left;
-}
-
-.fa-star {
-  color: rgb(255, 238, 0);
-  font-size: 50px;
-  padding-right: 20px;
-}
-
-.btn-primary-welcome {
-  border-radius: 8%;
-  background-color: #232530;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  border-width: 0px;
-  cursor: pointer;
-}
-
-h4 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: gray;
-}
-
-.btn-primary-client {
-  border-radius: 8%;
-  background-color: #232530;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  border-width: 0px;
-  cursor: pointer;
-}
-
-.btn-primary-client2 {
-  border-radius: 8%;
-  background-color: rgb(2, 168, 2);
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  border-width: 0px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
 .card-buttons {
   text-decoration: none;
   width: 200%;
@@ -596,7 +582,6 @@ h4 {
   width: 100%;
   display: grid;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 20px;
   padding-right: 5px;
   border: solid gray thin;
   border-radius: 2%;
