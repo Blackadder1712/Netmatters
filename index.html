@@ -12,11 +12,11 @@
       <body>  
            
         <!--Top netmatters logo, phone button, hamburger button and search bar--> 
+           
             <header>
-            
                 <div class="container">
                         
-                          
+                  
                               
                                   <a href="#">
                                   <img src="img/small-logo.png" alt="Netmatters Logo" href="#" target="_blank" id="netmatters">
@@ -24,8 +24,11 @@
 
 
                               
-                                  <i class="fa-2x fa-solid fa-phone-volume"></i>
-                                  <i class="fa-2x fa-solid fa-bars"></i>
+                                <i class="fa-2x fa-solid fa-phone-volume"></i>
+
+                                  <button class="hamburger"><i class="fa-2x fa-solid fa-bars"></i></button>
+
+                                </div>              
 
                         
 
@@ -38,17 +41,17 @@
                                   </div>
                               </div>
                             </div>
-                </div>
-
-
             </header>
+
+
+        
       
           
        <!--navigational menu that appear in vp's bigger than  992px -->   
 
               
           
-                <div class="nav">
+                <nav class="nav">
 
                                     <ul class="nav-item">
                                     <a class="nav-link" aria-current="page" href="#"><small>BESPOKE</small><br>
@@ -78,16 +81,29 @@
                                       <a class="nav-link" href="#"><small>DEVELOPER</small><br>
                                         COURSE</a>
                                     </ul>
-                </div>
+                 </nav>
 
       <!--main page image-->   
            
-                <div class="main-image">
+                <div class="main-image" style="
+                          position: relative;
+                          display:grid;
+                          place-items: center;
+                          ">
 
-                                    <img src="img/home-image.webp" class="page-image">
-                                    <div>The East Of England's Leading
-                                      Technology Company
-                                    <h6>Performance-driven digital and technology services with complete transparency.</h6></div>
+                          <img src="img/home-image.webp" class="page-image">
+                          <div style="
+                                      position:absolute;
+                                      width:50%;
+                                      ">
+                                <div class="caption-text">
+
+                                    <div class="img-title">The East Of England's Leading
+                                      Technology Company </div>
+
+                                    <div class="img-text">Performance-driven digital and technology services with complete transparency. </div>
+
+                                </div>    
 
                 </div>
           
@@ -97,10 +113,11 @@
 
       <!--Main page navigation buttons-->
          
-               <h1>Our Services</h1>
+              <main class="main-buttons">
+                <h1>Our Services</h1>
 
-               <div class="main-buttons">
-
+               
+                    <div class="main-blocks">
                                   <button class="btn btn-primary" type="button"><h2>Bespoke Software</h2>
                                           <h3>Tailored software solutions to<br>
                                           improve business productivity<br>
@@ -176,14 +193,15 @@
                                         </h3>
 
                                         <text>READ MORE</text>
-
+                                        
                                   </button>
+                  </div>              
 
-                </div> 
+               </main> 
 
             <!--The small partner logos-->
 
-                <div class="small-logos">
+                <aside class="small-logos">
 
                                         <ul class="logo-item-1">
                                           <img src="img/future-50.jpg"  alt="future 50 logo">
@@ -204,40 +222,39 @@
                                         <ul class="logo-item-6">
                                           <img src="img/qms.jpg"  alt="qms logo">
                                         </ul>
-                </div>
+                </aside>
               
 
                        
                  <!--Netmatters info and client review -->         
 
-                    
-                <div class="welcome">
+               <section class="welcome">  
+              
 
                           <ul class="info">
                                                    
 
-                                        <h1>Welcome To Netmatters</h1>
-                                        <h3>Netmatters is a leading Bespoke Software, IT Support, and Digital<br>
+                                           <h1>Welcome To Netmatters</h1>
+                                            <article>Netmatters is a leading Bespoke Software, IT Support, and Digital<br>
                                             Marketing company based in the East of England with offices in<br>
-                                              Cambridge, Wymondham, and Great Yarmouth.</h3>
-                                      
+                                              Cambridge, Wymondham, and Great Yarmouth.</article>
                                     
                                   
 
-                                        <h3> We aren't tied into contracts with third-party providers, so you know<br>
+                                            <article> We aren't tied into contracts with third-party providers, so you know<br>
                                             that our recommendations for your business are based purely with<br>
                                             one benefit in mind: to help improve your business with the most<br>
-                                            appropriate solutions.</h3> 
+                                            appropriate solutions.</article>
                                             
-                                        <h3>We pride ourselves on being an ethical business and have a unique<br>
+                                            <article>We pride ourselves on being an ethical business and have a unique<br>
                                             business offering and cost model that ensures you get the most<br>
                                               from our relationship in an upfront manner.
-                                              </h3>
+                                            </article> 
 
                                     <!--Read more button-->
 
-                                        <button type="button" class="btn btn-primary-welcome">READ MORE <i class="fa-solid fa-arrow-right">                                
-                                        </i> </button>
+                                            <button type="button" class="btn btn-primary-welcome">READ MORE <i class="fa-solid fa-arrow-right">                                
+                                            </i> </button> 
                                     
                           </ul>
                        
@@ -245,16 +262,16 @@
                           
                           <ul class="clients">
 
-                                        <h1>What Our Clients Think</h1>
+                                        <h1>What Our Clients Think</h1> 
                                                     
-                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li> 
                                           
-                                        <h3>Great service. Took the reigns and did all<br>
+                                       <h3>Great service. Took the reigns and did all<br>
                                           the leg work for us. Ensured we were<br>
                                             happy with our website and made all<br>
                                             changes necessary as and when asked to do so.</h3>
 
-                                            <h4>Oliver King - SEA Scaffolding</h4>
+                                          <h4>Oliver King - SEA Scaffolding</h4>
 
                                     <!--Google review button-->
 
@@ -271,11 +288,11 @@
                           </ul>
                         
                 </div>
-                </div>
+              </section> 
 
              <!--Image and text cards-->
                  
-                <div class="cards">
+                <aside class="cards">
                        
                           <div class="card-1" style="width: 18rem;">
 
@@ -314,7 +331,7 @@
                             </div>
                           </div>
                   </div> 
-                </div>
+                </aside>
               
              
 
@@ -347,7 +364,7 @@
                     </div>
             
                   </div> 
-                </div>
+                </aside>
 
 
              
@@ -378,18 +395,18 @@
                     </div>
             
                   </div> 
-                </div>
+                </aside>
 
 
                            
            <!--The view all button and arrow-->                
 
-                          <div class="view">
+                          <button class="view">
                   
                                           <button type="button" class="view-all">View All<i class="fa-solid fa-arrow-right">                              
                                           </i> </button>
 
-                          </div> 
+                          </button> 
 
           <!--The Email-form-->
             
