@@ -37,7 +37,8 @@ header {
   font-family: sans-serif;
   cursor: pointer;
   background-color: #e5e5e5;
-  color: #666;
+  
+  
 }
 
 
@@ -46,8 +47,10 @@ header {
   display: grid;
   width: 100%;
   grid-template-columns: auto;
- 
+  border: none;
   margin-right: auto;
+  margin-top: 11px;
+ 
  
 }
   
@@ -60,15 +63,18 @@ header {
   display: grid;
   grid-template-columns: 80% auto;
   cursor: pointer;
-  border: #666;
+  
   font-size:14px;
   color: #555;
+ border-color: rgb (204,204,204);
 }
 
 #button-addon2 
 {
-  border-left:none;
+  
 border-color:#ccc;
+border: none;
+line-height: 1.15;
 }
 
 
@@ -76,15 +82,19 @@ border-color:#ccc;
   max-width: 100%;
   display: block;
   vertical-align: middle;
+  margin-bottom: 0px;
 }
 
 .fa-bars {
  overflow: hidden;
-  font-size: 32px;
+  font-size: 30px;
 background-color: #333645;
-  padding:5px;
+  padding: 15px;
   color: white;
   margin-left: 15px;
+  border-radius: 3px;
+
+
 
  
  
@@ -96,6 +106,12 @@ background-color: #333645;
   display:block;
    border: none;
    background-color: transparent;
+ margin-bottom: 50px;
+   margin-right: 40px;
+   margin-top: -10px;
+ 
+   
+  
 }
  
  
@@ -103,6 +119,7 @@ background-color: #333645;
  .fa-phone {
    font-size: 32px;
    margin-left: 15px;
+   text-decoration: none;
  
    
   
@@ -204,185 +221,6 @@ h1 {
   
 }
 
-
-
-//The small partner logos
-
-.adverts {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-}
-
-.small-logos {
-  
-  max-width: auto;
-  display: grid;
-  padding: 20px 20px;
-  grid-template-columns: auto auto auto auto auto auto auto;
-  grid-column-gap: 30px;
-  margin: 0;
-  cursor: pointer;
-  overflow-x: hidden;
-}
-
-  .logo-item-1 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-1:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-2 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-2:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-3 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-3:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-4 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-4:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-5 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-5:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-6 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-6:hover
-  {
-  -webkit-filter: none ;
- }
-
-
-
-
-
-
-//Netmatters info and client review
-
-.welcome   {
-  background-color:$main-color;
-  max-width: 100%;
-  display: grid;
-  color:$main-font-color;
-  padding-right: 5px;
-  text-align: left;
-
-
- 
-    
- 
-}
-
-
-
-article
-{ font-family: sans-serif;
-  line-height:1.8rem;
-  letter-spacing:.4px;
-  display: $main-buttons-display;
-  border-radius: $main-buttons-radius;
-  width: $main-buttons-width;
-  max-height: $main-buttons-max-height;
-  margin-bottom: 25px;
-  margin-left: 30 px;
-  cursor: pointer;
-  color:white;
-
-
-}
-
-.clients h1 {
-  margin-left: 5px;
-  text-align:left ;
-
-}
-.clients h3 {
-font-style: italic;
-text-align: left;
-
-}
-
-.fa-star {
-  color:rgb(255, 238, 0);
-  font-size: 50px;
-  padding-right: 20px;
-}
-
-.btn-primary-welcome {
-  border-radius:$page-buttons-border-radius ;
-  background-color: $page-buttons-background-color;
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  cursor: pointer;
-}
-
-h4 {
-  font-family: $main-font-family;
-  color:gray;
-}
-.btn-primary-client {
-  border-radius:$page-buttons-border-radius ;
-  background-color: $page-buttons-background-color;
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  cursor:pointer;
-}
-
-.btn-primary-client2 {
-  border-radius:$page-buttons-border-radius ;
-  background-color: rgb(2, 168, 2);
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-//3 image and text cards
- 
 .btn-primary {
   
   display: $main-buttons-display;
@@ -749,13 +587,186 @@ h4 {
     font-weight: 1;
   }
   
+
+
+
+//The small partner logos
+
+.adverts {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.small-logos {
   
+  max-width: auto;
+  display: grid;
+  padding: 20px 20px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-column-gap: 30px;
+  margin: 0;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+  .logo-item-1 {
+  -webkit-filter: grayscale(100%); 
+  }
+
+ .logo-item-1:hover
+  {
+  -webkit-filter: none ;
+ }
+
+ .logo-item-2 {
+  -webkit-filter: grayscale(100%); 
+  }
+
+ .logo-item-2:hover
+  {
+  -webkit-filter: none ;
+ }
+
+ .logo-item-3 {
+  -webkit-filter: grayscale(100%); 
+  }
+
+ .logo-item-3:hover
+  {
+  -webkit-filter: none ;
+ }
+
+ .logo-item-4 {
+  -webkit-filter: grayscale(100%); 
+  }
+
+ .logo-item-4:hover
+  {
+  -webkit-filter: none ;
+ }
+
+ .logo-item-5 {
+  -webkit-filter: grayscale(100%); 
+  }
+
+ .logo-item-5:hover
+  {
+  -webkit-filter: none ;
+ }
+
+ .logo-item-6 {
+  -webkit-filter: grayscale(100%); 
+  }
+
+ .logo-item-6:hover
+  {
+  -webkit-filter: none ;
+ }
+
+
+
+
+
+
+//Netmatters info and client review
+
+.welcome   {
+  background-color:$main-color;
+  max-width: 100%;
+  display: grid;
+  color:$main-font-color;
+  padding-right: 5px;
+  text-align: left;
+
+
+ 
     
-  
+ 
+}
 
 
 
+article
+{ font-family: sans-serif;
+  line-height:1.8rem;
+  letter-spacing:.4px;
+  display: $main-buttons-display;
+  border-radius: $main-buttons-radius;
+  width: $main-buttons-width;
+  max-height: $main-buttons-max-height;
+  margin-bottom: 25px;
+  margin-left: 30 px;
+  cursor: pointer;
+  color:white;
 
+
+}
+
+.clients h1 {
+  margin-left: 5px;
+  text-align:left ;
+
+}
+.clients h3 {
+font-style: italic;
+text-align: left;
+
+}
+
+.fa-star {
+  color:rgb(255, 238, 0);
+  font-size: 50px;
+  padding-right: 20px;
+}
+
+.btn-primary-welcome {
+  border-radius:$page-buttons-border-radius ;
+  background-color: $page-buttons-background-color;
+  padding-left: $page-buttons-left-padding;
+  padding-right: $page-buttons-right-padding;
+  padding-top: $page-buttons-top-padding ;
+  padding-bottom: $page-buttons-bottom-padding;
+  font-family: $main-font-family;
+  color: $main-font-color ;
+  border-width: $page-buttons-border-width; 
+  cursor: pointer;
+}
+
+h4 {
+  font-family: $main-font-family;
+  color:gray;
+}
+.btn-primary-client {
+  border-radius:$page-buttons-border-radius ;
+  background-color: $page-buttons-background-color;
+  padding-left: $page-buttons-left-padding;
+  padding-right: $page-buttons-right-padding;
+  padding-top: $page-buttons-top-padding ;
+  padding-bottom: $page-buttons-bottom-padding;
+  font-family: $main-font-family;
+  color: $main-font-color ;
+  border-width: $page-buttons-border-width; 
+  cursor:pointer;
+}
+
+.btn-primary-client2 {
+  border-radius:$page-buttons-border-radius ;
+  background-color: rgb(2, 168, 2);
+  padding-left: $page-buttons-left-padding;
+  padding-right: $page-buttons-right-padding;
+  padding-top: $page-buttons-top-padding ;
+  padding-bottom: $page-buttons-bottom-padding;
+  font-family: $main-font-family;
+  color: $main-font-color ;
+  border-width: $page-buttons-border-width; 
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+//3 image and text cards
+ 
 .card-buttons
 {text-decoration: none;
 width: 200%

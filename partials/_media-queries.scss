@@ -2,6 +2,18 @@
 
 @media screen and (min-width: 992px) {
 
+  header {
+ 
+    max-width: auto;
+    display: grid;
+    padding: 20px 20px;
+    grid-template-columns: auto auto auto auto ;
+    grid-column-gap: 30px;
+    margin: 0;
+    }
+    
+    
+
 .outer-container {
   max-width: auto;
     display: grid;
@@ -70,9 +82,29 @@ caption {
 
 }
 
-
-
-
-
+footer {
+background-color:$main-color;
+    max-width: auto;
+    display: grid;
+    padding: 20px 20px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 30px;
+    margin: 0;
 }
+
+.main-blocks
+ {
+ 
+  max-width: auto;
+  display: grid;
+  padding: 20px 20px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-column-gap: 30px;
+  margin: 0;
+  }
+  
+  }
+
+
+
 
