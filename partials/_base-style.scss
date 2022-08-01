@@ -221,15 +221,13 @@ h1 {
   
 }
 
-.btn-primary {
+.btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   
   display: $main-buttons-display;
   border-radius: $main-buttons-radius;
   width: $main-buttons-width;
   max-height: $main-buttons-max-height;
   margin: $main-buttons-margin;
-  border-color: $main-buttons-border-color;
-  background-color: $mains-button-background-color;
   border-width: $mains-button-border-width;
   text-decoration: none;
   padding: 50px;
@@ -274,24 +272,6 @@ h1 {
 
 
 
-.btn-primary-2{
-  
-  display: $main-buttons-display;
-  border-radius: $main-buttons-radius;
-  width: $main-buttons-width;
-  max-height: $main-buttons-max-height;
-  margin: $main-buttons-margin;
-  border-color: $main-buttons-border-color;
-  background-color: $mains-button-background-color;
-  border-width: $mains-button-border-width;
-  text-decoration: none;
-  padding: 50px;
-  font-weight: 1;
-  cursor: pointer;
-  
-  
- 
-}
 
 .btn-primary-2:hover {
   background-color: $hover-color-bright-blue;
@@ -323,21 +303,7 @@ h1 {
   }
  
 
-  .btn-primary-3 {
-  
-    display: $main-buttons-display;
-    border-radius: $main-buttons-radius;
-    width: $main-buttons-width;
-    max-height: $main-buttons-max-height;
-    margin: $main-buttons-margin;
-    border-color: $main-buttons-border-color;
-    background-color: $mains-button-background-color;
-    border-width: $mains-button-border-width;
-    text-decoration: none;
-    padding: 50px;
-    font-weight: 1;
-    cursor: pointer;
-  }
+ 
     
     .btn-primary-3:hover 
     {
@@ -377,23 +343,7 @@ h1 {
   
   
 
-  .btn-primary-4{
-  
-    display: $main-buttons-display;
-    border-radius: $main-buttons-radius;
-    width: $main-buttons-width;
-    max-height: $main-buttons-max-height;
-    margin: $main-buttons-margin;
-    border-color: $main-buttons-border-color;
-    background-color: $mains-button-background-color;
-    border-width: $mains-button-border-width;
-    text-decoration: none;
-    padding: 50px;
-    font-weight: 1;
-    cursor: pointer;
-    
-   
-  }
+
 
   .btn-primary-4:hover 
   {
@@ -429,24 +379,7 @@ h1 {
   
   
 
-  .btn-primary-5 {
-  
-    display: $main-buttons-display;
-    border-radius: $main-buttons-radius;
-    width: $main-buttons-width;
-    max-height: $main-buttons-max-height;
-    margin: $main-buttons-margin;
-    border-color: $main-buttons-border-color;
-    background-color: $mains-button-background-color;
-    border-width: $mains-button-border-width;
-    text-decoration: none;
-    padding: 50px;
-    font-weight: 1;
-    cursor: pointer;
-    
-    
-   
-  }
+
 
   .btn-primary-5:hover 
   {
@@ -485,23 +418,7 @@ h1 {
   
   
 
-  .btn-primary-6{
-  
-    display: $main-buttons-display;
-    border-radius: $main-buttons-radius;
-    width: $main-buttons-width;
-    max-height: $main-buttons-max-height;
-    margin: $main-buttons-margin;
-    border-color: $main-buttons-border-color;
-    background-color: $mains-button-background-color;
-    border-width: $mains-button-border-width;
-    text-decoration: none;
-    padding: 50px;
-    font-weight: 1;
-    cursor: pointer;
-    
-   
-  }
+
 
   .btn-primary-6:hover 
   {
@@ -538,21 +455,6 @@ h1 {
   
   
 
-  .btn-primary-7{
-  
-    display: $main-buttons-display;
-    border-radius: $main-buttons-radius;
-    width: $main-buttons-width;
-    max-height: $main-buttons-max-height;
-    margin: $main-buttons-margin;
-    border-color: $main-buttons-border-color;
-    background-color: $mains-button-background-color;
-    border-width: $mains-button-border-width;
-    text-decoration: none;
-    padding: 50px;
-    font-weight: 1;
-    cursor: pointer;
-  }
 
   .btn-primary-7:hover 
   {

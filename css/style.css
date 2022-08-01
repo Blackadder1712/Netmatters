@@ -167,14 +167,12 @@ h1 {
   grid-row-gap: 30px;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   display: block;
   border-radius: 10%;
   width: 96%;
   max-height: 600px;
   margin: 2%;
-  border-color: rgb(180, 177, 177);
-  background-color: white;
   border-width: 1px;
   text-decoration: none;
   padding: 50px;
@@ -210,21 +208,6 @@ h1 {
   font-weight: 1;
 }
 
-.btn-primary-2 {
-  display: block;
-  border-radius: 10%;
-  width: 96%;
-  max-height: 600px;
-  margin: 2%;
-  border-color: rgb(180, 177, 177);
-  background-color: white;
-  border-width: 1px;
-  text-decoration: none;
-  padding: 50px;
-  font-weight: 1;
-  cursor: pointer;
-}
-
 .btn-primary-2:hover {
   background-color: #4389e4;
 }
@@ -250,21 +233,6 @@ h1 {
 
 .btn-primary-2 h3 {
   font-weight: 1;
-}
-
-.btn-primary-3 {
-  display: block;
-  border-radius: 10%;
-  width: 96%;
-  max-height: 600px;
-  margin: 2%;
-  border-color: rgb(180, 177, 177);
-  background-color: white;
-  border-width: 1px;
-  text-decoration: none;
-  padding: 50px;
-  font-weight: 1;
-  cursor: pointer;
 }
 
 .btn-primary-3:hover {
@@ -295,21 +263,6 @@ h1 {
   font-weight: 1;
 }
 
-.btn-primary-4 {
-  display: block;
-  border-radius: 10%;
-  width: 96%;
-  max-height: 600px;
-  margin: 2%;
-  border-color: rgb(180, 177, 177);
-  background-color: white;
-  border-width: 1px;
-  text-decoration: none;
-  padding: 50px;
-  font-weight: 1;
-  cursor: pointer;
-}
-
 .btn-primary-4:hover {
   background-color: red;
 }
@@ -335,21 +288,6 @@ h1 {
 
 .btn-primary-4 h3 {
   font-weight: 1;
-}
-
-.btn-primary-5 {
-  display: block;
-  border-radius: 10%;
-  width: 96%;
-  max-height: 600px;
-  margin: 2%;
-  border-color: rgb(180, 177, 177);
-  background-color: white;
-  border-width: 1px;
-  text-decoration: none;
-  padding: 50px;
-  font-weight: 1;
-  cursor: pointer;
 }
 
 .btn-primary-5:hover {
@@ -380,21 +318,6 @@ h1 {
   margin-bottom: 5px;
 }
 
-.btn-primary-6 {
-  display: block;
-  border-radius: 10%;
-  width: 96%;
-  max-height: 600px;
-  margin: 2%;
-  border-color: rgb(180, 177, 177);
-  background-color: white;
-  border-width: 1px;
-  text-decoration: none;
-  padding: 50px;
-  font-weight: 1;
-  cursor: pointer;
-}
-
 .btn-primary-6:hover {
   background-color: #f13261;
 }
@@ -420,21 +343,6 @@ h1 {
 
 .btn-primary-6 h3 {
   font-weight: 1;
-}
-
-.btn-primary-7 {
-  display: block;
-  border-radius: 10%;
-  width: 96%;
-  max-height: 600px;
-  margin: 2%;
-  border-color: rgb(180, 177, 177);
-  background-color: white;
-  border-width: 1px;
-  text-decoration: none;
-  padding: 50px;
-  font-weight: 1;
-  cursor: pointer;
 }
 
 .btn-primary-7:hover {
