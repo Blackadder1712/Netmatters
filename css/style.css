@@ -1,4 +1,4 @@
-/*main variables*/
+/*main font stacks */
 /* colours used when hovering over main buttons*/
 /*button variables */
 /* card variables*/
@@ -169,7 +169,7 @@ h1 {
 
 .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   display: block;
-  border-radius: 10%;
+  border-radius: 15px;
   width: 96%;
   max-height: 600px;
   margin: 2%;
@@ -180,8 +180,29 @@ h1 {
   cursor: pointer;
 }
 
+.btn-primary h2, .btn-primary-2 h2, .btn-primary-3 h2, .btn-primary-4 h2, .btn-primary-5 h2, .btn-primary-5 h2, .btn-primary-6 h2,
+.btn-primary-7 h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.btn-primary h3, .btn-primary-2 h3, .btn-primary-3 h3, .btn-primary-4 h3, .btn-primary-5 h3, .btn-primary-5 h3, .btn-primary-6 h3,
+.btn-primary-7 h3 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 .btn-primary:hover {
   background-color: #67809f;
+  color: white;
 }
 
 .btn-primary:hover text {
@@ -189,12 +210,13 @@ h1 {
   color: #67809f;
 }
 
-.btn-primary text {
+.btn-primary text, .btn-primary-2 text, .btn-primary-3 text, .btn-primary-4 text, .btn-primary-5 text, .btn-primary-6 text,
+.btn-primary-7 text {
   padding: 10px;
   font-weight: 1;
   text-decoration: none;
   background-color: #67809f;
-  border-radius: 10%;
+  border-radius: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
   color: white;
@@ -215,6 +237,7 @@ h1 {
 
 .btn-primary-2:hover {
   background-color: #4389e4;
+  color: white;
 }
 
 .btn-primary-2:hover text {
@@ -227,7 +250,6 @@ h1 {
   font-weight: 1;
   text-decoration: none;
   background-color: #4389e4;
-  border-radius: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
@@ -242,6 +264,7 @@ h1 {
 
 .btn-primary-3:hover {
   background-color: #31f081;
+  color: white;
 }
 
 .btn-primary-3:hover text {
@@ -255,7 +278,6 @@ h1 {
   font-weight: 1;
   text-decoration: none;
   background-color: #31f081;
-  border-radius: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
@@ -280,6 +302,7 @@ h1 {
 
 .btn-primary-4:hover {
   background-color: red;
+  color: white;
 }
 
 .btn-primary-4 text {
@@ -287,7 +310,6 @@ h1 {
   font-weight: 1;
   text-decoration: none;
   background-color: red;
-  border-radius: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
@@ -312,6 +334,7 @@ h1 {
 
 .btn-primary-5:hover {
   background-color: rgb(179, 1, 179);
+  color: white;
 }
 
 .btn-primary-5 text:hover {
@@ -329,7 +352,6 @@ h1 {
   font-weight: 1;
   text-decoration: none;
   background-color: rgb(179, 1, 179);
-  border-radius: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
@@ -340,11 +362,11 @@ h1 {
 
 .btn-primary-5 h3 {
   font-weight: 1;
-  margin-bottom: 5px;
 }
 
 .btn-primary-6:hover {
   background-color: #f13261;
+  color: white;
 }
 
 .btn-primary-6:hover text {
@@ -357,7 +379,6 @@ h1 {
   font-weight: 1;
   text-decoration: none;
   background-color: #f13261;
-  border-radius: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
@@ -377,6 +398,7 @@ h1 {
 
 .btn-primary-7:hover {
   background-color: red;
+  color: white;
 }
 
 .btn-primary-7:hover text {
@@ -389,7 +411,6 @@ h1 {
   font-weight: 1;
   text-decoration: none;
   background-color: red;
-  border-radius: 10%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
@@ -487,7 +508,7 @@ article {
   line-height: 1.8rem;
   letter-spacing: 0.4px;
   display: block;
-  border-radius: 10%;
+  border-radius: 3px;
   width: 96%;
   max-height: 600px;
   margin-bottom: 25px;

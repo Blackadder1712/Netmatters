@@ -221,10 +221,12 @@ h1 {
   
 }
 
+
+
 .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   
   display: $main-buttons-display;
-  border-radius: $main-buttons-radius;
+  border-radius: $main-nav-radius;
   width: $main-buttons-width;
   max-height: $main-buttons-max-height;
   margin: $main-buttons-margin;
@@ -235,8 +237,32 @@ h1 {
   cursor: pointer;
 }
 
+.btn-primary h2 , .btn-primary-2 h2, .btn-primary-3 h2,  .btn-primary-4 h2, .btn-primary-5 h2, .btn-primary-5 h2, .btn-primary-6 h2,
+ .btn-primary-7 h2
+{ 
+  font-size:  $main-nav-h2-size;
+  font-weight: $main-nav-weight;
+  margin-bottom: $nav-button-margin;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.btn-primary h3 , .btn-primary-2 h3, .btn-primary-3 h3,  .btn-primary-4 h3, .btn-primary-5 h3, .btn-primary-5 h3, .btn-primary-6 h3,
+ .btn-primary-7 h3 
+ {
+   font-size:  $main-nav-h3-size;
+   font-weight: $main-nav-weight;
+   margin-bottom: $nav-button-margin;
+   margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+ }
+
 .btn-primary:hover {
-  background-color: $hover-color-blue
+  background-color: $hover-color-blue;
+  color: white;
+  
 }
 
 
@@ -249,12 +275,14 @@ h1 {
 
 
 
-.btn-primary text {
+.btn-primary text, .btn-primary-2 text, .btn-primary-3 text, .btn-primary-4 text, .btn-primary-5 text, .btn-primary-6 text,
+.btn-primary-7 text {
   padding:10px;
   font-weight: 1;
   text-decoration: none;
   background-color: $hover-color-blue;
   border-radius: $main-buttons-radius;
+
   font-family: $main-font-family;
   cursor: pointer;
   color: white;
@@ -285,6 +313,7 @@ h1 {
 
 .btn-primary-2:hover {
   background-color: $hover-color-bright-blue;
+  color: white;
 }
 
 
@@ -302,10 +331,10 @@ h1 {
 
   .btn-primary-2 text {
     padding:10px;
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
     text-decoration: none;
     background-color: $hover-color-bright-blue;
-    border-radius: $main-buttons-radius;
+
     font-family: $main-font-family;
     color: white;
     
@@ -313,12 +342,12 @@ h1 {
   
   .btn-primary-2 h2 
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
   }
   
   .btn-primary-2 h3
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
   }
  
 
@@ -327,6 +356,7 @@ h1 {
     .btn-primary-3:hover 
     {
       background-color: $hover-color-bright-green;
+      color: white;
      
     }
    
@@ -343,7 +373,7 @@ h1 {
       font-weight: 1;
       text-decoration: none;
       background-color: $hover-color-bright-green;
-      border-radius: $main-buttons-radius;
+     
       font-family: $main-font-family;
       color:white;
       
@@ -363,12 +393,12 @@ h1 {
   
     .btn-primary-3 h2 
     {
-      font-weight: 1;
+      font-weight:  $btn-primary-weight;
     }
     
     .btn-primary-3 h3
     {
-      font-weight: 1;
+      font-weight:  $btn-primary-weight;
     }
     
     
@@ -378,6 +408,7 @@ h1 {
   .btn-primary-4:hover 
   {
     background-color: $hover-color-red;
+    color: white;
   }
 
   .btn-primary-4 text {
@@ -385,7 +416,7 @@ h1 {
     font-weight: 1;
     text-decoration: none;
     background-color: $hover-color-red;
-    border-radius: $main-buttons-radius;
+
     font-family: $main-font-family;
     color:white;
     
@@ -405,12 +436,12 @@ h1 {
   
   .btn-primary-4 h2 
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
   }
   
   .btn-primary-4 h3
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
   }
   
   
@@ -420,6 +451,7 @@ h1 {
   .btn-primary-5:hover 
   {
     background-color: $hover-color-purple;
+    color: white;
   }
 
   .btn-primary-5 text:hover 
@@ -436,10 +468,10 @@ h1 {
 
   .btn-primary-5 text {
     padding:10px;
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
     text-decoration: none;
     background-color: $hover-color-purple;
-    border-radius: $main-buttons-radius;
+
     font-family: $main-font-family;
     color:white;
     
@@ -448,14 +480,14 @@ h1 {
   
   .btn-primary-5 h2 
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
     
   }
   
   .btn-primary-5 h3
   {
-    font-weight: 1;
-    margin-bottom: 5px;
+    font-weight:  $btn-primary-weight;
+    
   }
   
   
@@ -465,6 +497,7 @@ h1 {
   .btn-primary-6:hover 
   {
     background-color: $hover-color-pink;
+    color: white;
   }
 
   .btn-primary-6:hover text
@@ -479,7 +512,7 @@ h1 {
     font-weight: 1;
     text-decoration: none;
     background-color: $hover-color-pink;
-    border-radius: $main-buttons-radius;
+ 
     font-family: $main-font-family;
     color: white;
     
@@ -493,12 +526,12 @@ h1 {
   }
   .btn-primary-6 h2 
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
   }
   
   .btn-primary-6 h3
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
   }
   
   
@@ -507,6 +540,7 @@ h1 {
   .btn-primary-7:hover 
   {
     background-color: $hover-color-red;
+    color: white;
 
   }
 
@@ -518,10 +552,10 @@ h1 {
 
   .btn-primary-7 text {
     padding:10px;
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
     text-decoration: none;
     background-color: $hover-color-red;
-    border-radius: $main-buttons-radius;
+
     font-family: $main-font-family;
     color: white;
     
@@ -535,12 +569,12 @@ h1 {
   
   .btn-primary-7 h2 
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
   }
   
   .btn-primary-7 h3
   {
-    font-weight: 1;
+    font-weight:  $btn-primary-weight;
   }
   
 

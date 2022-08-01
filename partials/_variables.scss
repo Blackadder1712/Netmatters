@@ -1,8 +1,28 @@
 
     
-    /*main variables*/
+    /*main font stacks */
+
+    $main-font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    $main-page-font-family: Poppins,sans-serif;
+
+    //Font weights
+    $title-font-weight: 600;
+    $btn-primary-weight: 1;
+    $main-nav-weight: 400;
+    
+
+    //font sizes 
+    $main-nav-h2-size: 1.3rem;
+    $main-nav-h3-size: .8125rem;
+
+    //margin sizes
+    $nav-button-margin: 15px;
+
+
 $main-color: #333645;
-$main-buttons-radius: 10%;
+$main-nav-radius: 15px;
+$main-buttons-radius: 3px;
 $main-buttons-display: block;
 $main-buttons-width: 96%;
 $main-buttons-max-height: 600px;
@@ -12,10 +32,10 @@ $mains-button-background-color: white;
 $mains-button-border-width: 1px;
 
 
-$main-font-family: Verdana, Geneva, Tahoma, sans-serif;
-$main-font-weight: lighter;
+
+
 $main-font-color: white;
-$main-page-font-family: Poppins,sans-serif;
+
 
 /* colours used when hovering over main buttons*/
 
