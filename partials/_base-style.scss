@@ -23,8 +23,8 @@ header {
   
   max-width: auto;
   display: grid;
-  padding: 8px 8px;
-  grid-template-columns: auto auto auto ;
+  
+  grid-template-columns: 72% auto auto ;
   grid-column-gap: 20px;
   margin-left: 5px;
   margin-right: 5px;
@@ -33,10 +33,12 @@ header {
 .form-control {
   height: 47px;
   width: 100%;
+  margin-top: 0px;
   padding-right: 40px ;
   font-family: sans-serif;
   cursor: pointer;
   background-color: #e5e5e5;
+  border-right: none;
   
   
 }
@@ -49,7 +51,7 @@ header {
   grid-template-columns: auto;
   border: none;
   margin-right: auto;
-  margin-top: 11px;
+  margin-top: 0px;
  
  
 }
@@ -65,15 +67,16 @@ header {
   cursor: pointer;
   
   font-size:14px;
-  color: #555;
- border-color: rgb (204,204,204);
+  color: white;
+
+ border-left: none;
 }
 
 #button-addon2 
 {
   
 border-color:#ccc;
-border: none;
+border-left: none;
 line-height: 1.15;
 }
 
@@ -81,8 +84,9 @@ line-height: 1.15;
 #netmatters { 
   max-width: 100%;
   display: block;
-  vertical-align: middle;
+  
   margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .fa-bars {
@@ -120,6 +124,9 @@ background-color: #333645;
    font-size: 32px;
    margin-left: 15px;
    text-decoration: none;
+   color: black;
+   outline: none;
+   border: 0;
  
    
   
@@ -205,9 +212,11 @@ h1 {
  font-size: 36px ;
 } 
 
+
 .main-buttons
  {
-  
+  padding-top: 50px;
+  padding-bottom: 0px;
    font-family: $main-page-font-family;
   font-size: 1rem;
   letter-spacing: .4px;
@@ -215,7 +224,9 @@ h1 {
   display: grid;
   padding: 20px 20px;
   grid-template-rows: auto auto auto auto auto auto auto ;
-  grid-row-gap: 30px;
+  grid-row-gap: 10px;
+
+ 
 
   
   
@@ -235,6 +246,8 @@ h1 {
   padding: 50px;
   font-weight:1;
   cursor: pointer;
+  letter-spacing: .4px;
+  
 }
 
 .btn-primary h2 , .btn-primary-2 h2, .btn-primary-3 h2,  .btn-primary-4 h2, .btn-primary-5 h2, .btn-primary-5 h2, .btn-primary-6 h2,
@@ -308,7 +321,10 @@ h1 {
 
 
 
-
+.btn-primary-2 text 
+{
+  background-color: $hover-color-bright-blue;
+}
 
 
 .btn-primary-2:hover {
@@ -329,16 +345,7 @@ h1 {
 
 
 
-  .btn-primary-2 text {
-    padding:10px;
-    font-weight:  $btn-primary-weight;
-    text-decoration: none;
-    background-color: $hover-color-bright-blue;
-
-    font-family: $main-font-family;
-    color: white;
-    
-  }
+ 
   
   .btn-primary-2 h2 
   {
@@ -348,6 +355,11 @@ h1 {
   .btn-primary-2 h3
   {
     font-weight:  $btn-primary-weight;
+  }
+
+  .btn-primary-3 text 
+  {
+    background-color: $hover-color-bright-green;
   }
  
 
@@ -367,17 +379,7 @@ h1 {
     }
   
 
-    .btn-primary-3 text {
-      margin-top: 10px;
-      padding:10px;
-      font-weight: 1;
-      text-decoration: none;
-      background-color: $hover-color-bright-green;
-     
-      font-family: $main-font-family;
-      color:white;
-      
-    }
+   
 
     .btn-primary-3 text:hover 
     {
@@ -411,16 +413,12 @@ h1 {
     color: white;
   }
 
-  .btn-primary-4 text {
-    padding:10px;
-    font-weight: 1;
-    text-decoration: none;
-    background-color: $hover-color-red;
-
-    font-family: $main-font-family;
-    color:white;
-    
-  }
+  
+.btn-primary-4 text 
+{
+  background-color: $hover-color-red;
+}
+  
 
   .btn-primary-4 text:hover 
   {
@@ -467,13 +465,9 @@ h1 {
 }
 
   .btn-primary-5 text {
-    padding:10px;
-    font-weight:  $btn-primary-weight;
-    text-decoration: none;
+   
     background-color: $hover-color-purple;
 
-    font-family: $main-font-family;
-    color:white;
     
     
   }
@@ -508,13 +502,8 @@ h1 {
 
 
   .btn-primary-6 text {
-    padding:10px;
-    font-weight: 1;
-    text-decoration: none;
+   
     background-color: $hover-color-pink;
- 
-    font-family: $main-font-family;
-    color: white;
     
   }
   
@@ -551,14 +540,7 @@ h1 {
   }
 
   .btn-primary-7 text {
-    padding:10px;
-    font-weight:  $btn-primary-weight;
-    text-decoration: none;
-    background-color: $hover-color-red;
-
-    font-family: $main-font-family;
-    color: white;
-    
+   background-color: $hover-color-red;
   }
 
   .btn-primary-7 text:hover
@@ -593,7 +575,7 @@ h1 {
   
   max-width: auto;
   display: grid;
-  padding: 20px 20px;
+ 
   grid-template-columns: auto auto auto auto auto auto auto;
   grid-column-gap: 30px;
   margin: 0;
@@ -601,62 +583,20 @@ h1 {
   overflow-x: hidden;
 }
 
-  .logo-item-1 {
+  .logo-item-1, .logo-item-2, .logo-item-3, .logo-item-4, .logo-item-5, .logo-item-6
+   {
   -webkit-filter: grayscale(100%); 
   }
 
- .logo-item-1:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-2 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-2:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-3 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-3:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-4 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-4:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-5 {
-  -webkit-filter: grayscale(100%); 
-  }
-
- .logo-item-5:hover
-  {
-  -webkit-filter: none ;
- }
-
- .logo-item-6 {
-  -webkit-filter: grayscale(100%); 
-  }
-
+ .logo-item-1:hover, .logo-item-2:hover, .logo-item-3:hover, .logo-item-4:hover, .logo-item-5:hover,
  .logo-item-6:hover
   {
   -webkit-filter: none ;
  }
 
+ 
 
-
+ 
 
 
 
@@ -767,7 +707,7 @@ h4 {
 .card-1, .card-2, .card-3 {
   
 
-  height: $main-buttons-max-height;
+ 
   margin:20px;
   display:grid;
   font-family: $main-font-family;
@@ -895,6 +835,15 @@ h4 {
   grid-row-gap: 20px;
   font-weight: lighter;
   
+
+ 
+
+  padding-right: $card-padding;
+  padding-left: $card-padding;
+ 
+ 
+  grid-template-rows: auto auto auto ;
+
   
   
 
