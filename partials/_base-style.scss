@@ -239,6 +239,16 @@ h1 {
   background-color: $hover-color-blue
 }
 
+
+
+  .btn-primary:hover text
+  {
+    background-color: white;
+    color: $hover-color-blue;
+  }
+
+
+
 .btn-primary text {
   padding:10px;
   font-weight: 1;
@@ -277,10 +287,19 @@ h1 {
   background-color: $hover-color-bright-blue;
 }
 
-.btn-primary-2 text:hover{
+
+
+
+.btn-primary-2:hover text
+{
   background-color: white;
-  color:$hover-color-bright-blue
+  color: $hover-color-bright-blue;
 }
+
+
+
+
+
   .btn-primary-2 text {
     padding:10px;
     font-weight: 1;
@@ -311,37 +330,48 @@ h1 {
      
     }
    
+    .btn-primary-3:hover text
+    {
+      background-color: white;
+      color: $hover-color-bright-green;
+    }
   
 
-  .btn-primary-3 text {
-    margin-top: 10px;
-    padding:10px;
-    font-weight: 1;
-    text-decoration: none;
-    background-color: $hover-color-bright-green;
-    border-radius: $main-buttons-radius;
-    font-family: $main-font-family;
-    color:white;
+    .btn-primary-3 text {
+      margin-top: 10px;
+      padding:10px;
+      font-weight: 1;
+      text-decoration: none;
+      background-color: $hover-color-bright-green;
+      border-radius: $main-buttons-radius;
+      font-family: $main-font-family;
+      color:white;
+      
+    }
+
+    .btn-primary-3 text:hover 
+    {
+      background-color: white;
+      color:$hover-color-bright-green;
+    }
+
+    .btn-primary-3:hover text
+    {
+      background-color: white;
+      color: $hover-color-bright-green;
+    }
+  
+    .btn-primary-3 h2 
+    {
+      font-weight: 1;
+    }
     
-  }
-
-  .btn-primary-3 text:hover 
-  {
-    background-color: white;
-    color:$hover-color-bright-green;
-  }
-  
-  .btn-primary-3 h2 
-  {
-    font-weight: 1;
-  }
-  
-  .btn-primary-3 h3
-  {
-    font-weight: 1;
-  }
-  
-  
+    .btn-primary-3 h3
+    {
+      font-weight: 1;
+    }
+    
+    
 
 
 
@@ -365,6 +395,12 @@ h1 {
   {
     background-color: white;
     color:$hover-color-red;
+  }
+
+  .btn-primary-4:hover text
+  {
+    background-color: white;
+    color: $hover-color-red;
   }
   
   .btn-primary-4 h2 
@@ -391,6 +427,12 @@ h1 {
     background-color: white;
     color:$hover-color-purple;
   }
+
+  .btn-primary-5:hover text
+{
+  background-color: white;
+  color: $hover-color-purple;
+}
 
   .btn-primary-5 text {
     padding:10px;
@@ -424,6 +466,12 @@ h1 {
   {
     background-color: $hover-color-pink;
   }
+
+  .btn-primary-6:hover text
+{
+  background-color: white;
+  color: $hover-color-pink;
+}
 
 
   .btn-primary-6 text {
@@ -460,6 +508,12 @@ h1 {
   {
     background-color: $hover-color-red;
 
+  }
+
+  .btn-primary-7:hover text
+  {
+    background-color: white;
+    color: $hover-color-red;
   }
 
   .btn-primary-7 text {
@@ -669,15 +723,18 @@ h4 {
 
 //3 image and text cards
  
-.card-buttons
-{text-decoration: none;
-width: 200%
+.cards 
+{
+ display: grid;
+
 }
 
 
-.cards {
+.card-1, .card-2, .card-3 {
+  
 
-  width: 100%;
+  height: $main-buttons-max-height;
+  margin:20px;
   display:grid;
   font-family: $main-font-family;
 
@@ -686,33 +743,18 @@ width: 200%
   border-radius: $card-border-radius ;
   grid-template-rows: auto auto auto ;
   text-decoration: none;
-
- 
-
-  
-  
- 
- 
-
 }
 
-.card-img {
+.card-img  {
   max-width:100%;
   display: grid;
   padding: 10px;
 }
 
 
-.card-title-1  {
-  width: 100%;
-  color: $hover-color-blue;
-  font-size: medium;
-  margin:10px;
-  text-decoration:none;
-  
-}
+
  
-.card-text {
+.card-text, .card-text-2, .card-text-3 {
   width: 100%;
  color: grey;
  margin:10px;
@@ -721,12 +763,7 @@ width: 200%
 
 }
 
-hr {
-  display:block;
-  width: auto;
-}
-
-.btn-primary-card1 {
+.btn-primary-card1, .btn-primary-card2, .btn-primary-card3 {
   border-radius:$page-buttons-border-radius ;
   background-color: $hover-color-blue;
   padding-left: $page-buttons-left-padding;
@@ -737,7 +774,16 @@ hr {
   color: $main-font-color ;
   border-width: $page-buttons-border-width; 
   margin: 20px;
-  
+
+}
+
+.btn-primary-card2, .btn-primary-card3{
+  background-color: #926fb1;
+
+}
+
+.btn-primary-card1 {
+  background-color: $hover-color-blue;
 }
 
 .btn-primary-cardlogo {
@@ -756,25 +802,14 @@ hr {
   color:gray;
 }
 
-.cards-2 {
-  max-width: $card-max-width;
-  display:$card-display;
-  font-family: $main-font-family;
-  margin: $card-margin;
-  padding-right: $card-padding;
-  border: $card-border;
-  border-radius: $card-border-radius ;
-  
-}
 
-.card-img{
-  margin: $card-img-margin;
-  width: $card-img-width;
-}
+
+
+
 
 .card-title-2  {
 
-  color: rgb(179, 1, 179);
+  color: #926fb1;
   font-size: medium;
   margin:10px;
   font-family: $main-font-family;
@@ -783,36 +818,14 @@ hr {
 
 
 
-.btn-primary-card2 {
-  border-radius:$page-buttons-border-radius ;
-  background-color: $hover-color-purple;
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  margin: 20px;
-  
-}
 
-.cards-3 {
-  max-width: $card-max-width;
-  display:$card-display;
-  font-family: $main-font-family;
-  margin: $card-margin;
-  padding-right: $card-padding;
-  border: $card-border;
-  border-radius: $card-border-radius ;
-  
-}
+
 
 
 
 .card-title-3  {
 
-  color: rgb(179, 1, 179);
+  color: #926fb1;
   font-size: medium;
   margin:10px;
   font-family: $main-font-family;
@@ -821,19 +834,7 @@ hr {
 
 
 
-.btn-primary-card3 {
-  border-radius:$page-buttons-border-radius ;
-  background-color: $hover-color-purple;
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  margin: 20px;
-  
-}
+
 
 //View all button and arrow 
 

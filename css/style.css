@@ -184,6 +184,11 @@ h1 {
   background-color: #67809f;
 }
 
+.btn-primary:hover text {
+  background-color: white;
+  color: #67809f;
+}
+
 .btn-primary text {
   padding: 10px;
   font-weight: 1;
@@ -212,7 +217,7 @@ h1 {
   background-color: #4389e4;
 }
 
-.btn-primary-2 text:hover {
+.btn-primary-2:hover text {
   background-color: white;
   color: #4389e4;
 }
@@ -239,6 +244,11 @@ h1 {
   background-color: #31f081;
 }
 
+.btn-primary-3:hover text {
+  background-color: white;
+  color: #31f081;
+}
+
 .btn-primary-3 text {
   margin-top: 10px;
   padding: 10px;
@@ -251,6 +261,11 @@ h1 {
 }
 
 .btn-primary-3 text:hover {
+  background-color: white;
+  color: #31f081;
+}
+
+.btn-primary-3:hover text {
   background-color: white;
   color: #31f081;
 }
@@ -282,6 +297,11 @@ h1 {
   color: red;
 }
 
+.btn-primary-4:hover text {
+  background-color: white;
+  color: red;
+}
+
 .btn-primary-4 h2 {
   font-weight: 1;
 }
@@ -295,6 +315,11 @@ h1 {
 }
 
 .btn-primary-5 text:hover {
+  background-color: white;
+  color: rgb(179, 1, 179);
+}
+
+.btn-primary-5:hover text {
   background-color: white;
   color: rgb(179, 1, 179);
 }
@@ -322,6 +347,11 @@ h1 {
   background-color: #f13261;
 }
 
+.btn-primary-6:hover text {
+  background-color: white;
+  color: #f13261;
+}
+
 .btn-primary-6 text {
   padding: 10px;
   font-weight: 1;
@@ -347,6 +377,11 @@ h1 {
 
 .btn-primary-7:hover {
   background-color: red;
+}
+
+.btn-primary-7:hover text {
+  background-color: white;
+  color: red;
 }
 
 .btn-primary-7 text {
@@ -522,13 +557,13 @@ h4 {
   cursor: pointer;
 }
 
-.card-buttons {
-  text-decoration: none;
-  width: 200%;
+.cards {
+  display: grid;
 }
 
-.cards {
-  width: 100%;
+.card-1, .card-2, .card-3 {
+  height: 600px;
+  margin: 20px;
   display: grid;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-right: 5px;
@@ -544,27 +579,14 @@ h4 {
   padding: 10px;
 }
 
-.card-title-1 {
-  width: 100%;
-  color: #67809f;
-  font-size: medium;
-  margin: 10px;
-  text-decoration: none;
-}
-
-.card-text {
+.card-text, .card-text-2, .card-text-3 {
   width: 100%;
   color: grey;
   margin: 10px;
   text-decoration: none;
 }
 
-hr {
-  display: block;
-  width: auto;
-}
-
-.btn-primary-card1 {
+.btn-primary-card1, .btn-primary-card2, .btn-primary-card3 {
   border-radius: 8%;
   background-color: #67809f;
   padding-left: 8%;
@@ -575,6 +597,14 @@ hr {
   color: white;
   border-width: 0px;
   margin: 20px;
+}
+
+.btn-primary-card2, .btn-primary-card3 {
+  background-color: #926fb1;
+}
+
+.btn-primary-card1 {
+  background-color: #67809f;
 }
 
 .btn-primary-cardlogo {
@@ -593,69 +623,18 @@ hr {
   color: gray;
 }
 
-.cards-2 {
-  max-width: 100%;
-  display: grid;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 20px;
-  padding-right: 5px;
-  border: solid gray thin;
-  border-radius: 2%;
-}
-
-.card-img {
-  margin: 10px;
-  width: 150%;
-}
-
 .card-title-2 {
-  color: rgb(179, 1, 179);
+  color: #926fb1;
   font-size: medium;
   margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.btn-primary-card2 {
-  border-radius: 8%;
-  background-color: rgb(179, 1, 179);
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  border-width: 0px;
-  margin: 20px;
-}
-
-.cards-3 {
-  max-width: 100%;
-  display: grid;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 20px;
-  padding-right: 5px;
-  border: solid gray thin;
-  border-radius: 2%;
 }
 
 .card-title-3 {
-  color: rgb(179, 1, 179);
+  color: #926fb1;
   font-size: medium;
   margin: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.btn-primary-card3 {
-  border-radius: 8%;
-  background-color: rgb(179, 1, 179);
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  border-width: 0px;
-  margin: 20px;
 }
 
 .view-all {
