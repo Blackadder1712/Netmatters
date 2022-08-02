@@ -85,13 +85,13 @@ line-height: 1.15;
   max-width: 100%;
   display: block;
   
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: em(0px);
+  padding-bottom: em(0px);
 }
 
 .fa-bars {
  overflow: hidden;
-  font-size: 30px;
+  font-size: $logo-font-size;
 background-color: #333645;
   padding: 15px;
   color: white;
@@ -121,7 +121,7 @@ background-color: #333645;
  
  
  .fa-phone {
-   font-size: 32px;
+   font-size: $logo-font-size;
    margin-left: 15px;
    text-decoration: none;
    color: black;
@@ -234,21 +234,10 @@ h1 {
 
 
 
-.btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
-  
-  display: $main-buttons-display;
-  border-radius: $main-nav-radius;
-  width: $main-buttons-width;
-  max-height: $main-buttons-max-height;
-  margin: $main-buttons-margin;
-  border-width: $mains-button-border-width;
-  text-decoration: none;
-  padding: 50px;
-  font-weight:1;
-  cursor: pointer;
-  letter-spacing: .4px;
-  
-}
+.btn-primary {
+  @include primary-button;
+  background-color: white;
+  }
 
 .btn-primary h2 , .btn-primary-2 h2, .btn-primary-3 h2,  .btn-primary-4 h2, .btn-primary-5 h2, .btn-primary-5 h2, .btn-primary-6 h2,
  .btn-primary-7 h2
