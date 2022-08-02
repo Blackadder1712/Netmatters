@@ -217,21 +217,81 @@ h1 {
   color: #67809f;
 }
 
-.btn-primary text, .btn-primary-2 text, .btn-primary-3 text, .btn-primary-4 text, .btn-primary-5 text, .btn-primary-6 text,
-.btn-primary-7 text {
+.btn-primary text {
   padding: 10px;
   font-weight: 1;
   text-decoration: none;
-  background-color: #67809f;
   border-radius: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
   color: white;
+  background-color: #67809f;
 }
 
-.btn-primary text:hover {
-  background-color: white;
-  color: #67809f;
+.btn-primary-2 text {
+  padding: 10px;
+  font-weight: 1;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  color: white;
+  background-color: #4389e4;
+}
+
+.btn-primary-3 text {
+  padding: 10px;
+  font-weight: 1;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  color: white;
+  background-color: #31f081;
+}
+
+.btn-primary-4 text {
+  padding: 10px;
+  font-weight: 1;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+
+.btn-primary-5 text {
+  padding: 10px;
+  font-weight: 1;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(179, 1, 179);
+}
+
+.btn-primary-6 text {
+  padding: 10px;
+  font-weight: 1;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  color: white;
+  background-color: #f13261;
+}
+
+.btn-primary-7 text {
+  padding: 10px;
+  font-weight: 1;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  color: white;
+  background-color: red;
 }
 
 .btn-primary h2 {

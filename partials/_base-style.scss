@@ -234,31 +234,21 @@ h1 {
 
 
 
-.btn-primary {
+.btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   @include primary-button;
-  background-color: white;
+ 
   }
 
 .btn-primary h2 , .btn-primary-2 h2, .btn-primary-3 h2,  .btn-primary-4 h2, .btn-primary-5 h2, .btn-primary-5 h2, .btn-primary-6 h2,
  .btn-primary-7 h2
 { 
-  font-size:  $main-nav-h2-size;
-  font-weight: $main-nav-weight;
-  margin-bottom: $nav-button-margin;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+  @include primary-button-h2;
 }
 
 .btn-primary h3 , .btn-primary-2 h3, .btn-primary-3 h3,  .btn-primary-4 h3, .btn-primary-5 h3, .btn-primary-5 h3, .btn-primary-6 h3,
  .btn-primary-7 h3 
  {
-   font-size:  $main-nav-h3-size;
-   font-weight: $main-nav-weight;
-   margin-bottom: $nav-button-margin;
-   margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+   @include primary-button-h3;
  }
 
 .btn-primary:hover {
@@ -277,35 +267,50 @@ h1 {
 
 
 
-.btn-primary text, .btn-primary-2 text, .btn-primary-3 text, .btn-primary-4 text, .btn-primary-5 text, .btn-primary-6 text,
-.btn-primary-7 text {
-  padding:10px;
-  font-weight: 1;
-  text-decoration: none;
-  background-color: $hover-color-blue;
-  border-radius: $main-buttons-radius;
-
-  font-family: $main-font-family;
-  cursor: pointer;
-  color: white;
-  
+.btn-primary text {
+ @include primary-button-text;
+ background-color: $hover-color-blue;
 }
 
-.btn-primary text:hover 
-{
-  background-color: white;
-  color:$hover-color-blue
+.btn-primary-2 text {
+  @include primary-button-text;
+  background-color: $hover-color-bright-blue;
+}
+
+.btn-primary-3 text {
+  @include primary-button-text;
+  background-color: $hover-color-bright-green;
+}
+
+.btn-primary-4 text {
+  @include primary-button-text;
+  background-color: $hover-color-red;
+}
+
+.btn-primary-5 text {
+  @include primary-button-text;
+  background-color: $hover-color-purple;
+}
+
+.btn-primary-6 text {
+  @include primary-button-text;
+  background-color: $hover-color-pink;
+}
+
+.btn-primary-7 text {
+  @include primary-button-text;
+  background-color: $hover-color-red;
 }
 
 .btn-primary h2 
 {
-  font-weight: 1;
+  font-weight: $btn-primary-weight;
   
 }
 
 .btn-primary h3
 {
-  font-weight: 1;
+  font-weight: $btn-primary-weight;
 }
 
 
@@ -641,16 +646,7 @@ text-align: left;
 }
 
 .btn-primary-welcome {
-  border-radius:$page-buttons-border-radius ;
-  background-color: $page-buttons-background-color;
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  cursor: pointer;
+  @include article;
 }
 
 h4 {
@@ -658,16 +654,7 @@ h4 {
   color:gray;
 }
 .btn-primary-client {
-  border-radius:$page-buttons-border-radius ;
-  background-color: $page-buttons-background-color;
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  cursor:pointer;
+ @include article;
 }
 
 .btn-primary-client2 {

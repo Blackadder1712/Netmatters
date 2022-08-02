@@ -12,3 +12,49 @@
     cursor: pointer;
     letter-spacing: .4px; 
 }
+
+@mixin primary-button-h2 
+{
+    
+  font-size:  $main-nav-h2-size;
+  font-weight: $main-nav-weight;
+  margin-bottom: $nav-button-margin;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+@mixin primary-button-h3
+{
+    font-size:  $main-nav-h3-size;
+   font-weight: $main-nav-weight;
+   margin-bottom: $nav-button-margin;
+   margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+@mixin primary-button-text
+{
+    padding:10px;
+    font-weight: 1;
+    text-decoration: none;
+    border-radius: $main-buttons-radius;
+  
+    font-family: $main-font-family;
+    cursor: pointer;
+    color: white;
+}
+
+@mixin article {
+    border-radius:$page-buttons-border-radius ;
+    background-color: $page-buttons-background-color;
+    padding-left: $page-buttons-left-padding;
+    padding-right: $page-buttons-right-padding;
+    padding-top: $page-buttons-top-padding ;
+    padding-bottom: $page-buttons-bottom-padding;
+    font-family: $main-font-family;
+    color: $main-font-color ;
+    border-width: $page-buttons-border-width; 
+    cursor: pointer; 
+}
