@@ -250,7 +250,9 @@ h1 {
  {
    @include primary-button-h3;
  }
-
+.fa-table-cells {
+ color: $main-color ;
+} 
 .btn-primary:hover {
   background-color: $hover-color-blue;
   color: white;
@@ -713,28 +715,20 @@ h4 {
 
 }
 
-.btn-primary-card1, .btn-primary-card2, .btn-primary-card3 {
-  border-radius:$page-buttons-border-radius ;
+.btn-primary-card1{
+  @include button-primary-card;
   background-color: $hover-color-blue;
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  margin: 20px;
 
 }
 
-.btn-primary-card2, .btn-primary-card3{
+.btn-primary-card2, .btn-primary-card3
+{
+  @include button-primary-card;
   background-color: #926fb1;
-
 }
 
-.btn-primary-card1 {
-  background-color: $hover-color-blue;
-}
+
+
 
 .btn-primary-cardlogo {
   border:none;
@@ -757,30 +751,14 @@ h4 {
 
 
 
-.card-title-2  {
+.card-title-2, .card-title-3   {
 
-  color: #926fb1;
-  font-size: medium;
-  margin:10px;
-  font-family: $main-font-family;
+  @include card-title
   
 }
 
 
 
-
-
-
-
-
-.card-title-3  {
-
-  color: #926fb1;
-  font-size: medium;
-  margin:10px;
-  font-family: $main-font-family;
-  
-}
 
 
 

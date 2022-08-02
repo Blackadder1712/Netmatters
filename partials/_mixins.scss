@@ -58,3 +58,23 @@
     border-width: $page-buttons-border-width; 
     cursor: pointer; 
 }
+
+@mixin button-primary-card 
+{border-radius:$page-buttons-border-radius ;
+    background-color: $hover-color-blue;
+    padding-left: $page-buttons-left-padding;
+    padding-right: $page-buttons-right-padding;
+    padding-top: $page-buttons-top-padding ;
+    padding-bottom: $page-buttons-bottom-padding;
+    font-family: $main-font-family;
+    color: $main-font-color ;
+    border-width: $page-buttons-border-width; 
+    margin: 20px;}
+
+@mixin card-title 
+{
+    color: #926fb1;
+  font-size: medium;
+  margin:10px;
+  font-family: $main-font-family;
+}

@@ -207,6 +207,10 @@ h1 {
   margin-left: 0px;
 }
 
+.fa-table-cells {
+  color: #333645;
+}
+
 .btn-primary:hover {
   background-color: #67809f;
   color: white;
@@ -602,7 +606,7 @@ h4 {
   text-decoration: none;
 }
 
-.btn-primary-card1, .btn-primary-card2, .btn-primary-card3 {
+.btn-primary-card1 {
   border-radius: 8%;
   background-color: #67809f;
   padding-left: 8%;
@@ -613,14 +617,21 @@ h4 {
   color: white;
   border-width: 0px;
   margin: 20px;
+  background-color: #67809f;
 }
 
 .btn-primary-card2, .btn-primary-card3 {
-  background-color: #926fb1;
-}
-
-.btn-primary-card1 {
+  border-radius: 8%;
   background-color: #67809f;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border-width: 0px;
+  margin: 20px;
+  background-color: #926fb1;
 }
 
 .btn-primary-cardlogo {
@@ -639,14 +650,7 @@ h4 {
   color: gray;
 }
 
-.card-title-2 {
-  color: #926fb1;
-  font-size: medium;
-  margin: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card-title-3 {
+.card-title-2, .card-title-3 {
   color: #926fb1;
   font-size: medium;
   margin: 10px;
