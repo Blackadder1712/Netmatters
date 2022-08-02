@@ -2,6 +2,7 @@
 /* colours used when hovering over main buttons*/
 /*button variables */
 /* card variables*/
+/*icon variables*/
 * {
   box-sizing: border-box;
 }
@@ -185,6 +186,8 @@ h1 {
   font-weight: 1;
   cursor: pointer;
   letter-spacing: 0.4px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
 }
 
 .btn-primary h2, .btn-primary-2 h2, .btn-primary-3 h2, .btn-primary-4 h2, .btn-primary-5 h2, .btn-primary-5 h2, .btn-primary-6 h2,
@@ -195,6 +198,7 @@ h1 {
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
+  color: #333645;
 }
 
 .btn-primary h3, .btn-primary-2 h3, .btn-primary-3 h3, .btn-primary-4 h3, .btn-primary-5 h3, .btn-primary-5 h3, .btn-primary-6 h3,
@@ -205,10 +209,78 @@ h1 {
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
+  color: #333645;
+}
+
+.fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone {
+  border-radius: 100%;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .fa-table-cells {
-  color: #333645;
+  background-color: #67809f;
+}
+
+.btn-primary:hover .fa-table-cells {
+  background-color: white;
+  color: #67809f;
+}
+
+.fa-desktop {
+  background-color: #4389e4;
+}
+
+.btn-primary-2:hover .fa-desktop {
+  background-color: white;
+  color: #4389e4;
+}
+
+.fa-chart-simple {
+  background-color: #31f081;
+}
+
+.btn-primary-3:hover .fa-chart-simple {
+  background-color: white;
+  color: #31f081;
+}
+
+.fa-phone {
+  background-color: red;
+}
+
+.btn-primary-4:hover .fa-phone {
+  background-color: white;
+  color: red;
+}
+
+.fa-code {
+  background-color: rgb(179, 1, 179);
+}
+
+.btn-primary-5:hover .fa-code {
+  background-color: white;
+  color: rgb(179, 1, 179);
+}
+
+.fa-shield-halved {
+  background-color: #f13261;
+}
+
+.btn-primary-6:hover .fa-shield-halved {
+  background-color: white;
+  color: #f13261;
+}
+
+.fa-graduation-cap {
+  background-color: red;
+}
+
+.btn-primary-7:hover .fa-graduation-cap {
+  background-color: white;
+  color: red;
 }
 
 .btn-primary:hover {
@@ -501,6 +573,8 @@ h1 {
   color: white;
   padding-right: 5px;
   text-align: left;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
 article {

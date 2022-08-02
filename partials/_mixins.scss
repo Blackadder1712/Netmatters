@@ -1,3 +1,5 @@
+//Button style mixins
+
 @mixin primary-button 
 {
     display: $main-buttons-display;
@@ -11,6 +13,9 @@
     font-weight:1;
     cursor: pointer;
     letter-spacing: .4px; 
+    margin-bottom:30px;
+    border:1px solid #ccc;
+    
 }
 
 @mixin primary-button-h2 
@@ -22,6 +27,7 @@
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
+  color:#333645;
 }
 
 @mixin primary-button-h3
@@ -32,6 +38,7 @@
    margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
+  color:#333645;
 }
 
 @mixin primary-button-text
@@ -44,7 +51,10 @@
     font-family: $main-font-family;
     cursor: pointer;
     color: white;
+    
 }
+
+//article style mixins
 
 @mixin article {
     border-radius:$page-buttons-border-radius ;
@@ -71,10 +81,25 @@
     border-width: $page-buttons-border-width; 
     margin: 20px;}
 
+    //card style mixins
+
 @mixin card-title 
 {
     color: #926fb1;
   font-size: medium;
   margin:10px;
   font-family: $main-font-family;
+}
+
+//icon style mixins
+
+@mixin icon-style
+{
+border-radius:100%;
+ font-size: 30px;
+ color: white;
+ 
+ padding: 20px;
+ margin-bottom: 10px;
+ 
 }

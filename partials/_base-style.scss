@@ -250,9 +250,91 @@ h1 {
  {
    @include primary-button-h3;
  }
+
+ .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone
+{
+  @include icon-style
+}
+
 .fa-table-cells {
- color: $main-color ;
-} 
+  background-color: $hover-color-blue;
+}
+
+.btn-primary:hover .fa-table-cells 
+{
+  background-color: $icon-background-hover;
+  color: $hover-color-blue;
+}
+
+.fa-desktop
+ {
+  background-color: $hover-color-bright-blue;
+}
+
+.btn-primary-2:hover .fa-desktop
+{
+  background-color: $icon-background-hover;
+  color: $hover-color-bright-blue;
+}
+
+.fa-chart-simple
+{
+  background-color:$hover-color-bright-green;
+}
+
+.btn-primary-3:hover .fa-chart-simple
+{
+  background-color: $icon-background-hover;
+  color: $hover-color-bright-green
+}
+
+.fa-phone
+{
+  background-color: $hover-color-red;
+}
+
+.btn-primary-4:hover .fa-phone
+{
+  background-color:$icon-background-hover;
+  color: $hover-color-red;
+}
+
+.fa-code
+{
+ background-color: $hover-color-purple;
+}
+
+.btn-primary-5:hover .fa-code
+{
+  background-color: $icon-background-hover;
+  color: $hover-color-purple;
+}
+
+.fa-shield-halved
+{
+  background-color: $hover-color-pink;
+}
+
+.btn-primary-6:hover .fa-shield-halved
+{
+  background-color: $icon-background-hover;
+  color: $hover-color-pink;
+}
+
+.fa-graduation-cap 
+{
+  background-color: $hover-color-red;
+}
+
+.btn-primary-7:hover .fa-graduation-cap
+{
+  background-color: $icon-background-hover;
+  color: $hover-color-red;
+}
+
+
+
+
 .btn-primary:hover {
   background-color: $hover-color-blue;
   color: white;
@@ -605,6 +687,8 @@ h1 {
   color:$main-font-color;
   padding-right: 5px;
   text-align: left;
+  font-weight: $title-font-weight;
+  line-height: 1.1;
 
 
  
@@ -1057,3 +1141,4 @@ justify-content: space-between;
           font-weight: lighter;
           
         }
+      
