@@ -39,6 +39,11 @@ header {
   cursor: pointer;
   background-color: #e5e5e5;
   border-right: none;
+  border-left: #555;
+ border-bottom: #555;
+ border-top: #555;
+ 
+
   
   
 }
@@ -49,9 +54,11 @@ header {
   display: grid;
   width: 100%;
   grid-template-columns: auto;
-  border: none;
+
   margin-right: auto;
   margin-top: 0px;
+  box-shadow: none;
+  border-style: none;
  
  
 }
@@ -70,11 +77,15 @@ header {
   color: white;
 
  border-left: none;
+ border-right: #ccc;
+ border-bottom: #ccc;
+ border-top: #ccc;
+
 }
 
 #button-addon2 
 {
-  
+  background-color: #e5e5e5;
 border-color:#ccc;
 border-left: none;
 line-height: 1.15;
@@ -159,16 +170,17 @@ margin: 0 auto;
 
 .page-image {
   width: 100%;
-  height: 400px;
+  height: 600px;
   object-fit: cover;
+  position: relative;
 }
 
   .main-image {
     width : 100%;
+    height: 100%;
   align-items:center;
   justify-content: center;
-  background: black;
-  background:linear-gradient(black)transparent (25%),color (black),("img/home-image.webp");
+  
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -181,6 +193,8 @@ margin: 0 auto;
   line-height: 3rem;
   margin-left: auto;
   margin-right: auto;
+  font-size: 2.5rem;
+  font-weight:$title-font-weight;
 
 
 }
@@ -188,7 +202,7 @@ margin: 0 auto;
 .img-title
 { 
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: $title-font-weight;
  }
 
 .img-text
@@ -198,7 +212,7 @@ margin: 0 auto;
   margin-bottom: .375rem ;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 500;
+  font-weight: $title-font-weight;
 }
 
 
@@ -208,8 +222,8 @@ h1 {
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  line-height: 1.1;
  padding-left: 30px;
- font-weight: 600;
- font-size: 36px ;
+ font-weight: $title-font-weight;
+ font-size: 2.7rem;
 } 
 
 
@@ -236,6 +250,7 @@ h1 {
 
 .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   @include primary-button;
+
  
   }
 
@@ -243,6 +258,7 @@ h1 {
  .btn-primary-7 h2
 { 
   @include primary-button-h2;
+  
 }
 
 .btn-primary h3 , .btn-primary-2 h3, .btn-primary-3 h3,  .btn-primary-4 h3, .btn-primary-5 h3, .btn-primary-5 h3, .btn-primary-6 h3,
@@ -337,11 +353,19 @@ h1 {
 
 .btn-primary:hover {
   background-color: $hover-color-blue;
-  color: white;
+
   
 }
 
+.btn-primary:hover h2, .btn-primary-2:hover h2, .btn-primary-3:hover h2,.btn-primary-4:hover h2, .btn-primary-5:hover h2,
+.btn-primary-6:hover h2, .btn-primary-7:hover h2 {
+  color: white;
+}
 
+.btn-primary:hover h3, .btn-primary-2:hover h3, .btn-primary-3:hover h3,.btn-primary-4:hover h3, .btn-primary-5:hover h3,
+.btn-primary-6:hover h3, .btn-primary-7:hover h3 {
+  color: white;
+}
 
   .btn-primary:hover text
   {
@@ -688,7 +712,8 @@ h1 {
   padding-right: 5px;
   text-align: left;
   font-weight: $title-font-weight;
-  line-height: 1.1;
+  line-height: 1.4;
+  font-size: 1rem;
 
 
  
@@ -732,7 +757,8 @@ text-align: left;
 }
 
 .btn-primary-welcome {
-  @include article;
+  background-color: #272936;
+  @include button-netmatters ;
 }
 
 h4 {
@@ -740,21 +766,13 @@ h4 {
   color:gray;
 }
 .btn-primary-client {
- @include article;
+  @include button-netmatters;
+  background-color: #4387f6; 
 }
 
 .btn-primary-client2 {
-  border-radius:$page-buttons-border-radius ;
-  background-color: rgb(2, 168, 2);
-  padding-left: $page-buttons-left-padding;
-  padding-right: $page-buttons-right-padding;
-  padding-top: $page-buttons-top-padding ;
-  padding-bottom: $page-buttons-bottom-padding;
-  font-family: $main-font-family;
-  color: $main-font-color ;
-  border-width: $page-buttons-border-width; 
-  margin-top: 20px;
-  cursor: pointer;
+  @include button-netmatters ;
+  background-color: #00b67b;
 }
 
 //3 image and text cards
@@ -779,6 +797,7 @@ h4 {
   border-radius: $card-border-radius ;
   grid-template-rows: auto auto auto ;
   text-decoration: none;
+  border-color: #e5e5e5;
 }
 
 .card-img  {
