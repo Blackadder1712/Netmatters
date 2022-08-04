@@ -5,7 +5,8 @@
 
 body {
   font-family:$main-page-font-family;
-  margin: 10px
+
+
 }
 
 //Top netmatters logo, phone button, hamburger button and search bar 
@@ -14,31 +15,27 @@ header {
   width:100%;
   
   overflow-x: initial;
-  padding: 20px 15px;
+  @include section-padding
 
 
 }
-.top-line {
- 
-}
+
 .container {
   
   max-width: auto;
   display: grid;
   
-  grid-template-columns: 72% auto auto ;
+  grid-template-columns: 60% auto auto ;
   grid-column-gap: 8px;
 
-  margin-right: 5px;
-padding-bottom: 10px;
-margin-top: 10px;
+ 
+@include section-padding
+
 }
 
 .form-control {
   height: 47px;
   width: 100%;
-  margin-top: 0px;
-  padding-right: 40px ;
   font-family: sans-serif;
   cursor: pointer;
   background-color: #e5e5e5;
@@ -54,12 +51,12 @@ margin-top: 10px;
 
 
 .search-bar {
-  height: 47px;
-  display: grid;
-  width: 100%;
+  height: 100%;
+  
+  width: 170%;
   grid-template-columns: auto;
 
-  margin-right: auto;
+
   margin-top: 0px;
   box-shadow: none;
   border-style: none;
@@ -100,8 +97,6 @@ line-height: 1.15;
   max-width: 100%;
   display: block;
   
-  margin-bottom: em(0px);
-  padding-bottom: em(0px);
 }
 
 .fa-bars {
@@ -140,7 +135,7 @@ background-color: #333645;
 
    
    text-decoration: none;
-   color: black;
+   color:  #333645;
    outline: none;
    border: 0;
 
@@ -151,6 +146,7 @@ background-color: #333645;
  .phone 
  {background-color: transparent;
   border: none;
+  color:  #333645;
 
 }
  
@@ -179,6 +175,13 @@ margin: 0 auto;
    
 // Main Image on page and caption
 
+.Main-page 
+{
+  position: relative;
+  display:grid;
+  place-items: center;
+}
+
 .page-image {
   width: 100%;
   height: 600px;
@@ -202,12 +205,10 @@ margin: 0 auto;
   font-family: sans-serif;
   color: white;
   text-align: center;
-  line-height: 3rem;
-  margin-left: 0;
-  margin-right: 0;
-  font-size: 2.5rem;
+  line-height: 1.4;
+  font-size: 14px;
   font-weight:$title-font-weight;
-  letter-spacing: 1.4px;
+  letter-spacing: .4px;
 
 
 }
@@ -235,7 +236,7 @@ margin: 0 auto;
 strong {
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  line-height: 1.1;
- padding-left: 10px;
+ @include section-padding;
  font-weight: 100;
  font-size: 2.7rem;
 } 
@@ -243,14 +244,13 @@ strong {
 
 .main-buttons
  {
-  padding-top: 50px;
-  padding-bottom: 0px;
+ 
    font-family: $main-page-font-family;
   font-size: 1rem;
   letter-spacing: .4px;
   max-width: auto;
   display: grid;
-  padding: 10px 10px;
+  @include section-padding;
   grid-template-rows: auto auto auto auto auto auto auto ;
   grid-row-gap: 10px;
 
@@ -685,6 +685,7 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  @include section-padding
 }
 
 .small-logos {
@@ -697,6 +698,7 @@ strong {
   margin: 0;
   cursor: pointer;
   overflow-x: hidden;
+  @include section-padding
 }
 
   .logo-item-1, .logo-item-2, .logo-item-3, .logo-item-4, .logo-item-5, .logo-item-6
@@ -723,11 +725,12 @@ strong {
   max-width: 100%;
   display: grid;
   color:$main-font-color;
-  padding-right: 5px;
+
   text-align: left;
   font-weight: $title-font-weight;
   line-height: 1.4;
   font-size: 1rem;
+  @include section-padding
 
  
 
@@ -812,6 +815,7 @@ h4 {
 .cards 
 {
  display: grid;
+ @include section-padding
 
 }
 
@@ -924,13 +928,11 @@ h4 {
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
+  @include section-padding;
   
 
  
 
-  padding-right: $card-padding;
-  padding-left: $card-padding;
- 
  
   grid-template-rows: auto auto auto ;
 
@@ -943,6 +945,7 @@ h4 {
 {
   font-weight: lighter;
   text-align: center;
+ 
 }
 
 .form-label 
@@ -972,12 +975,14 @@ h4 {
   text-align: center;
   font-family: $main-font-family;
   float: left;
+  @include section-padding
 }
 
 .form-check-label 
 {
   color:#333645;
   font-weight: lighter;
+  @include section-padding
 }
 
 //Subscribe button and arrow 
@@ -1006,6 +1011,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin:0%;
+  @include section-padding
  
   
 

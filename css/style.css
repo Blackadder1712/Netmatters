@@ -9,30 +9,31 @@
 
 body {
   font-family: Poppins, sans-serif;
-  margin: 10px;
 }
 
 header {
   width: 100%;
   overflow-x: initial;
-  padding: 20px 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container {
   max-width: auto;
   display: grid;
-  grid-template-columns: 72% auto auto;
+  grid-template-columns: 60% auto auto;
   grid-column-gap: 8px;
-  margin-right: 5px;
-  padding-bottom: 10px;
-  margin-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .form-control {
   height: 47px;
   width: 100%;
-  margin-top: 0px;
-  padding-right: 40px;
   font-family: sans-serif;
   cursor: pointer;
   background-color: #e5e5e5;
@@ -43,11 +44,9 @@ header {
 }
 
 .search-bar {
-  height: 47px;
-  display: grid;
-  width: 100%;
+  height: 100%;
+  width: 170%;
   grid-template-columns: auto;
-  margin-right: auto;
   margin-top: 0px;
   box-shadow: none;
   border-style: none;
@@ -75,8 +74,6 @@ header {
 #netmatters {
   max-width: 100%;
   display: block;
-  margin-bottom: em(0px);
-  padding-bottom: em(0px);
 }
 
 .fa-bars {
@@ -102,7 +99,7 @@ header {
 .fa-phone {
   font-size: 32px;
   text-decoration: none;
-  color: black;
+  color: #333645;
   outline: none;
   border: 0;
 }
@@ -110,6 +107,7 @@ header {
 .phone {
   background-color: transparent;
   border: none;
+  color: #333645;
 }
 
 .nav-item {
@@ -126,6 +124,12 @@ header {
   color: white;
   width: auto;
   margin: 0 auto;
+}
+
+.Main-page {
+  position: relative;
+  display: grid;
+  place-items: center;
 }
 
 .page-image {
@@ -151,12 +155,10 @@ header {
   font-family: sans-serif;
   color: white;
   text-align: center;
-  line-height: 3rem;
-  margin-left: 0;
-  margin-right: 0;
-  font-size: 2.5rem;
+  line-height: 1.4;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.4px;
 }
 
 .img-title {
@@ -174,20 +176,24 @@ header {
 strong {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.1;
-  padding-left: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: 100;
   font-size: 2.7rem;
 }
 
 .main-buttons {
-  padding-top: 50px;
-  padding-bottom: 0px;
   font-family: Poppins, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
   max-width: auto;
   display: grid;
-  padding: 10px 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   grid-template-rows: auto auto auto auto auto auto auto;
   grid-row-gap: 10px;
 }
@@ -571,6 +577,10 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .small-logos {
@@ -581,6 +591,10 @@ strong {
   margin: 0;
   cursor: pointer;
   overflow-x: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .logo-item-1, .logo-item-2, .logo-item-3, .logo-item-4, .logo-item-5, .logo-item-6 {
@@ -597,11 +611,14 @@ strong {
   max-width: 100%;
   display: grid;
   color: white;
-  padding-right: 5px;
   text-align: left;
   font-weight: 600;
   line-height: 1.4;
   font-size: 1rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 article {
@@ -685,6 +702,10 @@ h4 {
 
 .cards {
   display: grid;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card-1, .card-2, .card-3 {
@@ -778,8 +799,10 @@ h4 {
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   grid-template-rows: auto auto auto;
 }
 
@@ -808,11 +831,19 @@ h4 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .form-check-label {
   color: #333645;
   font-weight: lighter;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn-primary-subscribe {
@@ -836,6 +867,10 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about {
@@ -996,6 +1031,21 @@ footer {
   }
   .fa-phone-volume {
     display: none;
+  }
+  .form-control {
+    display: none;
+  }
+  .search-bar {
+    display: none;
+  }
+  .input-group-mb-3 {
+    display: none;
+  }
+  #button-addon2 {
+    background-color: #e5e5e5;
+    border-color: #ccc;
+    border-left: none;
+    line-height: 1.15;
   }
   .nav {
     background-color: #333645;

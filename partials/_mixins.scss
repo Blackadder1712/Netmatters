@@ -1,3 +1,13 @@
+// padding and margin values for sections 
+
+@mixin section-padding 
+{
+  padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
 //Button style mixins
 
 @mixin primary-button 
