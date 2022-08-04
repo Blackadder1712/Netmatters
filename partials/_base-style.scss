@@ -5,6 +5,7 @@
 
 body {
   font-family:$main-page-font-family;
+  margin: 10px
 }
 
 //Top netmatters logo, phone button, hamburger button and search bar 
@@ -14,6 +15,7 @@ header {
   
   overflow-x: initial;
   padding: 20px 15px;
+
 
 }
 .top-line {
@@ -26,7 +28,7 @@ header {
   
   grid-template-columns: 72% auto auto ;
   grid-column-gap: 8px;
-  margin-left: 5px;
+
   margin-right: 5px;
 padding-bottom: 10px;
 margin-top: 10px;
@@ -230,11 +232,11 @@ margin: 0 auto;
 
 //Main page navigation buttons 
 
-h1 {
+strong {
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  line-height: 1.1;
- padding-left: 30px;
- font-weight: $title-font-weight;
+ padding-left: 10px;
+ font-weight: 100;
  font-size: 2.7rem;
 } 
 
@@ -248,7 +250,7 @@ h1 {
   letter-spacing: .4px;
   max-width: auto;
   display: grid;
-  padding: 20px 20px;
+  padding: 10px 10px;
   grid-template-rows: auto auto auto auto auto auto auto ;
   grid-row-gap: 10px;
 
@@ -727,6 +729,8 @@ h1 {
   line-height: 1.4;
   font-size: 1rem;
 
+ 
+
 
  
     
@@ -744,7 +748,7 @@ article
   width: $main-buttons-width;
   max-height: $main-buttons-max-height;
   margin-bottom: 25px;
-  margin-left: 30 px;
+
   cursor: pointer;
   color:white;
 
@@ -752,20 +756,27 @@ article
 }
 
 .clients h1 {
-  margin-left: 5px;
+
   text-align:left ;
+  margin-left: -12px;
 
 }
 .clients h3 {
 font-style: italic;
 text-align: left;
+font-size:1.3rem;
+font-weight:  $title-font-weight;
+margin-left: -12px;
 
 }
 
 .fa-star {
-  color:rgb(255, 238, 0);
+  color: orange;
   font-size: 50px;
   padding-right: 20px;
+  letter-spacing: 0px;
+  margin-left: -13px;
+  
 }
 
 .btn-primary-welcome {
@@ -776,6 +787,7 @@ text-align: left;
 h4 {
   font-family: $main-font-family;
   color:gray;
+  margin-left: -12px;
 }
 .btn-primary-client {
   @include button-netmatters;
@@ -788,7 +800,15 @@ h4 {
 }
 
 //3 image and text cards
- 
+.cards h1
+{
+  margin:20px;
+  display:grid;
+  font-family: $main-font-family;
+
+}
+
+
 .cards 
 {
  display: grid;
@@ -831,14 +851,14 @@ h4 {
 }
 
 .btn-primary-card1{
-  @include button-primary-card;
+@include card-buttons;
   background-color: $hover-color-blue;
 
 }
 
 .btn-primary-card2, .btn-primary-card3
 {
-  @include button-primary-card;
+  @include card-buttons;
   background-color: #926fb1;
 }
 
@@ -848,6 +868,7 @@ h4 {
 .btn-primary-cardlogo {
   border:none;
   background-color: white;
+  margin-left: 7px;
 }
 
 .postedb {
@@ -926,7 +947,7 @@ h4 {
 
 .form-label 
 {
-  margin:40px;
+  margin:20px;
   border-top: 20px;
   
   
@@ -947,7 +968,7 @@ h4 {
   background-color: $main-color ;
   width: 30px;
   height: 30px;
-  margin: 20px;
+  margin: 30px;
   text-align: center;
   font-family: $main-font-family;
   float: left;
