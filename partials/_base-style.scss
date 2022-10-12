@@ -15,7 +15,7 @@ header {
   width:100%;
   
   overflow-x: initial;
-  @include section-padding
+  
 
 
 }
@@ -28,11 +28,13 @@ header {
   grid-template-columns: 65% auto 25% ;
   grid-column-gap: 5px;
   grid-row-gap:10%;
+  padding-bottom: 5px;
+
   
 
 
  
-@include section-padding
+
 
 }
 
@@ -61,14 +63,18 @@ header {
 .search-bar {
   height: 100%;
   
-  width: 170%;
+  width: 162%;
   grid-template-columns: auto;
 
 
   margin-top: -40px;
   box-shadow: none;
   border-style: none;
-  padding-right:23px;
+  padding-right:35px;
+  padding-bottom: 33px;
+  padding-left:15px;
+
+
  
  
 }
@@ -114,6 +120,9 @@ box-shadow: 0px 1px 1px;
   max-width: 100%;
   display: block;
   line-height: 22.8571;
+  padding-top:36px;
+  padding-left:15px;
+  padding-bottom:15px;
   
 }
 
@@ -141,7 +150,10 @@ background-color: #333645;
    background-color: transparent;
  margin-bottom: 50px;
    margin-right: 40px;
-   margin-top: -10px;
+   padding-top:27px;
+   padding-right:35px;
+   padding-left:5px;
+ 
    color:  #121419;
    
  
@@ -168,6 +180,8 @@ background-color: #333645;
  {background-color: transparent;
   border: none;
   color:  #333645;
+  padding-top:36px;
+ 
 
  
   
@@ -201,9 +215,11 @@ margin: 0 auto;
 
 .Main-page 
 {
+ 
   position: relative;
   display:grid;
   place-items: center;
+ 
 }
 
 .page-image {
@@ -233,14 +249,21 @@ margin: 0 auto;
   font-size: 14px;
   font-weight:$title-font-weight;
   letter-spacing: .4px;
+  margin-top:-39px;
+
 
 
 }
 
 .img-title
 { 
-  font-size: 2.5rem;
-  font-weight: $title-font-weight;
+  font-size: 47px;
+  font-weight: 600;
+  height:260px;
+  margin-bottom:20px;
+  margin-left:15px;
+  margin-right:15px;
+  margin-top:-120px;
   
  }
 
@@ -248,21 +271,31 @@ margin: 0 auto;
 
 {
 
-  margin-bottom: .375rem ;
+  margin-bottom: -63px; 
   font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: $title-font-weight;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-left:15px;
+  margin-right:15px;
+  margin-top: 80px;
 }
 
 
 //Main page navigation buttons 
 
 strong {
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-family:  Arial, Helvetica, sans-serif;
  line-height: 1.1;
- @include section-padding;
+
  font-weight: 100;
- font-size: 2.7rem;
+ font-size: 44px;
+ letter-spacing: .4px;
+ line-height:2;
+ color:#333;
+ margin-top:-20px;
+ padding-right:0px;
+ margin-right:-100px;
+ 
 } 
 
 

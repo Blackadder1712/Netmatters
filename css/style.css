@@ -14,10 +14,6 @@ body {
 header {
   width: 100%;
   overflow-x: initial;
-  padding-top: 35px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .container {
@@ -26,10 +22,7 @@ header {
   grid-template-columns: 65% auto 25%;
   grid-column-gap: 5px;
   grid-row-gap: 10%;
-  padding-top: 35px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 5px;
 }
 
 .form-control {
@@ -51,12 +44,14 @@ header {
 
 .search-bar {
   height: 100%;
-  width: 170%;
+  width: 162%;
   grid-template-columns: auto;
   margin-top: -40px;
   box-shadow: none;
   border-style: none;
-  padding-right: 23px;
+  padding-right: 35px;
+  padding-bottom: 33px;
+  padding-left: 15px;
 }
 
 .fa-magnifying-glass {
@@ -91,6 +86,9 @@ header {
   max-width: 100%;
   display: block;
   line-height: 22.8571;
+  padding-top: 36px;
+  padding-left: 15px;
+  padding-bottom: 15px;
 }
 
 .fa-bars {
@@ -111,7 +109,9 @@ header {
   background-color: transparent;
   margin-bottom: 50px;
   margin-right: 40px;
-  margin-top: -10px;
+  padding-top: 27px;
+  padding-right: 35px;
+  padding-left: 5px;
   color: #121419;
 }
 
@@ -127,6 +127,7 @@ header {
   background-color: transparent;
   border: none;
   color: #333645;
+  padding-top: 36px;
 }
 
 .nav-item {
@@ -178,29 +179,40 @@ header {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.4px;
+  margin-top: -39px;
 }
 
 .img-title {
-  font-size: 2.5rem;
+  font-size: 47px;
   font-weight: 600;
+  height: 260px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -120px;
 }
 
 .img-text {
-  margin-bottom: 0.375rem;
+  margin-bottom: -63px;
   font-size: 1.25rem;
-  line-height: 1.75rem;
+  line-height: 1.1;
   font-weight: 600;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 80px;
 }
 
 strong {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.1;
-  padding-top: 35px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
   font-weight: 100;
-  font-size: 2.7rem;
+  font-size: 44px;
+  letter-spacing: 0.4px;
+  line-height: 2;
+  color: #333;
+  margin-top: -20px;
+  padding-right: 0px;
+  margin-right: -100px;
 }
 
 .main-buttons {
