@@ -14,42 +14,56 @@ body {
 header {
   width: 100%;
   overflow-x: initial;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container {
   max-width: auto;
   display: grid;
-  grid-template-columns: 60% auto auto;
-  grid-column-gap: 8px;
-  padding-top: 50px;
+  grid-template-columns: 65% auto 25%;
+  grid-column-gap: 5px;
+  grid-row-gap: 10%;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form-control {
   height: 47px;
   width: 100%;
-  font-family: sans-serif;
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 2px;
   cursor: pointer;
-  background-color: #e5e5e5;
+  background-color: rgb(231, 230, 230);
+  border-color: rgb(233, 224, 224);
+  border-width: 2px;
+  border-style: solid;
+  color: #555;
+  box-shadow: 0px 1px 1px;
   border-right: none;
-  border-left: #555;
-  border-bottom: #555;
-  border-top: #555;
 }
 
 .search-bar {
   height: 100%;
   width: 170%;
   grid-template-columns: auto;
-  margin-top: 0px;
+  margin-top: -40px;
   box-shadow: none;
   border-style: none;
+  padding-right: 23px;
+}
+
+.fa-magnifying-glass {
+  color: #333645;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 40%;
 }
 
 .input-group-mb-3 {
@@ -59,21 +73,24 @@ header {
   font-size: 14px;
   color: white;
   border-left: none;
-  border-right: #ccc;
-  border-bottom: #ccc;
-  border-top: #ccc;
 }
 
 #button-addon2 {
   background-color: #e5e5e5;
-  border-color: #ccc;
   border-left: none;
   line-height: 1.15;
+  background-color: rgb(231, 230, 230);
+  border-color: rgb(233, 224, 224);
+  border-width: 2px;
+  border-style: solid;
+  color: #555;
+  box-shadow: 0px 1px 1px;
 }
 
 #netmatters {
   max-width: 100%;
   display: block;
+  line-height: 22.8571;
 }
 
 .fa-bars {
@@ -87,19 +104,21 @@ header {
 }
 
 .hamburger {
-  width: 33px;
+  width: 36px;
+  height: 35%;
   display: block;
   border: none;
   background-color: transparent;
   margin-bottom: 50px;
   margin-right: 40px;
   margin-top: -10px;
+  color: #121419;
 }
 
 .fa-phone {
   font-size: 32px;
   text-decoration: none;
-  color: #333645;
+  color: #121419;
   outline: none;
   border: 0;
 }
@@ -176,10 +195,10 @@ header {
 strong {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.1;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 100;
   font-size: 2.7rem;
 }
@@ -190,10 +209,10 @@ strong {
   letter-spacing: 0.4px;
   max-width: auto;
   display: grid;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   grid-template-rows: auto auto auto auto auto auto auto;
   grid-row-gap: 10px;
 }
@@ -577,10 +596,10 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .small-logos {
@@ -591,10 +610,10 @@ strong {
   margin: 0;
   cursor: pointer;
   overflow-x: hidden;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo-item-1, .logo-item-2, .logo-item-3, .logo-item-4, .logo-item-5, .logo-item-6 {
@@ -615,10 +634,10 @@ strong {
   font-weight: 600;
   line-height: 1.4;
   font-size: 1rem;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 article {
@@ -702,10 +721,10 @@ h4 {
 
 .cards {
   display: grid;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .card-1, .card-2, .card-3 {
@@ -799,10 +818,10 @@ h4 {
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   grid-template-rows: auto auto auto;
 }
 
@@ -831,19 +850,19 @@ h4 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: left;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form-check-label {
   color: #333645;
   font-weight: lighter;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .btn-primary-subscribe {
@@ -867,10 +886,10 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0%;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about {

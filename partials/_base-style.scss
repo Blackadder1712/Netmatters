@@ -11,7 +11,7 @@ body {
 
 //Top netmatters logo, phone button, hamburger button and search bar 
 
-header{
+header {
   width:100%;
   
   overflow-x: initial;
@@ -25,8 +25,11 @@ header{
   max-width: auto;
   display: grid;
   
-  grid-template-columns: 60% auto auto ;
-  grid-column-gap: 8px;
+  grid-template-columns: 65% auto 25% ;
+  grid-column-gap: 5px;
+  grid-row-gap:10%;
+  
+
 
  
 @include section-padding
@@ -36,14 +39,19 @@ header{
 .form-control {
   height: 47px;
   width: 100%;
-  font-family: sans-serif;
+  font-family: 'Poppins';
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 2px;
   cursor: pointer;
-  background-color: #e5e5e5;
-  border-right: none;
-  border-left: #555;
- border-bottom: #555;
- border-top: #555;
- 
+  background-color:rgb(231, 230, 230);
+  border-color: rgb(233, 224, 224);
+  border-width: 2px;
+  border-style: solid;
+  color:#555;
+  box-shadow: 0px 1px 1px;
+  border-right:none;
+
 
   
   
@@ -57,14 +65,21 @@ header{
   grid-template-columns: auto;
 
 
-  margin-top: 0px;
+  margin-top: -40px;
   box-shadow: none;
   border-style: none;
+  padding-right:23px;
  
  
 }
   
-  
+.fa-magnifying-glass
+{
+  color:#333645;
+  font-size:20px;
+  text-align:center;
+  margin-left:40%;
+}
  
 
 
@@ -78,24 +93,27 @@ header{
   color: white;
 
  border-left: none;
- border-right: #ccc;
- border-bottom: #ccc;
- border-top: #ccc;
-
 }
-
 #button-addon2 
 {
   background-color: #e5e5e5;
-border-color:#ccc;
+
 border-left: none;
 line-height: 1.15;
+background-color:rgb(231, 230, 230);
+border-color: rgb(233, 224, 224);
+border-width: 2px;
+border-style: solid;
+color:#555;
+box-shadow: 0px 1px 1px;
+
 }
 
 
 #netmatters { 
   max-width: 100%;
   display: block;
+  line-height: 22.8571;
   
 }
 
@@ -116,13 +134,16 @@ background-color: #333645;
  }
 
 .hamburger {
-  width:33px;
+  width:36px;
+  height:35%;
   display:block;
    border: none;
    background-color: transparent;
  margin-bottom: 50px;
    margin-right: 40px;
    margin-top: -10px;
+   color:  #121419;
+   
  
    
   
@@ -135,7 +156,7 @@ background-color: #333645;
 
    
    text-decoration: none;
-   color:  #333645;
+   color:  #121419;
    outline: none;
    border: 0;
 
@@ -147,6 +168,9 @@ background-color: #333645;
  {background-color: transparent;
   border: none;
   color:  #333645;
+
+ 
+  
 
 }
  
