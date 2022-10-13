@@ -295,6 +295,7 @@ strong {
  margin-top:-20px;
  padding-right:0px;
  margin-right:-100px;
+ margin-top: 40px;
  
 } 
 
@@ -307,7 +308,10 @@ strong {
   letter-spacing: .4px;
   max-width: auto;
   display: grid;
-  @include section-padding;
+  padding-left:0px;
+  padding-right:0px;
+  margin-left: 10px;
+  margin-right:10px;
   grid-template-rows: auto auto auto auto auto auto auto ;
   grid-row-gap: 10px;
 
@@ -345,6 +349,9 @@ strong {
 
 .fa-table-cells {
   background-color: $hover-color-blue;
+margin-top:31px;
+ padding:17px;
+
 }
 
 .btn-primary:hover .fa-table-cells 
@@ -356,6 +363,9 @@ strong {
 .fa-desktop
  {
   background-color: $hover-color-bright-blue;
+  margin-top:31px;
+  padding:17px;
+
 }
 
 .btn-primary-2:hover .fa-desktop
@@ -367,6 +377,8 @@ strong {
 .fa-chart-simple
 {
   background-color:$hover-color-bright-green;
+  margin-top:31px;
+  padding:17px;
 }
 
 .btn-primary-3:hover .fa-chart-simple
@@ -378,6 +390,9 @@ strong {
 .fa-phone
 {
   background-color: $hover-color-red;
+  margin-top:31px;
+  padding:17px;
+
 }
 
 .btn-primary-4:hover .fa-phone
@@ -389,6 +404,9 @@ strong {
 .fa-code
 {
  background-color: $hover-color-purple;
+ margin-top:31px;
+ padding:17px;
+
 }
 
 .btn-primary-5:hover .fa-code
@@ -400,6 +418,9 @@ strong {
 .fa-shield-halved
 {
   background-color: $hover-color-pink;
+  margin-top:31px;
+  padding:17px;
+
 }
 
 .btn-primary-6:hover .fa-shield-halved
@@ -411,6 +432,9 @@ strong {
 .fa-graduation-cap 
 {
   background-color: $hover-color-red;
+  margin-top:31px;
+  padding:17px;
+
 }
 
 .btn-primary-7:hover .fa-graduation-cap
@@ -438,7 +462,7 @@ strong {
   color: white;
 }
 
-  .btn-primary:hover text
+  .btn-primary:hover #read
   {
     background-color: white;
     color: $hover-color-blue;
@@ -446,7 +470,7 @@ strong {
 
 
 
-.btn-primary text {
+#read {
  @include primary-button-text;
  background-color: $hover-color-blue;
 }
@@ -836,6 +860,7 @@ margin-left: -12px;
   padding-right: 20px;
   letter-spacing: 0px;
   margin-left: -13px;
+  
   
 }
 
