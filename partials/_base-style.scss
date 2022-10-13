@@ -325,31 +325,33 @@ strong {
 
 .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   @include primary-button;
+  height: 15%
 
  
   }
 
-.btn-primary h2 , .btn-primary-2 h2, .btn-primary-3 h2,  .btn-primary-4 h2, .btn-primary-5 h2, .btn-primary-5 h2, .btn-primary-6 h2,
- .btn-primary-7 h2
+.primary-inner h2
 { 
   @include primary-button-h2;
   
+  
 }
 
-.btn-primary h3 , .btn-primary-2 h3, .btn-primary-3 h3,  .btn-primary-4 h3, .btn-primary-5 h3, .btn-primary-5 h3, .btn-primary-6 h3,
- .btn-primary-7 h3 
+.primary-inner h3 
  {
    @include primary-button-h3;
  }
 
  .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone
 {
-  @include icon-style
+  @include icon-style;
+
+  
 }
 
 .fa-table-cells {
   background-color: $hover-color-blue;
-margin-top:31px;
+
  padding:17px;
 
 }
@@ -363,7 +365,7 @@ margin-top:31px;
 .fa-desktop
  {
   background-color: $hover-color-bright-blue;
-  margin-top:31px;
+ 
   padding:17px;
 
 }
@@ -377,7 +379,7 @@ margin-top:31px;
 .fa-chart-simple
 {
   background-color:$hover-color-bright-green;
-  margin-top:31px;
+
   padding:17px;
 }
 
@@ -390,7 +392,7 @@ margin-top:31px;
 .fa-phone
 {
   background-color: $hover-color-red;
-  margin-top:31px;
+
   padding:17px;
 
 }
@@ -404,7 +406,7 @@ margin-top:31px;
 .fa-code
 {
  background-color: $hover-color-purple;
- margin-top:31px;
+ 
  padding:17px;
 
 }
@@ -418,7 +420,7 @@ margin-top:31px;
 .fa-shield-halved
 {
   background-color: $hover-color-pink;
-  margin-top:31px;
+ 
   padding:17px;
 
 }
@@ -432,7 +434,7 @@ margin-top:31px;
 .fa-graduation-cap 
 {
   background-color: $hover-color-red;
-  margin-top:31px;
+ 
   padding:17px;
 
 }
@@ -468,42 +470,76 @@ margin-top:31px;
     color: $hover-color-blue;
   }
 
+  .primary-inner
+  {
+   display:flex;
+   flex-direction: column;
+   margin-left:31px;
+   margin-right:31px;
+   margin-top:-25px
+  }
+
 
 
 #read {
  @include primary-button-text;
  background-color: $hover-color-blue;
+ 
 }
 
-.btn-primary-2 text {
+#read-2 {
+  @include primary-button-text;
+  background-color: $hover-color-bright-blue;
+  
+ }
+
+ #read-3 {
+  @include primary-button-text;
+  background-color: $hover-color-bright-green;
+  
+ }
+
+ #read-4 {
+  @include primary-button-text;
+  background-color: $hover-color-red;
+  
+ }
+
+ #read-5
+ {
+  @include primary-button-text;
+  background-color: $hover-color-purple;
+ }
+
+
+
+.primary-inner #read-2 {
   @include primary-button-text;
   background-color: $hover-color-bright-blue;
 }
 
-.btn-primary-3 text {
+.primary-inner #read-3 {
   @include primary-button-text;
   background-color: $hover-color-bright-green;
 }
 
-.btn-primary-4 text {
+.primary-inner #read-4 {
   @include primary-button-text;
   background-color: $hover-color-red;
 }
 
-.btn-primary-5 text {
+.primary-inner #read-5 {
   @include primary-button-text;
   background-color: $hover-color-purple;
 }
 
-.btn-primary-6 text {
+.primary-inner #read-6 {
   @include primary-button-text;
   background-color: $hover-color-pink;
 }
 
-.btn-primary-7 text {
-  @include primary-button-text;
-  background-color: $hover-color-red;
-}
+
+
 
 .btn-primary h2 
 {
@@ -532,7 +568,7 @@ margin-top:31px;
 
 
 
-.btn-primary-2:hover text
+.btn-primary-2:hover #read-2
 {
   background-color: white;
   color: $hover-color-bright-blue;
@@ -569,7 +605,7 @@ margin-top:31px;
      
     }
    
-    .btn-primary-3:hover text
+    .btn-primary-3:hover #read-3
     {
       background-color: white;
       color: $hover-color-bright-green;
@@ -578,27 +614,19 @@ margin-top:31px;
 
    
 
-    .btn-primary-3 text:hover 
+    .btn-primary-3 #read-3:hover 
     {
       background-color: white;
       color:$hover-color-bright-green;
     }
 
-    .btn-primary-3:hover text
+    .btn-primary-3:hover 
     {
-      background-color: white;
-      color: $hover-color-bright-green;
+      background-color: $hover-color-bright-green;
+      color: white;
     }
   
-    .btn-primary-3 h2 
-    {
-      font-weight:  $btn-primary-weight;
-    }
-    
-    .btn-primary-3 h3
-    {
-      font-weight:  $btn-primary-weight;
-    }
+  
     
     
 
@@ -611,33 +639,15 @@ margin-top:31px;
   }
 
   
-.btn-primary-4 text 
-{
-  background-color: $hover-color-red;
-}
-  
 
-  .btn-primary-4 text:hover 
-  {
-    background-color: white;
-    color:$hover-color-red;
-  }
 
-  .btn-primary-4:hover text
+  .btn-primary-4:hover #read-4
   {
     background-color: white;
     color: $hover-color-red;
   }
   
-  .btn-primary-4 h2 
-  {
-    font-weight:  $btn-primary-weight;
-  }
-  
-  .btn-primary-4 h3
-  {
-    font-weight:  $btn-primary-weight;
-  }
+
   
   
 
@@ -649,25 +659,15 @@ margin-top:31px;
     color: white;
   }
 
-  .btn-primary-5 text:hover 
-  {
-    background-color: white;
-    color:$hover-color-purple;
-  }
 
-  .btn-primary-5:hover text
+
+  .btn-primary-5:hover #read-5
 {
   background-color: white;
   color: $hover-color-purple;
 }
 
-  .btn-primary-5 text {
-   
-    background-color: $hover-color-purple;
-
-    
-    
-  }
+  
   
   .btn-primary-5 h2 
   {
@@ -691,20 +691,16 @@ margin-top:31px;
     color: white;
   }
 
-  .btn-primary-6:hover text
+  .btn-primary-6:hover #read-6
 {
   background-color: white;
   color: $hover-color-pink;
 }
 
 
-  .btn-primary-6 text {
-   
-    background-color: $hover-color-pink;
-    
-  }
+ 
   
-  .btn-primary-6 text:hover
+  .btn-primary-6 #read-6:hover
    {
      background-color: white;
      color:$hover-color-pink;
