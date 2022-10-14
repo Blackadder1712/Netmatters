@@ -454,6 +454,45 @@ strong {
   
 }
 
+.btn-primary-2:hover {
+  background-color: $hover-color-bright-blue;
+  color: white;
+}
+
+.btn-primary-3:hover 
+{
+  background-color: $hover-color-bright-green;
+  color: white;
+ 
+}
+
+
+.btn-primary-4:hover 
+{
+  background-color: $hover-color-red;
+  color: white;
+}
+
+
+
+.btn-primary-5:hover 
+{
+  background-color: $hover-color-purple;
+  color: white;
+}
+
+
+.btn-primary-6:hover 
+{
+  background-color: $hover-color-pink;
+  color: white;
+}
+
+
+
+
+
+
 .btn-primary:hover h2, .btn-primary-2:hover h2, .btn-primary-3:hover h2,.btn-primary-4:hover h2, .btn-primary-5:hover h2,
 .btn-primary-6:hover h2, .btn-primary-7:hover h2 {
   color: white;
@@ -469,6 +508,46 @@ strong {
     background-color: white;
     color: $hover-color-blue;
   }
+
+  
+.btn-primary-2:hover #read-2
+{
+  background-color: white;
+  color: $hover-color-bright-blue;
+}
+
+.btn-primary-3:hover #read-3
+{
+  background-color: white;
+  color: $hover-color-bright-green;
+}
+
+.btn-primary-4:hover #read-4
+{
+  background-color: white;
+  color: $hover-color-red;
+}
+
+.btn-primary-5:hover #read-5
+{
+  background-color: white;
+  color: $hover-color-purple;
+}
+
+.btn-primary-6:hover #read-6
+{
+  background-color: white;
+  color: $hover-color-pink;
+}
+
+.btn-primary-7:hover #read-7
+{
+  background-color: white;
+  color: $hover-color-red;
+}
+
+
+
 
   .primary-inner
   {
@@ -511,7 +590,19 @@ strong {
   background-color: $hover-color-purple;
  }
 
+ 
+ #read-6
+ {
+  @include primary-button-text;
+  background-color: $hover-color-pink;
+ }
 
+ 
+ #read-7
+ {
+  @include primary-button-text;
+  background-color: $hover-color-red;
+ }
 
 .primary-inner #read-2 {
   @include primary-button-text;
@@ -538,168 +629,13 @@ strong {
   background-color: $hover-color-pink;
 }
 
-
-
-
-.btn-primary h2 
-{
-  font-weight: $btn-primary-weight;
-  
-}
-
-.btn-primary h3
-{
-  font-weight: $btn-primary-weight;
+.primary-inner #read-7 {
+  @include primary-button-text;
+  background-color: $hover-color-red;
 }
 
 
 
-.btn-primary-2 text 
-{
-  background-color: $hover-color-bright-blue;
-}
-
-
-.btn-primary-2:hover {
-  background-color: $hover-color-bright-blue;
-  color: white;
-}
-
-
-
-
-.btn-primary-2:hover #read-2
-{
-  background-color: white;
-  color: $hover-color-bright-blue;
-}
-
-
-
-
-
- 
-  
-  .btn-primary-2 h2 
-  {
-    font-weight:  $btn-primary-weight;
-  }
-  
-  .btn-primary-2 h3
-  {
-    font-weight:  $btn-primary-weight;
-  }
-
-  .btn-primary-3 text 
-  {
-    background-color: $hover-color-bright-green;
-  }
- 
-
- 
-    
-    .btn-primary-3:hover 
-    {
-      background-color: $hover-color-bright-green;
-      color: white;
-     
-    }
-   
-    .btn-primary-3:hover #read-3
-    {
-      background-color: white;
-      color: $hover-color-bright-green;
-    }
-  
-
-   
-
-    .btn-primary-3 #read-3:hover 
-    {
-      background-color: white;
-      color:$hover-color-bright-green;
-    }
-
-    .btn-primary-3:hover 
-    {
-      background-color: $hover-color-bright-green;
-      color: white;
-    }
-  
-  
-    
-    
-
-
-
-  .btn-primary-4:hover 
-  {
-    background-color: $hover-color-red;
-    color: white;
-  }
-
-  
-
-
-  .btn-primary-4:hover #read-4
-  {
-    background-color: white;
-    color: $hover-color-red;
-  }
-  
-
-  
-  
-
-
-
-  .btn-primary-5:hover 
-  {
-    background-color: $hover-color-purple;
-    color: white;
-  }
-
-
-
-  .btn-primary-5:hover #read-5
-{
-  background-color: white;
-  color: $hover-color-purple;
-}
-
-  
-  
-  .btn-primary-5 h2 
-  {
-    font-weight:  $btn-primary-weight;
-    
-  }
-  
-  .btn-primary-5 h3
-  {
-    font-weight:  $btn-primary-weight;
-    
-  }
-  
-  
-
-
-
-  .btn-primary-6:hover 
-  {
-    background-color: $hover-color-pink;
-    color: white;
-  }
-
-  .btn-primary-6:hover #read-6
-{
-  background-color: white;
-  color: $hover-color-pink;
-}
-
-
- 
-  
   .btn-primary-6 #read-6:hover
    {
      background-color: white;
@@ -726,32 +662,10 @@ strong {
 
   }
 
-  .btn-primary-7:hover text
-  {
-    background-color: white;
-    color: $hover-color-red;
-  }
+ 
 
-  .btn-primary-7 text {
-   background-color: $hover-color-red;
-  }
+ 
 
-  .btn-primary-7 text:hover
-  {
-    background-color: white;
-    color: $hover-color-red;
-  }
-  
-  .btn-primary-7 h2 
-  {
-    font-weight:  $btn-primary-weight;
-  }
-  
-  .btn-primary-7 h3
-  {
-    font-weight:  $btn-primary-weight;
-  }
-  
 
 
 
@@ -773,6 +687,7 @@ strong {
   grid-template-columns: auto auto auto auto auto auto auto;
   grid-column-gap: 30px;
   margin: 0;
+  margin-top:285px;
   cursor: pointer;
   overflow-x: hidden;
   @include section-padding
@@ -802,20 +717,27 @@ strong {
   max-width: 100%;
   display: grid;
   color:$main-font-color;
-
+  
   text-align: left;
-  font-weight: $title-font-weight;
-  line-height: 1.4;
-  font-size: 1rem;
-  @include section-padding
-
+  letter-spacing: 1.4;
+  line-height: 1;
+  
  
+ }
 
+ .info 
+ {
+  margin-top:10px;
+  margin-left:-20px;
+  margin-right:10px;
 
+ }
+
+ .info h1
+ {
+  font-size: 37px;
  
-    
- 
-}
+ }
 
 
 
@@ -828,9 +750,48 @@ article
   width: $main-buttons-width;
   max-height: $main-buttons-max-height;
   margin-bottom: 25px;
-
+  padding-top: 15px;
+  font-weight:bold;
   cursor: pointer;
   color:white;
+  font-size:18px;
+
+
+}
+
+.info h2
+{ font-family: sans-serif;
+  line-height:1.8rem;
+  letter-spacing:.4px;
+  display: $main-buttons-display;
+  border-radius: $main-buttons-radius;
+  width: $main-buttons-width;
+  max-height: $main-buttons-max-height;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color:white;
+  font-weight:200;
+
+
+
+}
+
+.info h3 
+{  font-family: sans-serif;
+  line-height:1.8rem;
+  letter-spacing:.4px;
+  display: $main-buttons-display;
+  border-radius: $main-buttons-radius;
+  width: $main-buttons-width;
+  max-height: $main-buttons-max-height;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color:white;
+  font-weight:200;
 
 
 }
@@ -863,6 +824,7 @@ margin-left: -12px;
 .btn-primary-welcome {
   background-color: #272936;
   @include button-netmatters ;
+
 }
 
 h4 {
