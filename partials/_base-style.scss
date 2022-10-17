@@ -46,13 +46,14 @@ header {
   line-height: 20px;
   border-radius: 2px;
   cursor: pointer;
-  background-color:rgb(231, 230, 230);
+  background-color:white;
   border-color: rgb(233, 224, 224);
   border-width: 2px;
   border-style: solid;
-  color:#555;
-  box-shadow: 0px 1px 1px;
+ 
+ 
   border-right:none;
+  margin-left:14px;
 
 
   
@@ -299,6 +300,7 @@ strong {
  padding-right:0px;
  margin-right:-100px;
  margin-top: 40px;
+ padding-left:8px;
  
 } 
 
@@ -324,7 +326,10 @@ strong {
   
 }
 
-
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   @include primary-button;
@@ -1059,7 +1064,7 @@ margin-top:25px;
 {
   display: grid;
   font-family: $main-font-family; 
-  background-color: rgb(206, 206, 206);
+  background-color: #dddddd;
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
@@ -1087,41 +1092,83 @@ margin-top:25px;
  
 }
 
-.form-label 
+
+.mb-3 .form-label 
 {
-  margin:20px;
-  border-top: 20px;
-  
+ font-weight:549;
+ letter-spacing: .4px;
+ line-height: 23px;
+ margin-left:14px;
+ 
+
   
 }
 
-.fa-asterisk 
+.mb-3
 {
-  color: red;
-  font-size: 10px;
+  margin-top: -30px;
+  width:91%;
+  
+
 }
 
+
+.mb-3 .form-label .fa-asterisk 
+{
+  color: darkred;
+  font-size: 8px;
+ 
+}
+
+.form-check
+{
+  display:flex;
+  flex-direction: row;
+  padding-left:14px;
+  width:91%;
+
+}
 
 .form-check-input
 {
  
-  color: $main-color;
+
   background: transparent;
-  background-color: $main-color ;
-  width: 30px;
-  height: 30px;
-  margin: 30px;
+
+
+  height:0px;
+ 
+  margin-left: 15px;
+  margin-top: -5px;
   text-align: center;
-  font-family: $main-font-family;
-  float: left;
-  @include section-padding
+
+  
+
+  border-color: #333645 ;
+  color: #333645;
+  border-width: 30px;
+  font-weight: 600;
+ 
 }
+
+.form-check 
+{
+  color: #333645;
+  border-width:3px;
+
+};
+
+
 
 .form-check-label 
 {
   color:#333645;
-  font-weight: lighter;
-  @include section-padding
+  font-weight: 600;
+  
+  letter-spacing: .4px;
+ line-height:32px;
+ margin-top:8px;
+ margin-bottom:-5px;
 }
 
 //Subscribe button and arrow 
@@ -1129,15 +1176,18 @@ margin-top:25px;
 .btn-primary-subscribe 
 {
 background-color: #333645;
-border-radius:$page-buttons-border-radius ;
-padding-left: $page-buttons-left-padding;
-padding-right: $page-buttons-right-padding;
+border-radius:3px ;
+padding-left:15px;
+padding-right:15px;
 padding-top: $page-buttons-top-padding ;
 padding-bottom: $page-buttons-bottom-padding;
 font-family: $main-font-family;
 color: $main-font-color ;
 border-width: $page-buttons-border-width; 
-margin: 20px;
+margin-top: 20px;
+margin-bottom: 50px;
+font-size:18px;
+margin-left:15px;
 }
 
 //Footer information and links 
@@ -1146,78 +1196,155 @@ footer {
   background-color:$main-color;
   max-width: 100%;
   display: grid;
-  grid-template-columns:auto auto ;
+  grid-template-columns:auto auto auto ;
   flex-wrap: wrap;
   justify-content: space-between;
   margin:0%;
-  @include section-padding
- 
-  
-
+  @include section-padding;
+  border-left-color:$main-color;
+  border-right-color: $main-color;
 }
-.about  {
- 
+ .footer
+ {
+
+  display: flex;
+  justify-content: space-between;
+  border-top:1px solid #888;
+  max-width: 100%;
+  border-left-color:$main-color;
+  border-right-color: $main-color;
+  
+ } 
+
+ .footer .socials
+ {
+  background-color:$main-color;
+  color:white;
+  flex-direction:row;
+  display: flex;
+  border:none;
+  font-size:17px;
+  padding-top:10px;
+  padding-right:15px;
+  border-left-color:$main-color;
+  border-right-color: $main-color;
+ }
+
+ .footer text
+ {
+  background-color:$main-color;
+  color:white;
+  
+  display: inline-block;
+  border-left-color:$main-color;
+  border-right-color: $main-color;
+  font-size:17px;
+  padding-top:10px;
+  padding-right:15px;
+ }
+
+#facebook
+{
+  margin-top:5px;
+  margin-left:15px;
+}
+#link
+{
+
+  margin-top:5px;
+  margin-left:15px;
+}
+#twitter
+{
+  margin-top:5px;
+  margin-left:15px;
+}
+#insta
+{
+  margin-top:5px;
+  margin-left:15px;
+}
+
+footer
+{
+  margin-top:-5px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h4:hover
+{
+  text-decoration: underline;
+}
+
+.about
+{
+  display:flex;
+  flex-direction: column;
   color:$main-font-color;
   padding-right: 5px;
-  margin:0%;
+ 
   
 
 
 }
 
 .about h3 {
-padding-top: 30px;
-margin: 20px;
+padding-top: 8px;
+padding-left:20px;
+
 font-family: $main-font-family;
 color: $main-font-color;
 font-weight: lighter;
-font-size: medium;
-flex-wrap: wrap;
-justify-content: space-between;
+font-size: 20px;
+line-height: 23px;
+
 
 }
 
 .about h4 {
 
-  margin: 5px;
+
   margin-left:20px;
   font-family: $main-font-family;
   color: $main-font-color;
   font-weight: lighter;
-  font-size: small;
+  font-size: 16px;
+  margin-bottom: -20px;
+
 
   
   }
 
   .services
   {
-  background-color:$main-color;
-  max-width: 100%;
-
-  color:$main-font-color;
-  padding-right: 5px;
-  margin:0%;
-  
+    padding-top:30px;
+    display:flex;
+    flex-direction: column;
+    color:$main-font-color;
+    padding-right: 5px;
   }
 
   .services h3 {
-    padding-top: 30px;
-    margin: 20px;
+    padding-top: 8px;
+    padding-left:20px;
+    
     font-family: $main-font-family;
     color: $main-font-color;
     font-weight: lighter;
-    font-size: medium;
-    
+    font-size: 20px;
+    line-height: 23px;
     }
 
     .services h4 {
 
-      margin: 5px;
       margin-left:20px;
       font-family: $main-font-family;
       color: $main-font-color;
       font-weight: lighter;
-      font-size: small;
+      font-size: 16px;
+      margin-bottom: -20px;
+    
      
       
       }
@@ -1226,96 +1353,109 @@ justify-content: space-between;
 
     .cambridge  {
       
+      display:flex;
+      flex-direction: column;
       color:$main-font-color;
       padding-right: 5px;
-      margin:0%;
+      padding-top:30px;
       
     
     
     }
     
     .cambridge h3 {
-    padding-top: 30px;
-    margin: 20px;
-    font-family: $main-font-family;
-    color: $main-font-color;
-    font-weight: lighter;
-    font-size: medium;
-    
+      padding-top: 8px;
+      padding-left:20px;
+      
+      font-family: $main-font-family;
+      color: $main-font-color;
+      font-weight: lighter;
+      font-size: 20px;
+      line-height: 23px;
     }
     
     .cambridge h4 {
     
-      margin: 5px;
       margin-left:20px;
       font-family: $main-font-family;
       color: $main-font-color;
       font-weight: lighter;
-      font-size: small;
+      font-size: 16px;
+      margin-bottom: -20px;
+    
+     
      
       
       }
     
       .wymondham  {
     
+        display:flex;
+        flex-direction: column;
         color:$main-font-color;
         padding-right: 5px;
-        margin:0%;
-        
+        padding-top:30px;
       
       
       }
       
       .wymondham h3 {
-      padding-top: 30px;
-      margin: 20px;
-      font-family: $main-font-family;
-      color: $main-font-color;
-      font-weight: lighter;
-      font-size: medium;
+        padding-top: 8px;
+        padding-left:20px;
+        
+        font-family: $main-font-family;
+        color: $main-font-color;
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 23px;
       
       }
       
       .wymondham h4 {
       
-        margin: 5px;
         margin-left:20px;
-        font-family: $main-font-family;
-        color: $main-font-color;
-        font-weight: lighter;
-        font-size: small;
+      font-family: $main-font-family;
+      color: $main-font-color;
+      font-weight: lighter;
+      font-size: 16px;
+      margin-bottom: -20px;
       
         
         }
       
         .yarmouth  {
           
-          color:$main-font-color;
-          padding-right: 5px;
-          margin:0%;
+          display:flex;
+        flex-direction: column;
+        color:$main-font-color;
+        padding-right: 5px;
+        padding-top:30px;
          
         
         
         }
         
         .yarmouth h3 {
-        padding-top: 30px;
-        margin: 20px;
-        font-family: $main-font-family;
-        color: $main-font-color;
-        font-weight: lighter;
-        font-size: medium;
+          padding-top: 8px;
+          padding-left:20px;
+          
+          font-family: $main-font-family;
+          color: $main-font-color;
+          font-weight: lighter;
+          font-size: 20px;
+          line-height: 23px;
         
         }
         
         .yarmouth h4 {
-        
-          margin: 5px;
+  
           margin-left:20px;
           font-family: $main-font-family;
           color: $main-font-color;
           font-weight: lighter;
-          font-size: small;
+          font-size: 16px;
+          margin-bottom: -20px;
+          
         
           
           }
@@ -1325,17 +1465,20 @@ justify-content: space-between;
         .copyright
         {
           background-color: $main-color;
-          margin: 0%;
+          padding-left:8%;
+          padding-bottom:8%;
+          border:none;
         }
 
         .copyright h4 
         {
-          padding: 30px;
+          
           color:$main-font-color;
           margin: 0%;
-          font-size: small;
+          font-size: 15px;
           display: inline-block;
           font-weight: lighter;
+          border:none;
           
         }
       
