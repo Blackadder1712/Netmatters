@@ -257,6 +257,7 @@ strong {
   margin-left: 31px;
   color: #333645;
   margin-top: -12px;
+  padding-top: 17px;
 }
 
 .primary-inner h3 {
@@ -270,7 +271,7 @@ strong {
   letter-spacing: 0.4px;
 }
 
-.fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone {
+.fa-table-cells {
   border-radius: 100%;
   font-size: 30px;
   color: white;
@@ -278,7 +279,17 @@ strong {
   margin-right: 102px;
   padding: 40px;
   margin-top: 31px;
-  margin-bottom: 10px;
+}
+
+.fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone {
+  border-radius: 100%;
+  font-size: 30px;
+  color: white;
+  margin-left: 102px;
+  margin-right: 102px;
+  padding: 40px;
+  margin-top: 31px;
+  margin-bottom: 15px;
 }
 
 .fa-table-cells {
@@ -426,11 +437,11 @@ strong {
 }
 
 .primary-inner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin-left: 31px;
   margin-right: 31px;
   margin-top: -25px;
+  grid-template-rows: auto auto auto;
 }
 
 #read {
@@ -829,7 +840,7 @@ article {
 
 .clients h1 {
   text-align: left;
-  margin-left: -25px;
+  margin-left: -22px;
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 0.4px;
@@ -1046,10 +1057,16 @@ hr {
   border: none;
   background: transparent;
   padding: 15px;
-  margin-left: 35%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: x-large;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  margin-left: 24%;
+  margin-right: 20%;
+  margin-top: 25px;
+  margin-bottom: 28px;
 }
 
 .email-form {
@@ -1059,16 +1076,16 @@ hr {
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
-  padding-top: 35px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
   grid-template-rows: auto auto auto;
 }
 
 .email-form h1 {
-  font-weight: lighter;
-  text-align: center;
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 45px;
+  margin-left: 15px;
+  letter-spacing: 0.4px;
+  margin-top: 45px;
 }
 
 .form-label {

@@ -328,7 +328,8 @@ strong {
 
 .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   @include primary-button;
-  height: 15%
+  height: 15%;
+ 
 
  
   }
@@ -345,11 +346,17 @@ strong {
    @include primary-button-h3;
  }
 
- .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone
-{
+ .fa-table-cells
+ {
   @include icon-style;
 
   
+}
+
+.fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone
+{
+  @include icon-style;
+  margin-bottom: 15px;
 }
 
 .fa-table-cells {
@@ -554,11 +561,12 @@ strong {
 
   .primary-inner
   {
-   display:flex;
-   flex-direction: column;
+   display:grid;
+   
    margin-left:31px;
    margin-right:31px;
-   margin-top:-25px
+   margin-top:-25px;
+   grid-template-rows: auto auto auto ;
   }
 
 
@@ -802,7 +810,7 @@ article
 .clients h1 {
 
   text-align:left ;
-  margin-left:-25px;
+  margin-left:-22px;
   font-size:36px;
   font-weight:600;
   letter-spacing:.4px;
@@ -1030,10 +1038,17 @@ margin-top:25px;
   border: none;
   background: transparent;
   padding:15px;
- margin-left: 35%;
+
   font-family: $main-font-family;
-  font-weight: bold;
-  font-size: x-large;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing:.4px;
+  text-align: center;
+  margin-left:24%;
+  margin-right: 20%;
+  margin-top: 25px;
+  margin-bottom:28px;
  
  
 }
@@ -1048,7 +1063,7 @@ margin-top:25px;
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
-  @include section-padding;
+
   
 
  
@@ -1063,8 +1078,12 @@ margin-top:25px;
 
 .email-form h1 
 {
-  font-weight: lighter;
-  text-align: center;
+  font-weight:400;
+  font-size: 37px;
+  line-height: 45px;
+  margin-left:15px;
+  letter-spacing: .4px;
+  margin-top:45px;
  
 }
 
