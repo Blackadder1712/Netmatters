@@ -22,21 +22,21 @@ header {
   grid-template-columns: 65% auto 25%;
   grid-column-gap: 5px;
   grid-row-gap: 10%;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 
 .form-control {
   height: 47px;
   width: 100%;
-  font-family: "Poppins";
+  font-family: "Helvetica";
   font-size: 14px;
   line-height: 20px;
   border-radius: 2px;
   cursor: pointer;
-  background-color: white;
-  border-color: rgb(233, 224, 224);
+  background-color: #e7e6e6;
   border-width: 2px;
   border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
   border-right: none;
   margin-left: 14px;
 }
@@ -45,16 +45,15 @@ header {
   height: 100%;
   width: 162%;
   grid-template-columns: auto;
-  margin-top: -40px;
+  margin-top: -51px;
   box-shadow: none;
   border-style: none;
   padding-right: 35px;
   padding-bottom: 33px;
-  padding-left: 15px;
+  padding-left: 4px;
 }
 
 .fa-magnifying-glass {
-  color: #333645;
   font-size: 20px;
   text-align: center;
   margin-left: 40%;
@@ -73,12 +72,7 @@ header {
   background-color: #e5e5e5;
   border-left: none;
   line-height: 1.15;
-  background-color: rgb(231, 230, 230);
-  border-color: rgb(233, 224, 224);
-  border-width: 2px;
-  border-style: solid;
-  color: #555;
-  box-shadow: 0px 1px 1px;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 #netmatters {
