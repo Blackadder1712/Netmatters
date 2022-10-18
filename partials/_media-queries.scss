@@ -1,7 +1,55 @@
 /*Media Queries*/
 
+
+
 @media screen and (min-width: 992px) {
 
+
+  #support-btn
+  {
+    @include header-buttons;
+    background-color:$hover-color-bright-blue;
+    margin:10px;
+    width:70%
+
+    
+
+  
+    
+  }
+
+  #contact-btn
+  {
+    @include header-buttons;
+    background-color:$hover-color-bright-green;
+    margin:10px;
+    width:70%
+
+    
+
+  
+    
+  }
+
+
+  .fa-computer-mouse
+  {
+    padding-right:5px;
+  }
+.container
+   {
+    display:none;
+   }
+
+  .header-buttons
+  {
+    max-width:auto;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+  }
+
+ 
   header {
  
     max-width: auto;
@@ -67,21 +115,109 @@ display: none;
    
 .nav {
     background-color:$main-color;
-    max-width: auto;
+   
     display: grid;
-    padding: 20px 20px;
+ 
+    
+   padding-left:20px;
+   padding-right:300px;
+    
+    padding-top: 20px;
+    padding-bottom:20px;
+
+
     grid-template-columns: auto auto auto auto auto auto auto;
-    grid-column-gap: 30px;
+  
     margin: 0;
 }
 
 .nav-item {
   display: inline-block;
-  padding: auto;
-  width: auto;
+
+ 
   margin: 0 auto;
+  width:100%
+ 
 }
 
+.nav-item-1 {
+  display: inline-block;
+  margin:-20%;
+  width: 100%;
+  margin: 0 auto;
+  padding-left:1%;
+  
+  
+ 
+}
+
+.nav-item-2
+{
+  display: inline-block;
+  
+  width: 100%;
+  margin: 0 auto;
+  padding-left:1%;
+  
+  
+  
+
+}
+
+.nav-item-3
+{
+  display: inline-block;
+  
+  width: 100%;
+ 
+  margin: 0 auto;
+  padding-left:1%;
+
+}
+
+.nav-item-4
+{
+  display: inline-block;
+  
+  width: 100%;
+ 
+  margin: 0 auto;
+  padding-left:1%;
+
+}
+
+.nav-item-5
+{
+  display: inline-block;
+  
+  width: 100%;
+ 
+  margin: 0 auto;
+  padding-left:1%;
+
+}
+
+.nav-item-6
+{
+  display: inline-block;
+  
+  width: 100%;
+ 
+  margin: 0 auto;
+  padding-left:1%;
+
+}
+
+.nav-item-7
+{
+  display: inline-block;
+  
+  width: 100%;
+ 
+  margin: 0 auto;
+  padding-left:1%;
+
+}
 .nav-link {
   display: inline-block;
   font-family: Poppins,sans-serif;
@@ -89,7 +225,186 @@ display: none;
   color:white;
   width: auto;
   margin: 0 auto;
+
 }
+#small-table
+{
+  background-color:transparent;
+  padding-top:10px;
+  margin-top:-15px;
+  color: $hover-color-blue;
+  padding-left:35px;
+  margin-left:10px;
+  width:75%
+}
+
+#small-desktop
+{
+  display: inline-block;
+  background-color:transparent;
+  padding-top:1px;
+  margin-top:15px;
+  color: $hover-color-bright-blue;
+  padding-left:40px;
+  margin-left:16px;
+  width:75%;
+  padding-bottom:0px;
+  margin-bottom:15px;
+}
+
+#small-chart
+{
+  display: inline-block;
+  background-color:transparent;
+  padding-top:1px;
+  margin-top:-6px;
+  color: $hover-color-bright-green;
+  padding-left:40px;
+  margin-left:16px;
+  width:75%;
+  padding-bottom:0px;
+  margin-bottom:15px;
+}
+
+#small-phone
+{
+  display: inline-block;
+  background-color:transparent;
+  padding-top:1px;
+  margin-top:-6px;
+  color: $hover-color-red;
+  padding-left:40px;
+  margin-left:16px;
+  width:75%;
+  padding-bottom:0px;
+  margin-bottom:15px;
+}
+
+#small-code
+{
+  display: inline-block;
+  background-color:transparent;
+  padding-top:1px;
+  margin-top:-6px;
+  color: $hover-color-purple;
+  padding-left:40px;
+  margin-left:16px;
+  width:75%;
+  padding-bottom:0px;
+  margin-bottom:15px;
+}
+
+#small-shield
+{
+  display: inline-block;
+  background-color:transparent;
+  padding-top:1px;
+  margin-top:-6px;
+  color: $hover-color-pink;
+  padding-left:40px;
+  margin-left:16px;
+  width:75%;
+  padding-bottom:0px;
+  margin-bottom:15px;
+}
+
+#small-cap
+{
+display: inline-block;
+background-color:transparent;
+padding-top:1px;
+margin-top:-6px;
+color: $hover-color-red;
+padding-left:40px;
+margin-left:16px;
+width:75%;
+padding-bottom:0px;
+margin-bottom:15px;
+}
+.nav-item-1:hover
+{
+   background-color: $hover-color-bright-blue;
+}
+
+.nav-item-2:hover
+{
+  background-color: $hover-color-bright-green;
+}
+.nav-item:hover
+{
+  background-color:$hover-color-blue
+}
+
+.nav-item-3:hover
+{
+  background-color: $hover-color-red;
+}
+
+.nav-item-4:hover
+{
+  background-color: $hover-color-purple;
+}
+
+.nav-item-5:hover
+{
+  background-color: $hover-color-pink;
+}
+
+.nav-item-6:hover
+{
+  background-color: $hover-color-red;
+}
+
+#phone:hover #small-phone
+{
+  color:white;
+}
+#bespoke:hover #small-table
+{
+  color:white;
+  
+}
+
+#code:hover #small-code
+{
+  color:white;
+}
+
+#shield:hover #small-shield
+{
+  color:white;
+}
+
+#bespoke:hover
+{
+  background-color:$hover-color-blue
+}
+#cap:hover
+{
+  background-color:$hover-color-red
+}
+
+#desktop
+{
+  margin-top:-20px;
+}
+
+#chart:hover #small-chart
+{
+  color:white;
+}
+
+#cap:hover #small-cap
+{
+  color:white;
+}
+.nav-item-1:hover #small-desktop
+{
+  color:white
+}
+
+
+
 
 caption { 
   position: absolute; 
