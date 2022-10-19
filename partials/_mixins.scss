@@ -158,6 +158,21 @@ margin-top:31px;
  
 }
 
+@mixin icon-style-2
+{
+border-radius:100%;
+ font-size: 30px;
+ color: white;
+ margin-left: 45%;
+ margin-right:40%;
+
+
+
+margin-top:31px;
+
+
+ 
+}
 @mixin button-netmatters 
 {
   color: white;
