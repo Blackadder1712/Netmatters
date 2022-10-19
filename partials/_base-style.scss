@@ -10,7 +10,7 @@ body {
 }
 
 //Top netmatters logo, phone button, hamburger button and search bar 
-
+.Main-page
 header {
   width:100%;
   
@@ -20,9 +20,14 @@ header {
 
 }
 
+.container-2
+{
+  display:none;
+}
+
 .container {
   
-  max-width: auto;
+max-width: auto;
   display: grid;
   
   grid-template-columns: 65% auto 25% ;

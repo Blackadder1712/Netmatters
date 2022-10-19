@@ -5,7 +5,7 @@
 {
   body
   {
-    padding-left:20px;
+    
   }
 
       .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-phone, .fa-code, .fa-shield-halved, .fa-graduation-cap 
@@ -26,6 +26,7 @@
 
      padding-top:10px; 
      padding-right:98px;
+     width:auto
     }
     
 
@@ -89,6 +90,144 @@
 
 }
 
+@media screen and (min-width: 768px) {
+
+  .container-2
+  {
+    
+    display:grid;
+    grid-template-columns: 50% 30% auto;
+    padding-right:28px;
+   
+  
+  padding-bottom: 0px;
+  }
+
+  .hamburger
+  {
+    margin-top:10px;
+    margin-left:20px;
+  }
+
+  
+
+  .container-2 .search-bar
+  {
+    margin-top:30px;
+    
+
+  }
+
+  .container
+  {
+    display:none;
+   
+  }
+
+  .search-bar
+  {
+    margin-right:0px;
+    width:100%;
+    padding-right:0%;
+    
+    
+
+  }
+
+  .Main-page
+  {
+    margin-left:-19px;
+  }
+  
+  .main-buttons
+  {
+    margin:-5px;
+  }
+  .main-blocks
+  {
+    padding-right:10%
+  }
+  #read
+    {
+      margin-left:30%;
+      margin-right:30%
+    }
+    
+    .primary-inner #read-2
+    {
+       margin-left:30%;
+       margin-right:30%;
+    }
+    
+    .primary-inner #read-3
+    {
+       margin-left:30%;
+       margin-right:30%;
+    }
+
+    .primary-inner #read-4
+    {
+       margin-left:30%;
+       margin-right:30%;
+    }
+
+    .primary-inner #read-5
+    {
+       margin-left:30%;
+       margin-right:30%;
+    }
+
+    .primary-inner #read-6
+    {
+       margin-left:30%;
+       margin-right:30%;
+    }
+
+    .primary-inner #read-7
+    {
+       margin-left:30%;
+       margin-right:30%;
+    }
+
+    .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-phone, .fa-code, .fa-shield-halved, .fa-graduation-cap 
+    {
+      @include icon-style-2; 
+      margin-left: 45%;
+      margin-right:55%;
+      width:12%;
+      
+      
+
+      
+      
+    }
+
+    .welcome
+    {
+      margin-left:-1px;
+      
+    }
+
+    .welcome-btn
+    {
+      display:grid;
+      grid-template-rows:auto auto;
+      grid-template-columns:50%;
+    }
+  
+    .cards-2 
+    {
+      display:grid;
+      grid-template-columns: auto auto;
+  
+
+    }
+
+    .card-1
+    {
+      display:none;
+    }
+}
 
 
 @media screen and (min-width: 992px) {
