@@ -947,7 +947,7 @@ h4 {
   margin-left: 9px;
 }
 
-.cards h1 {
+.latest {
   font-size: 36px;
   font-weight: 600px;
   line-height: 40px;
@@ -956,10 +956,6 @@ h4 {
   margin-top: 41px;
   display: grid;
   font-family: "Helvetica";
-}
-
-.cards {
-  display: grid;
 }
 
 .card-1, .card-2, .card-3 {
@@ -1409,6 +1405,26 @@ footer h4:hover {
 
 /*Media Queries*/
 @media screen and (min-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .img-title {
+    padding-left: 2%;
+    padding-right: 7%;
+  }
+  .img-text {
+    padding-left: 2%;
+    padding-right: 5%;
+  }
+  .welcome {
+    padding-right: 5%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .main-buttons {
+    padding-right: 10%;
+  }
   .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-phone, .fa-code, .fa-shield-halved, .fa-graduation-cap {
     border-radius: 100%;
     font-size: 30px;
@@ -1424,6 +1440,14 @@ footer h4:hover {
     padding-top: 10px;
     padding-right: 98px;
     width: auto;
+  }
+  .cards {
+    padding-right: 14%;
+    margin-left: 1%;
+  }
+  .cards-2 {
+    padding-right: 14%;
+    margin-left: 1%;
   }
   #read {
     margin-left: 30%;
@@ -1456,16 +1480,32 @@ footer h4:hover {
   footer {
     display: grid;
     grid-template-columns: auto auto;
+    padding-left: 5px;
+    padding-right: 35px;
   }
   .about {
     padding-top: 30px;
   }
+  .footer {
+    padding-right: 10%;
+    margin-left: -3%;
+    background-color: #333645;
+  }
+  .email-form {
+    padding-right: 7%;
+  }
+  .footer {
+    margin-right: 12%;
+  }
 }
 @media screen and (min-width: 768px) {
+  .main-image {
+    margin-top: -5%;
+  }
   .container-2 {
     display: grid;
     grid-template-columns: 50% 30% auto;
-    padding-right: 28px;
+    padding-right: 12%;
     padding-bottom: 0px;
   }
   .hamburger {
@@ -1486,11 +1526,16 @@ footer h4:hover {
   .Main-page {
     margin-left: -19px;
   }
-  .main-buttons {
-    margin: -5px;
-  }
   .main-blocks {
-    padding-right: 10%;
+    padding-right: 6%;
+  }
+  .welcome {
+    padding-left: 1%;
+    padding-right: 12%;
+  }
+  .main-buttons {
+    margin-left: 10px;
+    padding-right: 67px;
   }
   #read {
     margin-left: 30%;
@@ -1536,18 +1581,67 @@ footer h4:hover {
   }
   .welcome-btn {
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 50%;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5%;
+    padding-right: 6%;
+    padding-bottom: 5%;
   }
-  .cards-2 {
+  .btn-primary-client {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+  }
+  .cards {
     display: grid;
     grid-template-columns: auto auto;
   }
-  .card-1 {
+  .card-1, .card-2 {
+    width: 85%;
+  }
+  .card-3 {
     display: none;
+  }
+  .view-all {
+    display: none;
+  }
+  .card-h {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 1%;
+  }
+  .view-all-2 {
+    border: none;
+    background: transparent;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-right: 20%;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .email-form {
+    padding-left: 1%;
+    padding-right: 9%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+    margin-right: 10%;
   }
 }
 @media screen and (min-width: 992px) {
+  .container-2 {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+  }
   #support-btn {
     display: block;
     border-radius: 3px;
@@ -1561,8 +1655,6 @@ footer h4:hover {
     letter-spacing: 0.4px;
     text-decoration: none;
     background-color: #4183d7;
-    margin: 10px;
-    width: 70%;
   }
   #contact-btn {
     display: block;
@@ -1577,8 +1669,6 @@ footer h4:hover {
     letter-spacing: 0.4px;
     text-decoration: none;
     background-color: #2ecc71;
-    margin: 10px;
-    width: 70%;
   }
   .fa-computer-mouse {
     padding-right: 5px;
