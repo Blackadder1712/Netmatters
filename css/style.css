@@ -1639,9 +1639,6 @@ footer h4:hover {
   .container-2 {
     display: none;
   }
-  .nav {
-    width: 100%;
-  }
   #support-btn {
     display: block;
     border-radius: 3px;
@@ -1679,23 +1676,13 @@ footer h4:hover {
   .header-buttons {
     max-width: auto;
     display: grid;
+    padding: 20px 20px;
     grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 30px;
+    margin: 0;
   }
   header {
-    max-width: auto;
-    display: grid;
-    padding: 20px 20px;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 30px;
-    margin: 0;
-  }
-  .outer-container {
-    max-width: auto;
-    display: grid;
-    padding: 20px 20px;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-column-gap: 30px;
-    margin: 0;
+    display: none;
   }
   .fa-phone-volume {
     display: none;
@@ -1715,24 +1702,23 @@ footer h4:hover {
     border-left: none;
     line-height: 1.15;
   }
-  .nav {
+  nav {
     background-color: #333645;
     display: grid;
-    padding-left: 20px;
-    padding-right: 300px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 4%;
     grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 2%;
     margin: 0;
+    width: 100%;
   }
   .nav-item {
     display: inline-block;
     margin: 0 auto;
-    width: 100%;
+    width: 100% padding-left;
   }
   .nav-item-1 {
     display: inline-block;
-    margin: -20%;
     width: 100%;
     margin: 0 auto;
     padding-left: 1%;
@@ -1741,13 +1727,11 @@ footer h4:hover {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
-    padding-left: 1%;
   }
   .nav-item-3 {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
-    padding-left: 1%;
   }
   .nav-item-4 {
     display: inline-block;
@@ -1759,26 +1743,18 @@ footer h4:hover {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
-    padding-left: 1%;
   }
   .nav-item-6 {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
-    padding-left: 1%;
-  }
-  .nav-item-7 {
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 1%;
   }
   .nav-link {
     display: inline-block;
     font-family: Poppins, sans-serif;
     text-decoration: none;
     color: white;
-    width: auto;
+    width: 100%;
     margin: 0 auto;
   }
   #small-table {
