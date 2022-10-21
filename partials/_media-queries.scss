@@ -41,9 +41,9 @@
       .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-phone, .fa-code, .fa-shield-halved, .fa-graduation-cap 
     {
       @include icon-style-2; 
-      margin-left: 40%;
-      margin-right:60%;
-      width:17%;
+      margin-left: 50px;
+      margin-right:55px;
+      width:70px;
       
 
       
@@ -72,46 +72,46 @@
   }
     
 
-    #read
+    .primary-inner #read
     {
-      margin-left:30%;
-      margin-right:30%
+      margin-left:30px;
+      margin-right:30px;
     }
     
     .primary-inner #read-2
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
     
     .primary-inner #read-3
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
     .primary-inner #read-4
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
     .primary-inner #read-5
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
     .primary-inner #read-6
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
     .primary-inner #read-7
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
     
     footer
@@ -228,58 +228,47 @@
 
   #read
     {
-      margin-left:30%;
-      margin-right:30%
+      margin-left:30px;
+      margin-right:30px
     }
     
     .primary-inner #read-2
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
     
     .primary-inner #read-3
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
     .primary-inner #read-4
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
     .primary-inner #read-5
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
     .primary-inner #read-6
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
     .primary-inner #read-7
     {
-       margin-left:30%;
-       margin-right:30%;
+       margin-left:30px;
+       margin-right:30px;
     }
 
-    .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-phone, .fa-code, .fa-shield-halved, .fa-graduation-cap 
-    {
-      @include icon-style-2; 
-      margin-left: 45%;
-      margin-right:55%;
-      width:12%;
-      
-      
-
-      
-      
-    }
+  
 
     .welcome
     {
@@ -413,10 +402,7 @@
   {
     padding-right:5px;
   }
-.container
-   {
-    display:none;
-   }
+
 
   .header-buttons
   {
@@ -793,6 +779,8 @@ caption {
 
 }
 
+
+
 footer {
 background-color:$main-color;
     max-width: auto;
@@ -809,10 +797,23 @@ background-color:$main-color;
   max-width: auto;
   display: grid;
   padding: 20px 20px;
-  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
   grid-column-gap: 30px;
   margin: 0;
   }
+
+  .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
+    @include primary-button-2;
+    
+   
+  
+   
+    }
+
+   
+
+  
   
   }
 
