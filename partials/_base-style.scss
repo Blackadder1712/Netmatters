@@ -61,6 +61,7 @@ max-width: auto;
   cursor: pointer;
   background-color:#e7e6e6;
 
+
   border-width: 2px;
   border-style: solid;
   border-color: rgba(0,0,0,.1);
@@ -72,6 +73,11 @@ max-width: auto;
 
   
   
+}
+
+.mb-3 .form-control
+{
+  background-color:white;
 }
 
 
@@ -287,6 +293,15 @@ html,body
     overflow-x: hidden; 
 }
 
+html,footer
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .caption-text
 { display: block;
   font-family: sans-serif;
@@ -297,6 +312,7 @@ html,body
   font-weight:$title-font-weight;
   letter-spacing: .4px;
   margin-top:-39px;
+  padding:5%
 
 
 
@@ -347,6 +363,10 @@ strong {
  
 } 
 
+.main-blocks-2
+{
+  display:none
+}
 
 .main-buttons
  {
@@ -385,6 +405,15 @@ strong {
   
   
 }
+
+.main-image
+{
+  width:130%;
+  padding-right:0px;
+  margin-right: 0px;
+}
+
+
 
 .primary-inner h3 
  {
@@ -941,9 +970,9 @@ h4 {
 .card-1, .card-2, .card-3 {
   
 
- 
+
   margin:20px;
-  margin-top:10px;
+  
   display:grid;
   font-family: $main-font-family;
   font-size:13px;
@@ -951,13 +980,13 @@ h4 {
 
   border: $card-border;
 
-  grid-template-rows: auto auto auto ;
+  
   text-decoration: none;
   border-color: #e5e5e5;
 }
 
 .card-img  {
-  max-width:100%;
+  width:100%;
   display: grid;
   
 }
@@ -1091,6 +1120,9 @@ margin-top:25px;
  
  
 }
+
+.view-all-2
+{display:none}
 
 //Email form 
 
@@ -1229,12 +1261,12 @@ margin-left:15px;
 footer {
   background-color:$main-color;
   max-width: 100%;
-  display: grid;
-  grid-template-columns:auto auto auto ;
-  flex-wrap: wrap;
+ 
+ 
+  
   justify-content: space-between;
   margin:0%;
-  @include section-padding;
+ 
   border-left-color:$main-color;
   border-right-color: $main-color;
 }
