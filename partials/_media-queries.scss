@@ -467,11 +467,18 @@
     
   }
 
-  .form-control {
+  .input-group-mb-3 .form-control {
 display: none;
    
   
     
+    
+  }
+
+  .mb-4
+  {
+    display:grid;
+    grid-template-rows:auto auto;
     
   }
   

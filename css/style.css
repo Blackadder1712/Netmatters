@@ -1718,8 +1718,12 @@ footer h4:hover {
   .fa-phone-volume {
     display: none;
   }
-  .form-control {
+  .input-group-mb-3 .form-control {
     display: none;
+  }
+  .mb-4 {
+    display: grid;
+    grid-template-rows: auto auto;
   }
   .search-bar {
     display: none;
