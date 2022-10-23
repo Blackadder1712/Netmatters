@@ -6,6 +6,11 @@
 
 {
 
+  .glass
+  {
+    display:none;
+  }
+
   .mb-3
   {
     width:100%;
@@ -163,28 +168,47 @@
   {
     
     display:grid;
-    grid-template-columns: 50% 30% auto;
-    padding-right:12%;
+    grid-template-columns: 50% 40% 10%;
+    
+   
+   
    
   
   padding-bottom: 0px;
  
   }
 
+  .search-bar .form-control
+  {
+    padding-top:10px;
+    height: 55px;
+    width:80%;
+    background-color: white;
+  }
+  
+
   .hamburger
   {
     margin-top:10px;
-    margin-left:20px;
+   margin-left:0px;
+   display: inline-block;
+    
+    
   }
-
+  
+  .hamburger-2 
+  {
+    margin-top:10px;
+   margin-left:0px;
+   display: inline-block;
+   
+    
+    
+  }
+  
   
 
-  .container-2 .search-bar
-  {
-    margin-top:30px;
-    
 
-  }
 
   .container
   {
@@ -194,9 +218,12 @@
 
   .search-bar
   {
+
+    margin-top:30px;
     margin-right:0px;
-    width:100%;
+    width:180px;
     padding-right:0%;
+    display:inline-block;
     
     
 
@@ -206,11 +233,7 @@
   {
     margin-left:-19px;
   }
-  
- .main-buttons
-  {
-    height:30px;
-  }
+   
   .main-blocks
   {
     padding-right:6%
@@ -365,6 +388,109 @@
 
 
 @media screen and (min-width: 992px) {
+
+  .container-2 #netmatters
+  {
+    width:90%;
+    padding-bottom:0px;
+    margin-bottom:0px;
+  }
+
+ .container-2 .fa-bars
+  {
+    font-size:40px
+  }
+
+  .support
+  {
+    
+    @include button-netmatters-reviews-2;
+    background-color: #4387f6; 
+    text-align: center;
+    padding-top:7px;
+    margin-bottom: 70px;
+    margin-top:40px;
+    display:block;
+
+ 
+
+    
+  
+
+  }
+
+  .contact 
+  {
+    
+    margin-top:-30px;
+    @include button-netmatters-reviews-2;
+    background-color: #84858f; 
+    text-align: center;
+    margin-bottom: 70px;
+  margin-top:40px;
+    display:block;
+    padding-top:6px;
+    padding-bottom:6px;
+    
+   
+  }
+
+ 
+  .contact a, .support a {
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    padding-top:10px;
+  }
+  
+  .container-2 .fa-magnifying-glass
+  {
+    overflow: hidden;
+    font-size: 38px;
+  background-color: #84858f;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    margin-left: 15px;
+    border-radius: 3px;
+  
+
+  }
+
+  .glass
+  {
+    color: #7e808a;
+    width:36px;
+    height:35%;
+    display:block;
+     border: none;
+     background-color: transparent;
+   margin-bottom: 50px;
+     margin-top:10px;
+     padding-top:27px;
+     
+    
+ 
+     
+     
+
+  }
+  .container-2
+  {
+    
+    display:grid;
+    grid-template-columns: auto auto auto 10% 10%;
+    grid-column-gap: 5px;
+  
+    
+   
+   
+  margin-bottom:-40px;
+  padding-bottom: 0px;
+ 
+  }
    .welcome
    {
     display:grid;
@@ -397,37 +523,23 @@
     max-width:100%
   }
 
-  .container-2
+  
+
+
+  
+
+  .contact
   {
-    display:none
+    display:block;
   }
-
-
-
-  #support-btn
-  {
-    @include header-buttons;
-    background-color:$hover-color-bright-blue;
+    
     
 
     
 
   
     
-  }
-
-  #contact-btn
-  {
-    @include header-buttons;
-    background-color:$hover-color-bright-green;
-
-    
-
-    
-
   
-    
-  }
 
 
   .fa-computer-mouse
@@ -443,13 +555,14 @@
 
   .header-buttons
   {
-    max-width: auto;
+    width:100%;
     display: grid;
-    padding: 20px 20px;
-    grid-template-columns: auto auto auto auto auto ;
-    grid-column-gap: 30px;
+    
+    grid-template-columns: 60% 10% 10%;
+  
     margin: 0;
   }
+  
 
  
   header {
@@ -457,7 +570,7 @@
    display:none
     }
     
-    
+ 
 
 
   
@@ -482,21 +595,17 @@ display: none;
     
   }
   
-  
-  .search-bar {
-   display: none;
-   
-   
-  }
+ 
     
-    
-   
-  
-  
-  
-  .input-group-mb-3 {
+    .search-bar
+   {
     display: none;
-  }
+   }
+    
+  
+  
+  
+  
   
   #button-addon2 
   {
@@ -865,6 +974,105 @@ background-color:$main-color;
   
   
   }
+
+  @media screen and (min-width: 1025px) 
+  {
+
+    .input-group-mb-3-2 .fa-magnifying-glass
+    {
+       background-color:#e5e5e5 ;
+       font-size: 20px;
+       padding-right:10px;
+       padding-left:10px;
+    }
+
+    .input-group-mb-3-2 {
+      display: grid;
+      grid-template-columns: 80% auto;
+      cursor: pointer;
+      width:100%;
+      font-size:14px;
+      color: white;
+    
+     border-left: none;
+    }
+
+    .input-group-mb-3-2 .form-control {
+      display:grid;
+      height: 67px;
+      width: 100%;
+      font-family: 'Helvetica';
+      font-size: 14px;
+      line-height: 20px;
+      border-radius: 2px;
+      cursor: pointer;
+      background-color:white;
+    
+    
+      border-width: 2px;
+      border-style: solid;
+      border-color: rgba(0,0,0,.1);
+     
+     
+      border-right:none;
+      margin-left:14px;
+    
+    
+      
+      
+    }
+
+
+
+ 
+
+  
+    .container-2
+   {
+    display:grid;
+    grid-template-columns: 35% 10% 10% 20% auto;
+    padding-left:20px;
+   }
+    
+   .search-bar
+   {
+    display:inline-block;
+    width:100%
+   }
+
+   .input-group-mb-3
+   {
+    display:inline-block;
+   }
+
+
+
+  
+
+
+  
+
+
+  
+  
+    
+   
+
+   .hamburger-2
+   {
+    background-color: transparent;
+    border: none;
+    padding-top:20px;
+   }
+    
+   .glass
+   {display:none}
+   
+  }
+  
+  
+  
+
 
 
 
