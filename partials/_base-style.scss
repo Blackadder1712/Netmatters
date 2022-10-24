@@ -816,7 +816,7 @@ strong {
 
  }
 
- .info h1
+ .info #h1
  {
   font-size: 37px;
  
@@ -824,7 +824,7 @@ strong {
 
 
 
-article
+.info #leading
 { font-family: sans-serif;
   line-height:1.8rem;
   letter-spacing:.4px;
@@ -842,7 +842,7 @@ article
 
 }
 
-.info h2
+.info #h2
 { font-family: sans-serif;
   line-height:1.8rem;
   letter-spacing:.4px;
@@ -861,7 +861,7 @@ article
 
 }
 
-.info h3 
+.info #h3 
 {  font-family: sans-serif;
   line-height:1.8rem;
   letter-spacing:.4px;

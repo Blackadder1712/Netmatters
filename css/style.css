@@ -829,11 +829,11 @@ strong {
   margin-right: 10px;
 }
 
-.info h1 {
+.info #h1 {
   font-size: 37px;
 }
 
-article {
+.info #leading {
   font-family: sans-serif;
   line-height: 1.8rem;
   letter-spacing: 0.4px;
@@ -849,7 +849,7 @@ article {
   font-size: 18px;
 }
 
-.info h2 {
+.info #h2 {
   font-family: sans-serif;
   line-height: 1.8rem;
   letter-spacing: 0.4px;
@@ -865,7 +865,7 @@ article {
   font-weight: 200;
 }
 
-.info h3 {
+.info #h3 {
   font-family: sans-serif;
   line-height: 1.8rem;
   letter-spacing: 0.4px;
