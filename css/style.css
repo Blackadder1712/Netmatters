@@ -286,7 +286,7 @@ strong {
   border: 1px solid #ccc;
 }
 
-.primary-inner h2 {
+.primary-inner .h2 {
   font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 15px;
@@ -296,6 +296,8 @@ strong {
   color: #333645;
   margin-top: -12px;
   padding-top: 17px;
+  margin-left: 33px;
+  font-weight: 300;
 }
 
 .main-image {
@@ -323,6 +325,8 @@ strong {
   margin-right: 102px;
   padding: 40px;
   margin-top: 31px;
+  margin-right: 130px;
+  margin-bottom: 15px;
 }
 
 .fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone {
@@ -334,6 +338,7 @@ strong {
   padding: 40px;
   margin-top: 31px;
   margin-bottom: 15px;
+  margin-right: 130px;
 }
 
 .fa-table-cells {
@@ -435,8 +440,8 @@ strong {
   color: white;
 }
 
-.btn-primary:hover h2, .btn-primary-2:hover h2, .btn-primary-3:hover h2, .btn-primary-4:hover h2, .btn-primary-5:hover h2,
-.btn-primary-6:hover h2, .btn-primary-7:hover h2 {
+.btn-primary:hover .h2, .btn-primary-2:hover .h2, .btn-primary-3:hover .h2, .btn-primary-4:hover .h2, .btn-primary-5:hover .h2,
+.btn-primary-6:hover .h2, .btn-primary-7:hover .h2 {
   color: white;
 }
 
@@ -481,8 +486,8 @@ strong {
 }
 
 .primary-inner {
-  margin-left: 31px;
-  margin-right: 31px;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-top: -25px;
   margin-bottom: 20px;
 }
@@ -492,9 +497,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -506,16 +508,15 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #67809f;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
-#read-2 {
+.primary-inner #read-2 {
   padding-top: 15px;
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -527,6 +528,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #4183d7;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
 #read-3 {
@@ -534,9 +537,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -548,6 +548,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #2ecc71;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
 #read-4 {
@@ -555,9 +557,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -569,6 +568,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #d64541;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
 #read-5 {
@@ -576,9 +577,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -590,6 +588,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #926fb1;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
 #read-6 {
@@ -597,9 +597,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -611,6 +608,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #f62459;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
 #read-7 {
@@ -618,9 +617,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -632,6 +628,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #d64541;
+  margin-left: 22px;
+  margin-bottom: 20px;
 }
 
 .primary-inner #read-2 {
@@ -639,9 +637,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -660,9 +655,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -681,9 +673,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -702,9 +691,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -723,9 +709,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -744,9 +727,6 @@ strong {
   padding-right: 10px;
   padding-left: 16px;
   padding-bottom: 15px;
-  margin-top: 3px;
-  margin-right: 70px;
-  margin-left: 70px;
   display: inline-block;
   text-align: center;
   font-weight: 1;
@@ -1451,7 +1431,7 @@ footer h4:hover {
     margin-left: 45%;
     margin-right: 40%;
     margin-top: 31px;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-right: 55px;
     width: 70px;
   }
@@ -1462,32 +1442,32 @@ footer h4:hover {
     margin-left: 1%;
   }
   .primary-inner #read {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 55px;
+    margin-right: 20px;
   }
   .primary-inner #read-2 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 55px;
+    margin-right: 20px;
   }
   .primary-inner #read-3 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 55px;
+    margin-right: 20px;
   }
   .primary-inner #read-4 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 55px;
+    margin-right: 20px;
   }
   .primary-inner #read-5 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 55px;
+    margin-right: 20px;
   }
   .primary-inner #read-6 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 55px;
+    margin-right: 20px;
   }
   .primary-inner #read-7 {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 55px;
+    margin-right: 20px;
   }
   footer {
     display: grid;
@@ -1532,6 +1512,17 @@ footer h4:hover {
     font-size: 14px;
     color: white;
     border-left: none;
+  }
+  .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-phone, .fa-code, .fa-shield-halved, .fa-graduation-cap {
+    border-radius: 100%;
+    font-size: 30px;
+    color: white;
+    margin-left: 45%;
+    margin-right: 40%;
+    margin-top: 31px;
+    margin-left: 15px;
+    margin-right: 55px;
+    width: 70px;
   }
   .input-group-mb-3-2 .form-control {
     display: grid;
@@ -1608,31 +1599,31 @@ footer h4:hover {
     margin-left: 10px;
   }
   #read {
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: 30px;
   }
   .primary-inner #read-2 {
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: 30px;
   }
   .primary-inner #read-3 {
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: 30px;
   }
   .primary-inner #read-4 {
-    margin-left: 30px;
+    margin-left: 45px;
     margin-right: 30px;
   }
   .primary-inner #read-5 {
-    margin-left: 30px;
+    margin-left: 45px;
     margin-right: 30px;
   }
   .primary-inner #read-6 {
-    margin-left: 30px;
+    margin-left: 45px;
     margin-right: 30px;
   }
   .primary-inner #read-7 {
-    margin-left: 30px;
+    margin-left: 45px;
     margin-right: 30px;
   }
   .welcome {
@@ -1692,6 +1683,29 @@ footer h4:hover {
   }
 }
 @media screen and (min-width: 992px) {
+  .main-blocks {
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    padding: 20px 0px;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 10%;
+    margin-left: 1px;
+    margin-right: 22%;
+  }
+  .main-blocks-2 {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10%;
+    grid-row-gap: 20%;
+    padding: 5% 10%;
+  }
+  .btn-primary, .btn-primary-2, .btn-primary-3 {
+    width: 120%;
+    height: 100%;
+  }
   .input-group-mb-3-2 .fa-magnifying-glass {
     background-color: #e5e5e5;
     font-size: 20px;

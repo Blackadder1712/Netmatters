@@ -396,9 +396,11 @@ strong {
  
   }
 
-.primary-inner h2
+.primary-inner .h2
 { 
   @include primary-button-h2;
+  margin-left:33px;
+  font-weight:300;
   
   
 }
@@ -420,7 +422,8 @@ strong {
  .fa-table-cells
  {
   @include icon-style;
-
+  margin-right:130px;
+  margin-bottom:15px;
   
 }
 
@@ -428,6 +431,7 @@ strong {
 {
   @include icon-style;
   margin-bottom: 15px;
+  margin-right:130px;
 }
 
 .fa-table-cells {
@@ -574,8 +578,8 @@ strong {
 
 
 
-.btn-primary:hover h2, .btn-primary-2:hover h2, .btn-primary-3:hover h2,.btn-primary-4:hover h2, .btn-primary-5:hover h2,
-.btn-primary-6:hover h2, .btn-primary-7:hover h2 {
+.btn-primary:hover .h2, .btn-primary-2:hover .h2, .btn-primary-3:hover .h2,.btn-primary-4:hover .h2, .btn-primary-5:hover .h2,
+.btn-primary-6:hover .h2, .btn-primary-7:hover .h2 {
   color: white;
 }
 
@@ -634,8 +638,8 @@ strong {
   {
    
    
-   margin-left:31px;
-   margin-right:31px;
+   margin-left:30px;
+   margin-right:30px;
    margin-top:-25px;
    margin-bottom:20px;
    
@@ -646,24 +650,32 @@ strong {
 #read {
  @include primary-button-text;
  background-color: $hover-color-blue;
+ margin-left:22px;
+ margin-bottom:20px;
  
 }
 
-#read-2 {
+.primary-inner #read-2 {
   @include primary-button-text;
   background-color: $hover-color-bright-blue;
+  margin-left:22px;
+  margin-bottom:20px;
   
  }
 
  #read-3 {
   @include primary-button-text;
   background-color: $hover-color-bright-green;
+  margin-left:22px;
+  margin-bottom:20px;
   
  }
 
  #read-4 {
   @include primary-button-text;
   background-color: $hover-color-red;
+  margin-left:22px;
+  margin-bottom:20px;
   
  }
 
@@ -671,6 +683,8 @@ strong {
  {
   @include primary-button-text;
   background-color: $hover-color-purple;
+  margin-left:22px;
+  margin-bottom:20px;
  }
 
  
@@ -678,6 +692,8 @@ strong {
  {
   @include primary-button-text;
   background-color: $hover-color-pink;
+  margin-left:22px;
+  margin-bottom:20px;
  }
 
  
@@ -685,6 +701,8 @@ strong {
  {
   @include primary-button-text;
   background-color: $hover-color-red;
+  margin-left:22px;
+  margin-bottom:20px;
  }
 
 .primary-inner #read-2 {
