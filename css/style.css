@@ -142,7 +142,8 @@ body {
   background-color: transparent;
   border: none;
   color: #333645;
-  padding-top: 36px;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
 
 .nav-item {
@@ -1510,6 +1511,13 @@ footer h4:hover {
   }
 }
 @media screen and (min-width: 768px) {
+  #netmatters-2 {
+    width: 90%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 22px;
+    padding-left: 10px;
+  }
   .input-group-mb-3-2 .fa-magnifying-glass {
     background-color: #e5e5e5;
     font-size: 20px;
@@ -2103,6 +2111,11 @@ footer h4:hover {
   }
 }
 @media screen and (min-width: 1025px) {
+  .container-2 #netmatters {
+    width: 90%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
   .main-blocks {
     max-width: 100%;
     max-height: 100%;
@@ -2177,8 +2190,20 @@ footer h4:hover {
   .glass {
     display: none;
   }
+  #netmatters-2 {
+    width: 90%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 22px;
+  }
 }
 @media screen and (min-width: 1260px) {
+  #netmatters-2 {
+    width: 90%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 22px;
+  }
   .main-blocks-2 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;

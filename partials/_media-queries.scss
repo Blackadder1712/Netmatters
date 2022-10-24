@@ -154,6 +154,15 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  #netmatters-2
+  {
+    width:90%;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    padding-top:22px;
+    padding-left:10px;
+  }
   .input-group-mb-3-2 .fa-magnifying-glass
   {
      background-color:#e5e5e5 ;
@@ -516,6 +525,7 @@
     width:90%;
     padding-bottom:0px;
     margin-bottom:0px;
+    
   }
 
  .container-2 .fa-bars
@@ -1085,7 +1095,14 @@ background-color:$main-color;
 
   @media screen and (min-width: 1025px) 
   {
-
+    
+    .container-2 #netmatters
+    {
+      width:90%;
+      padding-bottom:0px;
+      margin-bottom:0px;
+      
+    }
     .main-blocks
  {
  
@@ -1213,12 +1230,25 @@ background-color:$main-color;
    .glass
    {display:none}
 
-
+   #netmatters-2
+   {
+     width:90%;
+     padding-bottom:0px;
+     margin-bottom:0px;
+     padding-top:22px;
+   }
    
   }
 
   @media screen and (min-width: 1260px) 
   {
+     #netmatters-2
+    {
+      width:90%;
+      padding-bottom:0px;
+      margin-bottom:0px;
+      padding-top:22px;
+    }
     .main-blocks-2
     {
       display: grid;
