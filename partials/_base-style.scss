@@ -325,7 +325,7 @@ html,footer
   height:260px;
   margin-bottom:20px;
   margin-left:25px;
-  margin-right:25px;
+  margin-right:px;
   margin-top:-120px;
   
   
@@ -364,10 +364,6 @@ strong {
  
 } 
 
-.main-blocks-2
-{
-  display:none
-}
 
 .main-buttons
  {
@@ -394,7 +390,7 @@ strong {
 
 .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
   @include primary-button;
-  height: 15%;
+  
  
 
  
@@ -641,6 +637,7 @@ strong {
    margin-left:31px;
    margin-right:31px;
    margin-top:-25px;
+   margin-bottom:20px;
    
     }
 
