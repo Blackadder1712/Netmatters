@@ -1,0 +1,27 @@
+{
+  "name": "netmatters",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000e\u0000t\u0000m\u0000a\u0000t\u0000t\u0000e\u0000r\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blackadder1712/Netmatters.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blackadder1712/Netmatters/issues"
+  },
+  "homepage": "https://github.com/Blackadder1712/Netmatters#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}
