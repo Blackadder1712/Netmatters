@@ -116,14 +116,14 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
-
+    bottom: 125px;
+      
     display: block;
 
     width: 100%;
@@ -144,7 +144,7 @@
     height: 20px;
     margin: 0 5px;
     padding: 0;
-
+    color:white;
     cursor: pointer;
 }
 .slick-dots li button
@@ -159,7 +159,7 @@
     padding: 5px;
 
     cursor: pointer;
-
+    color:white;
     color: transparent;
     border: 0;
     outline: none;
