@@ -6,10 +6,10 @@ $(function(){
       autoplaySpeed:1000,
       arrows: true,
       dots: true,
-      fade: true,
+      fade:true,
       speed: 2000,
       infinite: true,
-      loop: true
+      
     });
   });
               
