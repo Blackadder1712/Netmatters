@@ -3,7 +3,7 @@ $(function(){
     $('.main-carousel').slick({
       autoplay:true,
       slideToShow: 1,
-      autoplaySpeed:1000,
+      autoplaySpeed:2000,
       arrows: true,
       dots: true,
       
