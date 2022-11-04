@@ -1145,8 +1145,29 @@ background-color:$main-color;
   
   }
 
-  @media screen and (min-width: 1025px) 
-  {
+  @media screen and (min-width: 1025px) {
+
+    .caption-text
+    {
+      padding-top:40px;
+      position:relative;
+      padding-right:60px;
+
+    }
+
+    .img-text
+    {
+      text-align:left;
+      font-size:45px;
+    }
+
+    .img-title
+    {
+      text-align:left;
+      font-size:60px;
+    }
+
+    
     
     .container-2 #netmatters
     {
@@ -1291,7 +1312,7 @@ background-color:$main-color;
      padding-top:22px;
    }
    
-  }
+  
 
   @media screen and (min-width: 1260px) 
   {
@@ -1322,7 +1343,7 @@ background-color:$main-color;
   
   
   
-
+  }
 
 
 
