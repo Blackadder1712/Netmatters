@@ -182,7 +182,8 @@ background-color: #333645;
    border: none;
    background-color: transparent;
  margin-bottom: 50px;
-   
+   position: relative;
+   right:10px;
    padding-top:27px;
    padding-right:35px;
   
@@ -398,7 +399,8 @@ strong {
 }
 .main-buttons
  {
- 
+   position: relative;
+   top: -185px;
    font-family: $main-page-font-family;
   font-size: 1rem;
   letter-spacing: .4px;
@@ -406,8 +408,7 @@ strong {
   display: grid;
   padding-left:0px;
   padding-right:0px;
-  margin-left: 10px;
-  margin-right:10px;
+
   grid-template-rows: auto auto auto auto auto auto auto ;
   grid-row-gap: 10px;
 
@@ -488,7 +489,10 @@ strong {
 {
   background-color:$hover-color-bright-green;
 
-  padding:17px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:17px;
+  padding-bottom:17px;
 }
 
 .btn-primary-3:hover .fa-chart-simple
@@ -515,7 +519,10 @@ strong {
 {
  background-color: $hover-color-purple;
  
- padding:17px;
+ padding-top:17px;
+ padding-bottom:17px;
+ padding-left:15px;
+ padding-right:15px
 
 }
 
@@ -542,8 +549,10 @@ strong {
 .fa-graduation-cap 
 {
   background-color: $hover-color-red;
- 
-  padding:17px;
+  padding-top:17px;
+  padding-bottom:17px;
+  padding-left:15px;
+  padding-right:15px
 
 }
 
@@ -819,7 +828,9 @@ strong {
   
   cursor: pointer;
   overflow-x: hidden;
-  @include section-padding
+  @include section-padding;
+  position: relative;
+  top: -230px;
 }
 
   .logo-item-1, .logo-item-2, .logo-item-3, .logo-item-4, .logo-item-5, .logo-item-6
@@ -850,6 +861,8 @@ strong {
   text-align: left;
   letter-spacing: 1.4;
   line-height: 1;
+  position:relative;
+  top:-230px
   
  
  }
@@ -1073,7 +1086,9 @@ margin-bottom:20px;
 .btn-primary-cardlogo {
   border:none;
   background-color: white;
-  margin-left: 20px;
+  position: relative;
+  left:30px;
+  top: 10px;
 }
 
 hr
@@ -1090,26 +1105,31 @@ hr
 
 .posted-by-netmatters h6 {
   color:gray;
- 
+ position:relative;
+ left:120px;
+ top:-50px;
+
   font-size: 13.5px;
 font-weight: 550;
 font-family: "Helvetica";
 line-height:6px;
 letter-spacing:.4px;
-padding-left:95px;
-margin-top:16px;
+
+
 }
 
 .posted-by-netmatters h5
 {
-  padding-top:8px;
+  position: relative;
+  left:120px;
+  top:-60px;
   font-size: 13.5px;
 font-weight: 700;
 font-family: "Helvetica";
 line-height:4px;
 letter-spacing:.4px;
-margin-left:95px;
-margin-top:25px;
+
+
 
 }
 
@@ -1393,6 +1413,7 @@ footer h4:hover
   flex-direction: column;
   color:$main-font-color;
   padding-right: 5px;
+  text-decoration: none;
  
   
 
@@ -1406,20 +1427,20 @@ padding-left:20px;
 font-family: $main-font-family;
 color: $main-font-color;
 font-weight: lighter;
-font-size: 20px;
+font-size: 15px;
 line-height: 23px;
-
+text-decoration: none;
 
 }
 
 .about h4 {
 
-
+  text-decoration: none;
   margin-left:20px;
   font-family: $main-font-family;
   color: $main-font-color;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: -20px;
 
 
@@ -1433,6 +1454,7 @@ line-height: 23px;
     flex-direction: column;
     color:$main-font-color;
     padding-right: 5px;
+    text-decoration: none;
   }
 
   .services h3 {
@@ -1442,8 +1464,9 @@ line-height: 23px;
     font-family: $main-font-family;
     color: $main-font-color;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 23px;
+    text-decoration: none;
     }
 
     .services h4 {
@@ -1452,9 +1475,9 @@ line-height: 23px;
       font-family: $main-font-family;
       color: $main-font-color;
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 13px;
       margin-bottom: -20px;
-    
+      text-decoration: none;
      
       
       }
@@ -1468,7 +1491,7 @@ line-height: 23px;
       color:$main-font-color;
       padding-right: 5px;
       padding-top:30px;
-      
+      text-decoration: none;
     
     
     }
@@ -1480,8 +1503,9 @@ line-height: 23px;
       font-family: $main-font-family;
       color: $main-font-color;
       font-weight: lighter;
-      font-size: 20px;
+      font-size: 15px;
       line-height: 23px;
+      text-decoration: none;
     }
     
     .cambridge h4 {
@@ -1490,7 +1514,7 @@ line-height: 23px;
       font-family: $main-font-family;
       color: $main-font-color;
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 13px;
       margin-bottom: -20px;
     
      
@@ -1505,7 +1529,7 @@ line-height: 23px;
         color:$main-font-color;
         padding-right: 5px;
         padding-top:30px;
-      
+        text-decoration: none;
       
       }
       
@@ -1516,9 +1540,9 @@ line-height: 23px;
         font-family: $main-font-family;
         color: $main-font-color;
         font-weight: lighter;
-        font-size: 20px;
+        font-size: 15px;
         line-height: 23px;
-      
+        text-decoration: none;
       }
       
       .wymondham h4 {
@@ -1527,9 +1551,9 @@ line-height: 23px;
       font-family: $main-font-family;
       color: $main-font-color;
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 13px;
       margin-bottom: -20px;
-      
+      text-decoration: none;
         
         }
       
@@ -1540,7 +1564,7 @@ line-height: 23px;
         color:$main-font-color;
         padding-right: 5px;
         padding-top:30px;
-         
+        text-decoration: none;
         
         
         }
@@ -1552,9 +1576,9 @@ line-height: 23px;
           font-family: $main-font-family;
           color: $main-font-color;
           font-weight: lighter;
-          font-size: 20px;
+          font-size: 15px;
           line-height: 23px;
-        
+          text-decoration: none;
         }
         
         .yarmouth h4 {
@@ -1563,13 +1587,18 @@ line-height: 23px;
           font-family: $main-font-family;
           color: $main-font-color;
           font-weight: lighter;
-          font-size: 16px;
+          font-size: 13px;
           margin-bottom: -20px;
-          
+          text-decoration: none;
         
           
           }
+        
+          footer a:hover
+          {text-decoration: none;}
 
+          footer h4:hover
+          {text-decoration: none;}
         
 
         //Copyright Information

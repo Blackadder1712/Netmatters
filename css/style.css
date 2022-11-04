@@ -128,6 +128,8 @@ body {
   border: none;
   background-color: transparent;
   margin-bottom: 50px;
+  position: relative;
+  right: 10px;
   padding-top: 27px;
   padding-right: 35px;
   margin-left: -12px;
@@ -269,6 +271,8 @@ strong {
 }
 
 .main-buttons {
+  position: relative;
+  top: -185px;
   font-family: Poppins, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
@@ -276,8 +280,6 @@ strong {
   display: grid;
   padding-left: 0px;
   padding-right: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
   grid-template-rows: auto auto auto auto auto auto auto;
   grid-row-gap: 10px;
 }
@@ -368,7 +370,10 @@ strong {
 
 .fa-chart-simple {
   background-color: #2ecc71;
-  padding: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .btn-primary-3:hover .fa-chart-simple {
@@ -388,7 +393,10 @@ strong {
 
 .fa-code {
   background-color: #926fb1;
-  padding: 17px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn-primary-5:hover .fa-code {
@@ -408,7 +416,10 @@ strong {
 
 .fa-graduation-cap {
   background-color: #d64541;
-  padding: 17px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn-primary-7:hover .fa-graduation-cap {
@@ -790,6 +801,8 @@ strong {
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+  top: -230px;
 }
 
 .logo-item-1, .logo-item-2, .logo-item-3, .logo-item-4, .logo-item-5, .logo-item-6 {
@@ -809,6 +822,8 @@ strong {
   text-align: left;
   letter-spacing: 1.4;
   line-height: 1;
+  position: relative;
+  top: -230px;
 }
 
 .info {
@@ -1025,7 +1040,9 @@ h4 {
 .btn-primary-cardlogo {
   border: none;
   background-color: white;
-  margin-left: 20px;
+  position: relative;
+  left: 30px;
+  top: 10px;
 }
 
 hr {
@@ -1037,24 +1054,25 @@ hr {
 
 .posted-by-netmatters h6 {
   color: gray;
+  position: relative;
+  left: 120px;
+  top: -50px;
   font-size: 13.5px;
   font-weight: 550;
   font-family: "Helvetica";
   line-height: 6px;
   letter-spacing: 0.4px;
-  padding-left: 95px;
-  margin-top: 16px;
 }
 
 .posted-by-netmatters h5 {
-  padding-top: 8px;
+  position: relative;
+  left: 120px;
+  top: -60px;
   font-size: 13.5px;
   font-weight: 700;
   font-family: "Helvetica";
   line-height: 4px;
   letter-spacing: 0.4px;
-  margin-left: 95px;
-  margin-top: 25px;
 }
 
 .card-title-1 {
@@ -1260,6 +1278,7 @@ footer h4:hover {
   flex-direction: column;
   color: white;
   padding-right: 5px;
+  text-decoration: none;
 }
 
 .about h3 {
@@ -1268,16 +1287,18 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 23px;
+  text-decoration: none;
 }
 
 .about h4 {
+  text-decoration: none;
   margin-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: -20px;
 }
 
@@ -1287,6 +1308,7 @@ footer h4:hover {
   flex-direction: column;
   color: white;
   padding-right: 5px;
+  text-decoration: none;
 }
 
 .services h3 {
@@ -1295,8 +1317,9 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 23px;
+  text-decoration: none;
 }
 
 .services h4 {
@@ -1304,8 +1327,9 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: -20px;
+  text-decoration: none;
 }
 
 .cambridge {
@@ -1314,6 +1338,7 @@ footer h4:hover {
   color: white;
   padding-right: 5px;
   padding-top: 30px;
+  text-decoration: none;
 }
 
 .cambridge h3 {
@@ -1322,8 +1347,9 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 23px;
+  text-decoration: none;
 }
 
 .cambridge h4 {
@@ -1331,7 +1357,7 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: -20px;
 }
 
@@ -1341,6 +1367,7 @@ footer h4:hover {
   color: white;
   padding-right: 5px;
   padding-top: 30px;
+  text-decoration: none;
 }
 
 .wymondham h3 {
@@ -1349,8 +1376,9 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 23px;
+  text-decoration: none;
 }
 
 .wymondham h4 {
@@ -1358,8 +1386,9 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: -20px;
+  text-decoration: none;
 }
 
 .yarmouth {
@@ -1368,6 +1397,7 @@ footer h4:hover {
   color: white;
   padding-right: 5px;
   padding-top: 30px;
+  text-decoration: none;
 }
 
 .yarmouth h3 {
@@ -1376,8 +1406,9 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 23px;
+  text-decoration: none;
 }
 
 .yarmouth h4 {
@@ -1385,8 +1416,17 @@ footer h4:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: -20px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer h4:hover {
+  text-decoration: none;
 }
 
 .copyright {
