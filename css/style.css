@@ -9,6 +9,9 @@
 
 body {
   font-family: Poppins, sans-serif;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  height: auto;
 }
 
 .main-image {
@@ -215,7 +218,6 @@ html, footer {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
 }
 
 .caption-text {
@@ -664,6 +666,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #4183d7;
+  position: relative;
+  left: 5px;
 }
 
 .primary-inner #read-3 {
@@ -682,6 +686,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #2ecc71;
+  position: relative;
+  left: 5px;
 }
 
 .primary-inner #read-4 {
@@ -700,6 +706,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #d64541;
+  position: relative;
+  left: 5px;
 }
 
 .primary-inner #read-5 {
@@ -718,6 +726,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #926fb1;
+  position: relative;
+  left: 5px;
 }
 
 .primary-inner #read-6 {
@@ -736,6 +746,8 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #f62459;
+  position: relative;
+  left: 5px;
 }
 
 .primary-inner #read-7 {
@@ -754,11 +766,15 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #d64541;
+  position: relative;
+  left: 5px;
 }
 
 .btn-primary-6 #read-6:hover {
   background-color: white;
   color: #f62459;
+  position: relative;
+  left: 5px;
 }
 
 .btn-primary-6 h2 {
@@ -980,6 +996,11 @@ h4 {
   font-family: "Helvetica";
 }
 
+.cards {
+  position: relative;
+  top: -220px;
+}
+
 .card-1, .card-2, .card-3 {
   margin: 20px;
   display: grid;
@@ -994,6 +1015,11 @@ h4 {
 .card-img {
   width: 100%;
   display: grid;
+}
+
+.card-h {
+  position: relative;
+  top: -235px;
 }
 
 .card-text, .card-text-2, .card-text-3 {
@@ -1100,6 +1126,8 @@ hr {
   border: none;
   background: transparent;
   padding: 15px;
+  position: relative;
+  top: -220px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: 30px;
@@ -1108,8 +1136,6 @@ hr {
   text-align: center;
   margin-left: 24%;
   margin-right: 20%;
-  margin-top: 25px;
-  margin-bottom: 28px;
 }
 
 .view-all-2 {
@@ -1123,6 +1149,8 @@ hr {
   grid-template-rows: auto;
   grid-row-gap: 20px;
   font-weight: lighter;
+  position: relative;
+  top: -200px;
   grid-template-rows: auto auto auto;
 }
 
@@ -1206,15 +1234,20 @@ footer {
   max-width: 100%;
   justify-content: space-between;
   margin: 0%;
+  position: relative;
+  top: -200px;
   border-left-color: #333645;
   border-right-color: #333645;
+  padding-bottom: -300px;
 }
 
 .footer {
+  position: relative;
+  top: -200px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #888;
-  width: 110%;
+  width: 100%;
   border-left-color: #333645;
   border-right-color: #333645;
 }
