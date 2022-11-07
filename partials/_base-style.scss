@@ -634,6 +634,7 @@ strong {
   @include icon-style;
   margin-bottom: 15px;
   margin-right:130px;
+  margin-bottom:20px;
 }
 
 .fa-table-cells {
@@ -641,7 +642,8 @@ strong {
   background-color: $hover-color-blue;
  position:relative;
  top:20px;
- left: 15px;
+ left: 20px;
+ margin-bottom:20px;
  padding:17px;
 
 }
@@ -892,7 +894,7 @@ strong {
 .primary-inner #read-2 {
   @include primary-button-text;
   background-color: $hover-color-bright-blue;
- 
+  margin-bottom:20px;
  
   
  }
@@ -902,21 +904,21 @@ strong {
  #read-3 {
   @include primary-button-text;
   background-color: $hover-color-bright-green;
-
+  margin-bottom:20px;
   
  }
 
  #read-4 {
   @include primary-button-text;
   background-color: $hover-color-red;
-
+  margin-bottom:20px;
  }
 
  #read-5
  {
   @include primary-button-text;
   background-color: $hover-color-purple;
-
+  margin-bottom:20px;
  }
 
  
@@ -924,7 +926,7 @@ strong {
  {
   @include primary-button-text;
   background-color: $hover-color-pink;
- 
+  margin-bottom:20px;
  }
 
  
@@ -932,7 +934,7 @@ strong {
  {
   @include primary-button-text;
   background-color: $hover-color-red;
-
+  margin-bottom:20px;
  }
 
 .primary-inner #read-2 {

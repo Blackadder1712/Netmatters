@@ -491,6 +491,7 @@ strong {
   margin-top: 31px;
   margin-bottom: 15px;
   margin-right: 130px;
+  margin-bottom: 20px;
 }
 
 .fa-table-cells {
@@ -504,7 +505,8 @@ strong {
   background-color: #67809f;
   position: relative;
   top: 20px;
-  left: 15px;
+  left: 20px;
+  margin-bottom: 20px;
   padding: 17px;
 }
 
@@ -720,6 +722,7 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #4183d7;
+  margin-bottom: 20px;
 }
 
 #read-3 {
@@ -738,6 +741,7 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #2ecc71;
+  margin-bottom: 20px;
 }
 
 #read-4 {
@@ -756,6 +760,7 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #d64541;
+  margin-bottom: 20px;
 }
 
 #read-5 {
@@ -774,6 +779,7 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #926fb1;
+  margin-bottom: 20px;
 }
 
 #read-6 {
@@ -792,6 +798,7 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #f62459;
+  margin-bottom: 20px;
 }
 
 #read-7 {
@@ -810,6 +817,7 @@ strong {
   color: white;
   letter-spacing: 0.4px;
   background-color: #d64541;
+  margin-bottom: 20px;
 }
 
 .primary-inner #read-2 {
