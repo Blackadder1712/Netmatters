@@ -19,7 +19,12 @@
           
 
         </head>
-      <body>  
+  <body> 
+        
+    <div id="main">
+
+          
+        
            
         <!--Top netmatters logo, phone button, hamburger button and search bar--> 
               
@@ -40,7 +45,7 @@
                               
                                <button class="phone"><i class="fa-2x fa-solid fa-phone-volume" ></i></button>
 
-                                  <button class="hamburger"><i class="fa-2x fa-solid fa-bars"></i></button>
+                                  <button class="hamburger" type="button" onclick="openNav()"><i class="fa-2x fa-solid fa-bars"></i></button>
 
                                            
 
@@ -105,7 +110,7 @@
                         
                 
 
-                    <button class="hamburger"><i class="fa-2x fa-solid fa-bars"></i></button>
+                    <button class="hamburger"><i class="fa-2x fa-solid fa-bars" onclick="openNav()"></i></button>
 
                     
                 </header>     
@@ -202,18 +207,22 @@
 
       <!--main page image-->   
         <div class="Main-page">
+ 
 
                 <div class="main-carousel"
                          >
+                        
 
 
                   <div class="main-image">
+                    <div class="overlay-block"></div>
+               
                                             
                                             
-                    <div class="overlay">
+                  
                       <img src="img/home-image.webp" class="page-image" alt="main netmatters image" >
 
-                    </div>
+                  
                    
                   
                           <div class="caption-text">
@@ -227,12 +236,12 @@
                   </div>  
 
                   <div class="main-image">
-
-                    <div class="overlay">
+                    <div class="overlay-block"></div>
+                
                    
                        <img src="img/bespoke.webp" class="page-image" alt="bespoke netmatters image">
                      
-                    </div>
+               
                                   
                     <div class="caption-text">
                       
@@ -256,9 +265,10 @@
 
                   
                   <div class="main-image">
-                    <div class="overlay">
+                   
+                    <div class="overlay-block"></div>
                         <img src="img/IT.webp" class="page-image" alt="IT SUPPORTimage">
-                    </div>
+                 
                           <div class="caption-text">
 
                               <div class="img-title"> IT Support</div>
@@ -274,9 +284,11 @@
 
                   
                   <div class="main-image">
-                    <div class="overlay">
+                
+                
+                    <div class="overlay-block"></div>
                       <img src="img/Digital.webp" class="page-image" alt="Digital Marketing image">
-                    </div>
+             
                    
                   
                           <div class="caption-text">
@@ -295,10 +307,12 @@
 
                    
                   <div class="main-image">
-                    <div class="overlay">
+
+                    <div class="overlay-block"></div>
+             
+                  
                       <img src="img/telecoms.webp" class="page-image" alt="telecoms  image">
 
-                    </div>
                  
                        
                     <div class="caption-text">
@@ -321,11 +335,14 @@
                     
                   <div class="main-image">
 
-                  <div class="overlay">
-                    <img src="img/web.jpg" class="page-image" alt="Web design image">
+                    <div class="overlay-block"></div>
+                  
+
+                  
+                     <img src="img/web.jpg" class="page-image" alt="Web design image">
                       
 
-                  </div>
+                  
                     
                     <div class="caption-text">
 
@@ -358,11 +375,11 @@
 
                       
                     <div class="main-image">
-                    <div class="overlay">
-                      <img src="img/cyber.webp" class="page-image" alt="bespoke netmatters image">
+                       <div class="overlay-block h-100 w-100"></div>
+          
+                       <img src="img/cyber.webp" class="page-image" alt="bespoke netmatters image">
                         
 
-                    </div> 
                   
                           
                       <div class="caption-text">
@@ -978,164 +995,6 @@
                           
             
 
-              <div id="mypanel" >
-                <button class="sidebtn">Navigation Menu</button>
-                                <div class="side-content">
-
-                                  <button href="index.html" id="contact">CONTACT US</button>
-
-                                  <button href="index.html" id="bespoke">BESPOKE SOFTWARE</button>
-
-                                  <div class="inner-content">
-                                    <button href="index.html" class="work">WORKFLOW</button>
-                                    <button href="index.html" class="work">AUTOMATION</button>
-                                    <button href="index.html" class="work">INTEGRATION</button>
-                                    <button href="index.html" class="work">APPS</button>
-                                    <button href="index.html" class="work">DATABASE</button>
-                                    <button href="index.html" class="work">SHAREPOINT</button>
-                                    <button href="index.html" class="work">MANAGEMENT</button>
-                                    <button href="index.html" class="work">BUSINESS CENTRAL</button>
-                                    <button href="index.html" class="work">INTERNET OF THINGS</button>
-                                    <button href="index.html" class="work">INTRANET DEVELOPMENT</button>
-                                    <button href="index.html" class="work">CUSTOMER PORTAL DEVELOPMENT</button>
-                                    <button href="index.html" class="work">REPORTING HUB</button>
-                                    <button href="index.html" class="work">INTRANET DEVELOPMENT</button>
-                                  </div>  
-
-
-                                
-                                  <button href="index.html" id="IT">IT SUPPORT</button>
-
-                                    <div class="inner-content-2">
-                                      <button href="index.html" class="work">MANAGED IT</button>
-                                      <button href="index.html" class="work">BUSINESS IT</button>
-                                      <button href="index.html" class="work">OFFICE 365</button>
-                                      <button href="index.html" class="work">CONSULTANCY</button>
-                                      <button href="index.html" class="work">CLOUD PROVIDER</button>
-                                      <button href="index.html" class="work">DATA BACKUP</button>
-                                    </div>
-
-                                  <button href="index.html" id="digital">DIGITAL MARKETING</button>
-
-                                    <div class="inner-content-3">
-                                      <button href="index.html" class="work">SEARCH (SEO)</button>
-                                      <button href="index.html" class="work">PAID (PPC)</button>
-                                      <button href="index.html" class="work">CONVERSION (CRO)</button>
-                                      <button href="index.html" class="work">EMAIL</button>
-                                      <button href="index.html" class="work">SOCIAL MEDIA</button>
-                                      <button href="index.html" class="work">CONTENT</button>
-                                    </div>
-
-                                  <button href="index.html" id="TELECOMS">TELECOMS SERVICES</button>
-
-                                    <div class="inner-content-4">
-                                      <button href="index.html" class="work">BUSINESS MOBILE</button>
-                                      <button href="index.html" class="work">HOSTED VOIP</button>
-                                      <button href="index.html" class="work">BUSINESS VOIP</button>
-                                      <button href="index.html" class="work">BUSINESS BROADBAND</button>
-                                      <button href="index.html" class="work">LEASED LINE</button>
-                                      <button href="index.html" class="work">3CX SYSTEMS</button>
-                                    </div>  
-
-                                  <button href="index.html" id="WEB">WEB DESIGN</button>
-
-                                    <div class="inner-content-5">
-                                      <button href="index.html" class="work">STYLISH WEBSITES</button>
-                                      <button href="index.html" class="work">ECOMMERCE STORES</button>
-                                      <button href="index.html" class="work">BRANDING</button>
-                                      <button href="index.html" class="work">APPS</button>
-                                      <button href="index.html" class="work">WEB HOSTING</button>
-                                      <button href="index.html" class="work">PAY MONTHLY WEBSITES</button>
-                                    </div>
-
-                                  <button href="index.html" id="CYBER">CYBER SECURITY</button>
-
-                                    <div class="inner-content-6">
-                                      <button href="index.html" class="work">ASSESSMENT</button>
-                                      <button href="index.html" class="work">MANAGEMENT</button>
-                                      <button href="index.html" class="work">PENETRATION TESTING</button>
-                                      <button href="index.html" class="work">CYBER ESSENTIALS</button>
-                                      <button href="index.html" class="work">PCI/DSS</button>
-                                      <button href="index.html" class="work">HACKER PREVENTION</button>
-                                    </div>  
-
-                                  <button href="index.html" id="DEVELOPER">IT SUPPORT</button>
-
-                                    <div class="inner-content-7">
-                                      <button href="index.html" class="work">TRAIN FOR A CAREER IN TECH</button>
-                                      <button href="index.html" class="work">SKILLS BOOTCAMP</button>
-                                      <button href="index.html" class="work">SCION SCHEME FREQUENTLY ASKED QUESTIONS</button>
-                                      <button href="index.html" class="work">CONSULTANCY</button>
-                                      <button href="index.html" class="work">CLOUD PROVIDER</button>
-                                      <button href="index.html" class="work">DATA BACKUP</button>
-                                    </div>
-
-                                  <button href="index.html" class="title">OUR WORK</button>
-
-                                  
-                                  <button href="index.html" class="sub">CASE STUDIES</button>
-                                  
-                                  
-                                  <button href="index.html" class="sub">CASE STUDIES</button>
-
-                                  <button href="index.html" class="sub">TECHNOLOGIES</button>
-                                  <button href="index.html" class="sub">INDUSTRIES</button>
-                                  <button href="index.html" class="sub">NEWS</button>
-                                  <button href="index.html" class="sub">INSIGHTS</button>
-
-                                  <button href="index.html" class="title">TRAINING</button>
-
-                                  <button href="index.html" class="sub">TRAIN FOR A CAREER IN TECH</button>
-                                  <button href="index.html" class="sub">SKILLS BOOTCAMP</button>
-                                  <button href="index.html" class="sub">SCS FREQUENTLY ASK QUESTIONS</button>
-                                  <button href="index.html" class="sub">SCION COLLABORATORS</button>
-
-                                  <button href="index.html" class="title">EVENTS</button>
-
-                                  <button href="index.html" class="sub">BUSINESSS AUTOMATION SEMINAR</button>
-
-                                  <button href="index.html" class="title">OUR COMPANY</button>
-
-                                  <button href="index.html" class="sub">OUR CAREERS</button>
-                                  <button href="index.html" class="sub">OUR TEAM</button>
-                                  <button href="index.html" class="sub">OUR CULTURE</button>
-                                  <button href="index.html" class="sub">OUR BENEFITS</button>
-
-                                  <button href="index.html" class="title">CONTACT US</button>
-
-                                  <button href="index.html" class="sub">CAMBRIDGE OFFICE</button>
-                                  <button href="index.html" class="sub">WYMONDHAM OFFICE</button>
-                                  <button href="index.html" class="sub">GREAT YARMOUTH OFFICE</button>
-
-                                  <button href="index.html" class="title">COVID RISK ASSESSMENTS</button>
-                                  <button href="index.html" class="title">SUPPORT</button>
-
-                                </div>
-
-                                    
-
-
-                                    
-                                  
-
-                                    
-                                   
-                                    
-                                   
-                                  
-                            
-                                   
-                                     
-                              
-
-                                    
-                               </div>
-                                 
-                                  
-                                   
-        
-                                  </div>
-              </div>
 
           </div>      
                   
@@ -1181,16 +1040,255 @@
             <script src="javascript/slick/slick.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+            <script src="javascript/side-menu.js"></script>
             <script src="javascript/main.js"></script>
             <script>
               
       
             </script>
+    </div> 
+    
+      
+    <div id="mypanel" class="sidenav" >
+    
+            
+     
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <a href="index.html" id="title" >CONTACT US</a>
+
+        <a href="index.html" id="title">
+
+          <i class="fa-solid fa-table-cells" id="nav-table"></i>
+          <h2>BESPOKE</h2> 
+          <h3>SOFTWARE</h3>
+        
+        </a>
+
+        <div class="inner-content">
+          <a href="index.html" class="work">WORKFLOW</a>
+          <a href="index.html" class="work">AUTOMATION</a>
+          <a href="index.html" class="work">INTEGRATION</a>
+          <a href="index.html" class="work">APPS</a>
+          <a href="index.html" class="work">DATABASE</a>
+          <a href="index.html" class="work">SHAREPOINT</a>
+          <a href="index.html" class="work">MANAGEMENT</a>
+          <a href="index.html" class="work">BUSINESS CENTRAL</a>
+          <a href="index.html" class="work">INTERNET OF THINGS</a>
+          <a href="index.html" class="work">INTRANET DEVELOPMENT</a>
+          <a href="index.html" class="work">CUSTOMER PORTAL DEVELOPMENT</a>
+          <a href="index.html" class="work">REPORTING HUB</a>
+          <a href="index.html" class="work">INTRANET DEVELOPMENT</a>
+        </div>  
+
+
+      
+        <a href="index.html" id="title">
+
+          <i class="fa-solid fa-desktop" id="nav-desktop"></i>
+          <h2>IT</h2> 
+          <h3>SUPPORT</h3>
+        
+        </a>
+
+          <div class="inner-content-2">
+            <a href="index.html" class="work">MANAGED IT</a>
+            <a href="index.html" class="work">BUSINESS IT</a>
+            <a href="index.html" class="work">OFFICE 365</a>
+            <a href="index.html" class="work">CONSULTANCY</a>
+            <a href="index.html" class="work">CLOUD PROVIDER</a>
+            <a href="index.html" class="work">DATA BACKUP</a>
+          </div>
+
+          <a href="index.html" id="title">
+
+            <i class="fa-solid fa-chart-simple" id="nav-chart"></i>
+            <h2>DIGITAL</h2> 
+            <h3>DESKTOP</h3>
+          
+          </a>
+
+          <div class="inner-content-3">
+            <a href="index.html" class="work">SEARCH (SEO)</a>
+            <a href="index.html" class="work">PAID (PPC)</a>
+            <a href="index.html" class="work">CONVERSION (CRO)</a>
+            <a href="index.html" class="work">EMAIL</a>
+            <a href="index.html" class="work">SOCIAL MEDIA</a>
+            <a href="index.html" class="work">CONTENT</a>
+          </div>
+
+          <a href="index.html" id="title">
+
+            <i class="fa-solid fa-phone" id="nav-phone"></i>
+            <h2>TELECOMS</h2> 
+            <h3>SERVICES</h3>
+          
+          </a>
+
+          <div class="inner-content-4">
+            <a href="index.html" class="work">BUSINESS MOBILE</a>
+            <a href="index.html" class="work">HOSTED VOIP</a>
+            <a href="index.html" class="work">BUSINESS VOIP</a>
+            <a href="index.html" class="work">BUSINESS BROADBAND</a>
+            <a href="index.html" class="work">LEASED LINE</a>
+            <a href="index.html" class="work">3CX SYSTEMS</a>
+          </div>  
+
+          <a href="index.html" id="title">
+
+            <i class="fa-solid fa-code" id="nav-code"></i>
+            <h2>WEB</h2> 
+            <h3>DESIGN</h3>
+          
+          </a>
+
+          <div class="inner-content-5">
+            <a href="index.html" class="work">STYLISH WEBSITES</a>
+            <a href="index.html" class="work">ECOMMERCE STORES</a>
+            <a href="index.html" class="work">BRANDING</a>
+            <a href="index.html" class="work">APPS</a>
+            <a href="index.html" class="work">WEB HOSTING</a>
+            <a href="index.html" class="work">PAY MONTHLY WEBSITES</a>
+          </div>
+
+        
+          <a href="index.html" id="title">
+
+            <i class="fa-solid fa-shield-halved" id="nav-shield"></i>
+            <h2>CYBER</h2> 
+            <h3>SECURITY</h3>
+          
+          </a>
+
+          <div class="inner-content-6">
+            <a href="index.html" class="work">ASSESSMENT</a>
+            <a href="index.html" class="work">MANAGEMENT</a>
+            <a href="index.html" class="work">PENETRATION TESTING</a>
+            <a href="index.html" class="work">CYBER ESSENTIALS</a>
+            <a href="index.html" class="work">PCI/DSS</a>
+            <a href="index.html" class="work">HACKER PREVENTION</a>
+          </div>  
+
+          <a href="index.html" id="title">
+
+            <i class="fa-solid fa-graduation-cap" id="nav-cap"></i>
+            <h2>DEVELOPER</h2> 
+            <h3>COURSE</h3>
+          
+          </a>
+
+          <div class="inner-content-7">
+            <a href="index.html" class="work">TRAIN FOR A CAREER IN TECH</a>
+            <a href="index.html" class="work">SKILLS BOOTCAMP</a>
+            <a href="index.html" class="work">SCION SCHEME FREQUENTLY ASKED QUESTIONS</a>
+      
+            <a href="index.html" class="work">SCION COLLABORATORS</a>
+          </div>
+
+        <button href="index.html" class="title">OUR WORK</button>
+
+        <div class="inner-content-8">
+          <a href="index.html" class="sub">CASE STUDIES</a>
+
+        </div>
+      
+        
+  
+        <button href="index.html" class="sub">OUR KNOWLEDGE</button>
+
+        <div class="inner-content-8">
+
+          <a href="index.html" class="sub">TECHNOLOGIES</a>
+          <a href="index.html" class="sub">INDUSTRIES</a>
+          <a href="index.html" class="sub">NEWS</a>
+          <a href="index.html" class="sub">INSIGHTS</a>
+
+
+        </div>
+
+        
+        <button href="index.html" class="title">TRAINING</button>
+
+        <div class="inner-content-9">
+          <a href="index.html" class="sub">TRAIN FOR A CAREER IN TECH</a>
+          <a href="index.html" class="sub">SKILLS BOOTCAMP</a>
+          <a href="index.html" class="sub">SCS FREQUENTLY ASK QUESTIONS</a>
+          <a href="index.html" class="sub">SCION COLLABORATORS</a>
+
+
+        </div>
+
+
+
+ 
+
+        <button href="index.html" class="title">EVENTS</button>
+
+        <div class="inner-content-10">
+          <a href="index.html" class="sub">BUSINESSS AUTOMATION SEMINAR</a>
+
+        </div>
+
+       
+
+        <button href="index.html" class="title">OUR COMPANY</button>
+
+        <div class="inner-content-11">
+          <a href="index.html" class="sub">OUR CAREERS</a>
+          <a href="index.html" class="sub">OUR TEAM</a>
+          <a href="index.html" class="sub">OUR CULTURE</a>
+          <a href="index.html" class="sub">OUR BENEFITS</a>
+
+        </div>
+
+    
+
+        <button href="index.html" class="title">CONTACT US</button>
+
+        <div class="inner-content-12">
+          <a href="index.html" class="sub">CAMBRIDGE OFFICE</a>
+          <a href="index.html" class="sub">WYMONDHAM OFFICE</a>
+          <a href="index.html" class="sub">GREAT YARMOUTH OFFICE</a>
+
+          <a href="index.html" class="title">COVID RISK ASSESSMENTS</a>
+          <a href="index.html" class="title">SUPPORT</a>
+
+
+        </div>
+
+
+
+      
+
+          
+
+
+          
+        
+
+          
+         
+          
+         
+        
+  
+         
+           
+    
+
+          
+     </div>
+       
+        
+         
+
+        </div>
+   </div>
         
 
        
           
- </body>
+  </body>
           
 
 

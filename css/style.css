@@ -190,11 +190,136 @@ body {
   height: 80vh;
 }
 
-.overlay {
-  background-color: black;
+.overlay-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  opacity: 5%;
+  background: linear-gradient(270deg, transparent 25%, #000);
+  height: 62.5%;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  z-index: 11;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #333645; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav #title {
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: 19px 0 18px;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.sidenav h2 {
+  font-size: 10px;
+  padding-bottom: -30px;
+  font-weight: lighter;
+}
+
+.sidenav h3 {
+  padding-top: -20px;
+  margin-top: -5px;
+  font-weight: lighter;
+}
+
+#nav-table {
+  background: none;
+  color: #67809f;
+  font-size: 20px;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+
+#nav-cap {
+  background: none;
+  color: #d64541;
+  font-size: 20px;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+
+#nav-phone {
+  background: none;
+  color: #d64541;
+  font-size: 20px;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+
+#nav-code {
+  background: none;
+  color: #926fb1;
+  font-size: 20px;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+
+#nav-shield {
+  background: none;
+  color: #f62459;
+  font-size: 20px;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+
+#nav-desktop {
+  background: none;
+  color: #4183d7;
+  font-size: 20px;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+
+#nav-chart {
+  background: none;
+  color: #2ecc71;
+  font-size: 20px;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 55px;
+  margin-bottom: 10px;
 }
 
 .main-carousel {
+  z-index: 2;
   width: 100vw;
   height: 400px;
   align-items: center;
@@ -231,6 +356,7 @@ html, footer {
   letter-spacing: 0.4px;
   position: relative;
   top: -500px;
+  z-index: 10;
 }
 
 .img-title {
@@ -251,6 +377,30 @@ html, footer {
   top: -50px;
   left: 10px;
   padding-right: 10%;
+}
+
+.inner-content, .inner-content-2, .inner-content-3, .inner-content-4, .inner-content-5, .inner-content-6, .inner-content-7 {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.inner-content a, .inner-content-2 a, .inner-content-3 a, .inner-content-4 a, .inner-content-5 a, .inner-content-6 a, .inner-content-7 a {
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #333;
 }
 
 strong {
@@ -331,18 +481,6 @@ strong {
   text-align: center;
 }
 
-.fa-table-cells {
-  border-radius: 100%;
-  font-size: 30px;
-  color: white;
-  margin-left: 102px;
-  margin-right: 102px;
-  padding: 40px;
-  margin-top: 31px;
-  margin-right: 130px;
-  margin-bottom: 15px;
-}
-
 .fa-desktop, .fa-chart-simple, .fa-code, .fa-shield-halved, .fa-graduation-cap, .fa-phone {
   border-radius: 100%;
   font-size: 30px;
@@ -356,10 +494,17 @@ strong {
 }
 
 .fa-table-cells {
+  border-radius: 100%;
+  font-size: 30px;
+  color: white;
+  margin-left: 102px;
+  margin-right: 102px;
+  padding: 40px;
+  margin-top: 31px;
   background-color: #67809f;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
   padding: 17px;
 }
 
@@ -373,7 +518,7 @@ strong {
   padding: 17px;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
 }
 
 .btn-primary-2:hover .fa-desktop {
@@ -389,7 +534,7 @@ strong {
   padding-bottom: 17px;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
 }
 
 .btn-primary-3:hover .fa-chart-simple {
@@ -402,7 +547,7 @@ strong {
   padding: 17px;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
 }
 
 .btn-primary-4:hover .fa-phone {
@@ -418,7 +563,7 @@ strong {
   padding-right: 15px;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
 }
 
 .btn-primary-5:hover .fa-code {
@@ -431,7 +576,7 @@ strong {
   padding: 17px;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
 }
 
 .btn-primary-6:hover .fa-shield-halved {
@@ -447,7 +592,7 @@ strong {
   padding-right: 15px;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
 }
 
 .btn-primary-7:hover .fa-graduation-cap {
@@ -822,10 +967,6 @@ strong {
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-#mypanel {
-  display: none;
 }
 
 .small-logos {
