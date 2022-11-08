@@ -14,6 +14,68 @@ body {
   height: auto;
 }
 
+.modal {
+  position: fixed;
+  z-index: 30;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cookie-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: auto; /* 15% from the top and centered */
+  padding: 20px;
+  margin-top: 15%;
+  width: 90%; /* Could be more or less, depending on screen size */
+}
+
+.cookie-content h1 {
+  font-family: sans-serif;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.cookie-content p {
+  position: relative;
+  padding: 20px;
+  letter-spacing: 0.4px;
+  line-height: 1.8;
+  color: #666;
+  font-size: 16px;
+}
+
+.cookie-inner {
+  position: relative;
+}
+
+.cookie-btn {
+  display: grid;
+  grid-template-rows: auto, auto;
+  grid-row-gap: 20px;
+}
+
+#cookie-1 {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  border-radius: 3px;
+  background-color: #999aa2;
+  border-color: #999aa2;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: none;
+}
+
 .main-image {
   width: 100%;
 }
@@ -186,6 +248,11 @@ body {
   height: 700px;
 }
 
+.main-blocks {
+  display: relative;
+  transition: right 0.5s;
+}
+
 .page-image {
   height: 80vh;
 }
@@ -202,9 +269,9 @@ body {
   height: 62.5%;
 }
 
-#main {
+#netmatters-work {
   transition: margin-right 0.5s;
-  z-index: 11;
+  position: auto;
 }
 
 .sidenav {
@@ -1173,6 +1240,28 @@ h4 {
   top: -220px;
 }
 
+#mask {
+  position: absolute;
+  z-index: 9000;
+  background-color: #000;
+  display: none;
+}
+
+#boxes .window {
+  position: fixed;
+  width: 440px;
+  height: 200px;
+  display: none;
+  z-index: 9999;
+  padding: 20px;
+}
+
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  width: 375px;
+  height: 203px;
+}
+
 .card-1, .card-2, .card-3 {
   margin: 20px;
   display: grid;
@@ -1678,7 +1767,7 @@ footer h4:hover {
     overflow-x: hidden;
   }
   .cards {
-    margin-left: 1%;
+    position: relative;
   }
   .cards-2 {
     margin-left: 1%;
@@ -1871,15 +1960,17 @@ footer h4:hover {
     margin-left: -19px;
   }
   .main-blocks {
-    padding-right: 6%;
+    padding-right: 1%;
+    margin-left: -1%;
   }
   .main-blocks-2 {
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-column-gap: 3%;
     padding: 20px;
-    margin-left: -12px;
+    margin-left: -15px;
   }
   .welcome {
     padding-left: 1%;
@@ -1968,12 +2059,16 @@ footer h4:hover {
   }
 }
 @media screen and (min-width: 992px) {
+  .main-carousel {
+    width: 100vw;
+  }
   .main-blocks {
+    max-height: 100%;
     display: grid;
     position: relative;
     left: 30px;
     grid-template-columns: 33% 33% 33%;
-    grid-column-gap: 45%;
+    padding-bottom: 100px;
   }
   .main-blocks-2 {
     display: grid;
@@ -1981,6 +2076,7 @@ footer h4:hover {
     grid-column-gap: 10%;
     grid-row-gap: 20%;
     padding: 5% 10%;
+    margin-top: 15px;
   }
   .input-group-mb-3-2 .fa-magnifying-glass {
     background-color: #e5e5e5;
@@ -2399,6 +2495,20 @@ footer h4:hover {
   }
 }
 @media screen and (min-width: 1025px) {
+  .primary-inner .fa-table-cells {
+    margin-left: 35px;
+  }
+  .primary-inner .fa-desktop, .primary-inner .fa-chart-simple {
+    margin-right: 40px;
+    margin-left: -110px;
+  }
+  #read {
+    margin-left: -40px;
+  }
+  .primary-inner #read-2, .primary-inner #read-3 {
+    margin-right: 60px;
+    margin-left: -55px;
+  }
   .nav {
     padding-left: 90px;
     padding-right: 90px;

@@ -56,8 +56,10 @@
 
     .cards
     {
+      position:relative;
       
-      margin-left: 1%;
+    
+
     }
 
     .cards-2
@@ -204,6 +206,7 @@
   left:90px;
   
 }
+
 
 .primary-inner .fa-table-cells
 {
@@ -353,8 +356,8 @@
    
   .main-blocks
   {
-    padding-right:6%
-    
+    padding-right:1%;
+    margin-left:-1%;
   }
 
   .main-blocks-2
@@ -364,10 +367,11 @@
   height:100%;
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-column-gap:3%;
   padding: 20px;
 
   
-  margin-left: -12px;
+  margin-left: -15px;
   }
 
   
@@ -515,18 +519,28 @@
 
 @media screen and (min-width: 992px) {
 
+  .main-carousel
+  {
+    width: 100vw;
+  }
+
   .main-blocks
 
   {
   
-   
+   max-height:100%;
    display: grid;
    position:relative;
    left:30px;
    grid-template-columns: 33% 33% 33%;  
-   grid-column-gap: 45%;
+   padding-bottom:100px;
+   
+
+ 
 
    }
+
+ 
  
    .main-blocks-2
    {
@@ -537,6 +551,7 @@
     grid-column-gap: 10%;
     grid-row-gap: 20%;
     padding: 5% 10%;
+    margin-top:15px;
   
     
     
@@ -1208,6 +1223,28 @@ background-color:$main-color;
   }
 
   @media screen and (min-width: 1025px) {
+
+    .primary-inner .fa-table-cells
+    {
+      margin-left:35px;
+    }
+
+    .primary-inner .fa-desktop, .primary-inner .fa-chart-simple
+    {
+      margin-right:40px;
+      margin-left:-110px;
+    }
+
+    #read
+    {
+      margin-left:-40px;
+    }
+
+    .primary-inner #read-2, .primary-inner #read-3
+    {
+      margin-right:60px;
+      margin-left:-55px;
+    }
     .nav
     {
       padding-left:90px;
@@ -1382,6 +1419,11 @@ background-color:$main-color;
 
   @media screen and (min-width: 1260px) 
   {
+
+  
+
+
+    
      #netmatters-2
     {
       width:90%;
@@ -1405,11 +1447,12 @@ background-color:$main-color;
     height:260%;
     
   }
+  
+  
+  
+  
   }
-  
-  
-  
-  }
+}
 
 
 
