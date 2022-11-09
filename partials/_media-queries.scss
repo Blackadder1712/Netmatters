@@ -188,7 +188,6 @@
 @media screen and (min-width: 768px) {
 
   
-
   .fa-desktop, .fa-chart-simple
 {
 
@@ -307,24 +306,8 @@
   }
   
 
-  .hamburger
-  {
-    margin-top:10px;
-   margin-left:0px;
-   display: inline-block;
-    
-    
-  }
-  
-  .hamburger-2 
-  {
-    margin-top:10px;
-   margin-left:0px;
-   display: inline-block;
-   
-    
-    
-  }
+
+
   
   
 
@@ -864,10 +847,6 @@ nav {
     margin: 0;
     width:100%
 }
-.nav-item
-{
-
-}
 
 .nav-item {
   display: inline-block;
@@ -1397,13 +1376,6 @@ background-color:$main-color;
     
    
 
-   .hamburger-2
-   {
-    background-color: transparent;
-    border: none;
-    padding-top:20px;
-   }
-    
    .glass
    {display:none}
 
