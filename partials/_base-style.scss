@@ -439,12 +439,13 @@ height:80vh;
   z-index: 11; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  background-color: #333645; /* Black*/
+  background-color: $main-color; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   
 }
+
 
 .sidenav #title
 {
@@ -461,9 +462,143 @@ height:80vh;
   border: 1px solid hsla(0,0%,100%,.1);
   margin-left: 20px;
   margin-right:20px;
-  margin-bottom:10px;
+  margin-bottom:20px;
+  margin-top:20px;
+  background-color:$main-color;
 
 }
+
+.sidenav .sub-1, .sidenav button .sub-1
+{
+  text-align: left;
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding-right:100px;
+  padding-bottom:15px;
+  padding-top:15px;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0,0,0,.25);
+  border: 1px solid hsla(0,0%,100%,.1);
+  width:100%;
+  
+  margin-top:20px;
+  background-color:$main-color;
+
+}
+
+.sidenav .sub-2
+{
+  text-align: left;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-right:90px;
+  padding-bottom:15px;
+  padding-top:15px;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0,0,0,.25);
+  border: 1px solid hsla(0,0%,100%,.1);
+  width:100%;
+  
+ 
+  background-color:$main-color;
+
+}
+
+.sidenav .sub-6
+{
+  text-align: left;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-right:190px;
+  padding-bottom:15px;
+  padding-top:15px;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0,0,0,.25);
+  border: 1px solid hsla(0,0%,100%,.1);
+  width:120%;
+  
+ 
+  background-color:$main-color;
+
+}
+
+.inner-content-8
+{
+  display:grid;
+  grid-template-columns:1% auto;
+  text-align: left;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-right:70px;
+  padding-bottom:15px;
+  padding-top:15px;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0,0,0,.25);
+  border: 1px solid hsla(0,0%,100%,.1);
+  width:100%;
+
+  background-color:#333;
+  
+}
+
+.inner-content-8 .icon
+{
+  color:white;
+  text-decoration: none;
+  padding-left:20px;
+  padding-right:3px;
+  font-size: 10px;
+  padding-top:3px;
+
+}
+
+.inner-content-8 .sub4
+{
+  color:white;
+  text-decoration: none;
+  
+  font-size: 1rem;
+  
+}
+.sidenav .sub-3
+{
+  text-align: left;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-right:90px;
+  padding-bottom:15px;
+  padding-top:15px;
+  display: block;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0,0,0,.25);
+  border: 1px solid hsla(0,0%,100%,.1);
+  width:100%;
+  margin-bottom:20px;
+  margin-top:20px;
+  background-color:$main-color;
+
+}
+
+
 
 .sidenav h2
 {
@@ -656,6 +791,7 @@ html,footer
 {
   display:grid;
   grid-template-rows: auto;
+  color:#444;
 
 }
 
