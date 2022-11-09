@@ -178,14 +178,18 @@ body {
 
 .search-bar {
   height: 100%;
-  width: 162%;
+  position: relative;
+  width: 420%;
   grid-template-columns: auto;
+  top: 90px;
+  right: 310px;
   margin-top: -51px;
   box-shadow: none;
   border-style: none;
   padding-right: 35px;
-  padding-bottom: 33px;
+  padding-bottom: 50px;
   padding-left: 4px;
+  margin-bottom: 50px;
 }
 
 .fa-magnifying-glass {
@@ -1776,6 +1780,10 @@ footer h4:hover {
 
 /*Media Queries*/
 @media screen and (min-width: 576px) {
+  .search-bar {
+    position: relative;
+    right: 450px;
+  }
   .glass {
     display: none;
   }
@@ -1975,6 +1983,22 @@ footer h4:hover {
     color: white;
     border-left: none;
   }
+  .search-bar {
+    height: 100%;
+    position: relative;
+    width: 420%;
+    grid-template-columns: auto;
+    top: -1px;
+    bottom: 20px;
+    right: 1px;
+    left: 15px;
+    box-shadow: none;
+    border-style: none;
+    padding-right: 35px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    margin-bottom: 50px;
+  }
   .fa-table-cells, .fa-desktop, .fa-chart-simple, .fa-phone, .fa-code, .fa-shield-halved, .fa-graduation-cap {
     border-radius: 100%;
     font-size: 30px;
@@ -2129,6 +2153,10 @@ footer h4:hover {
   }
 }
 @media screen and (min-width: 992px) {
+  .hamburger-menu-2 {
+    position: relative;
+    top: 40px;
+  }
   .main-carousel {
     width: 100vw;
   }
@@ -2565,6 +2593,10 @@ footer h4:hover {
   }
 }
 @media screen and (min-width: 1025px) {
+  .hamburger-menu-2 {
+    position: relative;
+    left: 40px;
+  }
   .primary-inner .fa-table-cells {
     margin-left: 35px;
   }

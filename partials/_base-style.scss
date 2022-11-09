@@ -225,17 +225,19 @@ max-width: auto;
 
 .search-bar {
   height: 100%;
-  
-  width: 162%;
+  position:relative;
+  width: 420%;
   grid-template-columns: auto;
-
+  top:90px;
+  right:310px;
 
   margin-top: -51px;
   box-shadow: none;
   border-style: none;
   padding-right:35px;
-  padding-bottom: 33px;
+  padding-bottom: 50px;
   padding-left:4px;
+  margin-bottom: 50px;
  
 
 
