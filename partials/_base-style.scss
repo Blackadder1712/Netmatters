@@ -103,7 +103,7 @@ header {
 .hamburger-menu
 { position:relative;
   top:20px;
-  
+  background-color:  #121419;
   height:50px;
   width:50px;
   cursor: pointer;
@@ -111,11 +111,12 @@ header {
  
 }
 
+
 .ham-bar
 {
   width:70%;
   height:4px;
-  background-color:white;
+  background-color:  #121419;
   border-radius:25px;
   position:absolute;
   top:50%;
@@ -129,19 +130,19 @@ header {
 .bar-top
 {
   top:25%;
-  background-color:  #121419;
+  background-color:  white;
 }
 
 .bar-bottom
 {
   top:75%;
-  background-color:  #121419;
+  background-color:  white;
 }
 
 .bar-mid
 {
   
-  background-color:  #121419;
+  background-color:   white;
 }
 
 .hamburger-menu.active .bar-top
