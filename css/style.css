@@ -14,7 +14,7 @@ body {
   height: auto;
 }
 
-.modal {
+#myModal {
   position: fixed;
   z-index: 30;
   left: 0;

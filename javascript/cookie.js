@@ -1,22 +1,81 @@
-// Get the modal
-var modal = document.getElementById("myModal");
+
+
+let acceptCookies =
+
+    {
+      showModal()
+      {
+        $('.cookie-content').show();
+      },
+    
+
+    $param(Date,trad)
+    {
+    return(trad)
+    },
+
+    Expired(Date)
+    {
+      let Day = Date.now();
+      let Spent = Day - Date;
+      return (Spent >= 8.95e+7);
+    },
+
+    hideModal()
+    {
+      $('.cookie-content').hide();
+    },
+
+    getCookie()
+   {
+    return localStorage.getItem('accepted');
+   },
+
+   deleteCookies()
+   {
+    localStorage.clear();
+   },
+
+   createCookies(Date)
+   {
+    localStorage.setItem('accepted', Date.getTime());
+
+   }
 
 
 
-// Get the element that closes the modal
-var span = document.getElementById("cookie-1");
-var span2 = document.getElementById("cookie-2");
+
+
+  };
 
 
 
 
-//close on button click
-span.onclick = function() {
-  modal.style.display = "none";
+const cookiebtn = document.getElementById('cookie-2');
+
+cookiebtn.addEventListener("click",() =>
+{
+   
+   acceptCookies;
+   document.getElementById('myModal').style.display = "none";
+   console.log("accept");
+
+});
+
+
+ 
+if(Date !== null)
+{
+  if(acceptCookies.Expired(Date))
+  {
+    acceptCookies.deleteCookies();
+    document.getElementById('myModal').style.display = "block";
+
+  }
+else
+{
+  document.getElementById('myModal').style.display = "none";
 }
 
-span2.onclick = function() {
-    modal.style.display = "none";
-  }
 
-
+}  
