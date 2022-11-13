@@ -11,6 +11,8 @@ window.addEventListener("scroll", () =>
     if(currentScroll <= 0)
     {
         body.classList.remove("scroll-up"); //if at top of page remove scroll up css
+
+        
       
      
         

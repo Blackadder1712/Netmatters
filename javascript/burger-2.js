@@ -28,9 +28,12 @@ function openNav() {
     document.getElementById("tail").style.marginLeft = "-260px";
     document.getElementById("foot").style.marginRight = "270px";
     document.getElementById("foot").style.marginLeft = "-260px";
+    document.getElementById("contain").style.marginLeft = "-220px";
+  
 }
    
     function closeNav() {
+        document.getElementById("contain").style.marginLeft = "0px";
         document.getElementById("mypanel").style.width = "0";
         document.getElementById("netmatters-work").style.marginLeft = "0";
         document.getElementById("netmatters-work").style.marginRight = "0";

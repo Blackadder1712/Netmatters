@@ -1,4 +1,5 @@
 const hamMenu = document.querySelector(".hamburger-menu ");
+const contain = document.getElementsByClassName("contain");
 
 
 
@@ -8,7 +9,10 @@ hamMenu.addEventListener("click",() =>
     hamMenu.classList.toggle("active"))
     {
         openNav();
+        contain.classList.toggle("top");
     }
+
+    
 
     else
     {

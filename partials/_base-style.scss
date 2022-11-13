@@ -196,6 +196,15 @@ max-width: auto;
 
 }
 
+ .container.top
+
+{
+  margin-left:-200px;
+  margin-right:200px;
+  position:relative;
+
+}
+
 .scroll-down .container
 {
   transform: translate3d(0, -100%,0);
@@ -457,7 +466,7 @@ height:80vh;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 11; /* Stay on top */
+  z-index: 110; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
   background-color: $main-color; /* Black*/
