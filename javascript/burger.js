@@ -9,7 +9,7 @@ hamMenu.addEventListener("click",() =>
     hamMenu.classList.toggle("active"))
     {
         openNav();
-        contain.classList.toggle("top");
+       
     }
 
     

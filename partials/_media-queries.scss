@@ -6,11 +6,34 @@
 
 
 {
+  .main-blocks
+  {
+    margin-right:35px;
+  }
+  .main-blocks-2
+  {
+    margin-right:35px;
+  }
 
+
+  .hamburger-menu
+  {
+    right:25px;
+    top:38px;
+  }
+  .phone
+  {
+    margin-top:-10px;
+    margin-left:-25px;
+    right:5px;
+  }
   .search-bar
   {
     position:relative;
-    right:450px;
+    padding-right:180px;
+    right:510px;
+    margin-top:-3px;
+ 
   }
 
 
@@ -446,6 +469,7 @@
   {
     padding-right:1%;
     margin-left:-1%;
+    
   }
 
   .main-blocks-2
@@ -612,6 +636,9 @@
     position:relative;
     top:40px;
   }
+
+
+
 
   .main-carousel
   {
