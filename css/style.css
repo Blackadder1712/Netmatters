@@ -11,11 +11,7 @@ body {
   font-family: Poppins, sans-serif;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  min-height: 100vh;
-}
-
-html {
-  height: 100vh;
+  width: 100vw;
 }
 
 #myModal {
@@ -86,8 +82,7 @@ html {
 }
 
 .Main-page header {
-  width: 100%;
-  overflow-x: initial;
+  max-width: 100%;
 }
 
 .hamburger-menu {
@@ -146,10 +141,11 @@ html {
 
 .scrolling {
   margin-top: 150px;
+  max-width: 100%;
 }
 
 .container {
-  max-width: auto;
+  max-width: 100%;
   display: grid;
   position: fixed;
   top: 0px;
@@ -168,6 +164,10 @@ html {
   position: relative;
 }
 
+.tail {
+  max-width: 100%;
+}
+
 .scroll-down .container {
   transform: translate3d(0, -100%, 0);
 }
@@ -180,6 +180,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 .contact {
@@ -192,7 +193,7 @@ html {
 
 .form-control {
   height: 47px;
-  width: 100%;
+  max-width: 100%;
   font-family: "Helvetica";
   font-size: 14px;
   line-height: 20px;
@@ -213,7 +214,7 @@ html {
 .search-bar {
   height: 100%;
   position: relative;
-  width: 420%;
+  width: 99vw;
   grid-template-columns: auto;
   top: 90px;
   right: 310px;
@@ -318,7 +319,7 @@ html {
   position: relative;
   display: grid;
   place-items: center;
-  width: 100vw;
+  max-width: 100%;
   height: 700px;
   padding: 0.1px;
 }
@@ -326,11 +327,19 @@ html {
 .main-blocks {
   display: relative;
   transition: right 0.5s;
+  max-width: 100%;
+  padding-left: 3%;
+}
+
+.main-blocks-2 {
+  display: relative;
+  transition: right 0.5s;
+  max-width: 100%;
+  padding-left: 5%;
 }
 
 .page-image {
   height: 80vh;
-  padding: 0.1px;
 }
 
 .overlay-block {
@@ -576,7 +585,6 @@ html {
 .main-carousel {
   width: 100vw;
   height: 400px;
-  padding: 0.1px;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -661,20 +669,16 @@ strong {
   padding-left: 8px;
 }
 
-.main-blocks {
-  margin-bottom: -15px;
-}
-
 .main-buttons {
   position: relative;
   top: -185px;
   font-family: Poppins, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
-  max-width: auto;
+  width: 100%;
   display: grid;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 5px;
+  padding-right: 22px;
   grid-template-rows: auto auto auto auto auto auto auto;
   grid-row-gap: 10px;
 }
@@ -1414,6 +1418,13 @@ h4 {
 .cards {
   position: relative;
   top: -220px;
+  width: 100%;
+  padding-left: 1%;
+}
+
+.cards-3 {
+  left: 5%;
+  width: 100%;
 }
 
 #mask {
@@ -1440,8 +1451,8 @@ h4 {
 
 .card-3 {
   position: relative;
-  padding-top: 0.1px;
   top: -220px;
+  width: 85%;
 }
 
 .card-1, .card-2, .card-3 {
@@ -1594,6 +1605,7 @@ hr {
   font-weight: lighter;
   position: relative;
   top: -200px;
+  max-width: 100%;
   grid-template-rows: auto auto auto;
 }
 
@@ -1611,11 +1623,6 @@ hr {
   letter-spacing: 0.4px;
   line-height: 23px;
   margin-left: 14px;
-}
-
-.mb-3 {
-  margin-top: -30px;
-  width: 91%;
 }
 
 .mb-3 .form-label .fa-asterisk {
@@ -1971,6 +1978,7 @@ footer h4:hover {
   }
   .cards {
     position: relative;
+    width: 100%;
   }
   .cards-2 {
     margin-left: 1%;
@@ -2062,6 +2070,9 @@ footer h4:hover {
   }
 }
 @media screen and (min-width: 768px) {
+  .mb-3 {
+    padding-right: 3%;
+  }
   .ham-bar-2 {
     background-color: #121419;
   }
@@ -2198,6 +2209,7 @@ footer h4:hover {
     width: 100vw;
     z-index: 100;
     transition: all 300ms ease-in-out;
+    padding-right: 10%;
     padding-bottom: 0px;
   }
   .scroll-down .container-2 {
@@ -2216,7 +2228,7 @@ footer h4:hover {
     display: none;
   }
   .search-bar {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 0px;
     width: 180px;
     padding-right: 0%;
@@ -2226,8 +2238,8 @@ footer h4:hover {
     margin-left: -19px;
   }
   .main-blocks {
-    padding-right: 1%;
-    margin-left: -1%;
+    padding-right: 5%;
+    margin-left: 2%;
   }
   .main-blocks-2 {
     width: 100%;
@@ -2235,8 +2247,7 @@ footer h4:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-column-gap: 3%;
-    padding: 20px;
-    margin-left: -15px;
+    padding-right: 12%;
   }
   .welcome {
     padding-left: 1%;
@@ -2287,6 +2298,7 @@ footer h4:hover {
   .cards {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-right: 5%;
   }
   .card-3 {
     display: none;
@@ -2321,7 +2333,6 @@ footer h4:hover {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-columns: auto auto auto;
-    margin-right: 10%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -2383,11 +2394,10 @@ footer h4:hover {
     max-width: 100%;
     max-height: 100%;
     display: grid;
-    padding: 20px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-column-gap: 15px;
-    margin-left: -12px;
+    margin-left: -18px;
   }
   .container-2 #netmatters {
     width: 90%;
@@ -2524,16 +2534,14 @@ footer h4:hover {
     background-color: #333645;
     display: grid;
     padding-top: 20px;
-    padding-left: 10px;
+    margin-right: 12%;
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-column-gap: 1%;
-    padding-bottom: 25px;
     margin: 0;
-    width: 100%;
+    width: 100vw;
   }
   .nav-item {
     display: inline-block;
-    margin: 0 auto;
     width: 100%;
     padding-left: 0px;
   }
@@ -2591,9 +2599,8 @@ footer h4:hover {
     position: relative;
     top: -3px;
     margin-bottom: -5px;
-    width: 75%;
   }
-  #small-table .nav-item {
+  .nav-item {
     margin-bottom: 40px;
   }
   #small-desktop {
@@ -2741,27 +2748,14 @@ footer h4:hover {
     margin: 0;
   }
   .main-blocks {
-    max-width: 100%;
-    max-height: 50%;
     display: grid;
-    padding: 20px 20px;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    grid-column-gap: 20px;
+    padding-left: 0px;
+    margin-right: 10%;
+    grid-column-gap: 2%;
   }
   .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
-    display: block;
-    border-radius: 12px;
-    width: 100%;
-    height: 130%;
-    margin: 2%;
-    border-width: 1px;
-    text-decoration: none;
-    font-weight: 1;
-    cursor: pointer;
-    letter-spacing: 0.4px;
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
+    height: 70%;
   }
 }
 @media screen and (min-width: 1025px) {

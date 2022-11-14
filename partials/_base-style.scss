@@ -1,22 +1,18 @@
 //*--Base Element Styles--*/
 
 *
-{box-sizing: border-box;
-
-}
+{box-sizing: border-box;}
+  
 
 body {
   font-family:$main-page-font-family;
   padding-bottom:0px;
   margin-bottom:0px;
-  min-height:100vh;
+ 
+  width:100vw;
 
 }
 
-html
-{
-  height:100vh;
-}
 
 //modal styles
 
@@ -100,9 +96,9 @@ border-radius:5px;
 //Top netmatters logo, phone button, hamburger button and search bar 
 .Main-page
 header {
-  width:100%;
+  max-width:100%;
   
-  overflow-x: initial;
+ 
   
 
 
@@ -174,16 +170,18 @@ header {
 .container-2
 {
   display:none;
+  
 }
 
 .scrolling
 {
   margin-top:150px;
+  max-width:100%;
 }
 
 .container {
   
-max-width: auto;
+max-width: 100%;
   display: grid;
   position: fixed;
   top:0px;
@@ -212,9 +210,12 @@ max-width: auto;
 
 }
 
+.tail
+{max-width:100%}
 .scroll-down .container
 {
   transform: translate3d(0, -100%,0);
+
 }
 
 .scroll-up .container
@@ -227,6 +228,7 @@ max-width: auto;
   height:100%;
   margin:0;
   padding:0;
+  max-width:100%
 }
 
 .contact
@@ -239,7 +241,7 @@ max-width: auto;
 }
 .form-control {
   height: 47px;
-  width: 100%;
+  max-width: 100%;
   font-family: 'Helvetica';
   font-size: 14px;
   line-height: 20px;
@@ -270,7 +272,7 @@ max-width: auto;
 .search-bar {
   height: 100%;
   position:relative;
-  width: 420%;
+  width: 99vw;
   grid-template-columns: auto;
   top:90px;
   right:310px;
@@ -435,7 +437,7 @@ height:100%;
   position: relative;
   display:grid;
   place-items: center;
-  width: 100vw;
+  max-width: 100%;
   height: 700px;
   padding:0.1px;
 }
@@ -444,12 +446,23 @@ height:100%;
 {
   display:relative;
   transition: right .5s;
+  max-width:100%;
+  padding-left:3%;
+  
+}
+
+.main-blocks-2
+{
+  display:relative;
+  transition: right .5s;
+  max-width:100%;
+  padding-left:5%
   
 }
 .page-image
 {
 height:80vh;
-padding:0.1px;
+
 
 
 
@@ -759,7 +772,7 @@ padding:0.1px;
   
     width : 100vw;
     height: 400px;
-    padding:0.1px;
+   
   align-items:center;
   justify-content: center;
   position:relative;
@@ -871,10 +884,7 @@ strong {
  
 } 
 
-.main-blocks
-{
-  margin-bottom:-15px;
-}
+
 .main-buttons
  {
    position: relative;
@@ -882,10 +892,10 @@ strong {
    font-family: $main-page-font-family;
   font-size: 1rem;
   letter-spacing: .4px;
-  max-width: auto;
+  width:100%;
   display: grid;
-  padding-left:0px;
-  padding-right:0px;
+  padding-left:5px;
+  padding-right:22px;
 
   grid-template-rows: auto auto auto auto auto auto auto ;
   grid-row-gap: 10px;
@@ -1540,8 +1550,14 @@ h4 {
 {
   position: relative;
   top:-220px;
+  width:100%;
+  padding-left:1%;
 
 }
+
+.cards-3
+{left:5%;
+width:100%}
 
 #mask {
   position:absolute;
@@ -1569,8 +1585,10 @@ h4 {
 .card-3
 {
   position:relative;
-  padding-top:0.1px;
+
   top:-220px;
+  width:85%;
+
 }
 
 .card-1, .card-2, .card-3 {
@@ -1752,6 +1770,7 @@ letter-spacing:.4px;
   font-weight: lighter;
   position:relative;
   top:-200px;
+  max-width:100%;
 
   
 
@@ -1788,13 +1807,6 @@ letter-spacing:.4px;
   
 }
 
-.mb-3
-{
-  margin-top: -30px;
-  width:91%;
-  
-
-}
 
 
 .mb-3 .form-label .fa-asterisk 

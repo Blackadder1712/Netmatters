@@ -6,6 +6,8 @@
 
 
 {
+
+
   .main-blocks
   {
     margin-right:35px;
@@ -86,7 +88,7 @@
     .cards
     {
       position:relative;
-      
+      width:100%
     
 
     }
@@ -215,6 +217,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .mb-3
+  {
+    padding-right:3%;
+  }
 
   .ham-bar-2
   {
@@ -410,7 +417,8 @@
    width:100vw;
    z-index:100;
    transition: all 300ms ease-in-out;
-  
+   padding-right:10%;
+   
   padding-bottom: 0px;
  
   }
@@ -450,7 +458,7 @@
   .search-bar
   {
 
-    margin-top:30px;
+    margin-top:20px;
     margin-right:0px;
     width:180px;
     padding-right:0%;
@@ -467,8 +475,8 @@
    
   .main-blocks
   {
-    padding-right:1%;
-    margin-left:-1%;
+    padding-right:5%;
+    margin-left:2%;
     
   }
 
@@ -480,10 +488,9 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-column-gap:3%;
-  padding: 20px;
+  padding-right:12%;
 
   
-  margin-left: -15px;
   }
 
   
@@ -568,6 +575,7 @@
     {
       display:grid;
       grid-template-columns: 50% 50%;
+      padding-right:5%;
   
 
     }
@@ -622,7 +630,7 @@
       display:grid;
       grid-template-columns:auto auto;
       grid-template-columns:auto auto auto;
-      margin-right:10%;
+      
     }
     
     
@@ -736,13 +744,13 @@
    max-width:100%;
    max-height:100%;
    display: grid;
-   padding: 20px;
+   
  
    grid-template-columns: 50% 50%;
    grid-template-rows: 50% 50%;
    grid-column-gap: 15px;
    
-   margin-left: -12px;
+   margin-left: -18px;
    }
 
   
@@ -976,21 +984,22 @@ nav {
     
     padding-top: 20px;
     
-    
-    padding-left:10px;
+    margin-right:12%;
+ 
+ 
 
     grid-template-columns: auto auto auto auto auto auto auto;
-    grid-column-gap: 1%;
-    padding-bottom: 25px;
+    grid-column-gap:  1%;
+
     margin: 0;
-    width:100%
+    width:100vw
 }
 
 .nav-item {
   display: inline-block;
 
  
-  margin: 0 auto;
+  
   width:100%;
   padding-left:0px;
  
@@ -1087,6 +1096,7 @@ nav {
   position:relative;
   top:-3px;
   margin-bottom:-5px;
+}
   
  .nav-item
   {
@@ -1094,9 +1104,8 @@ nav {
   }
 
  
- 
-  width:75%;
-}
+
+
 
 #small-desktop
 {
@@ -1311,14 +1320,17 @@ background-color:$main-color;
 .main-blocks
  {
  
-  max-width: 100%;
-  max-height:50%;
+
+
   display: grid;
-  padding: 20px 20px;
+
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+  
  
-  grid-column-gap: 20px;
+ padding-left:0px;
+ margin-right:10%;
+ 
+  grid-column-gap: 2%;
 
  
 
@@ -1326,9 +1338,9 @@ background-color:$main-color;
   }
 
   .btn-primary, .btn-primary-2, .btn-primary-3, .btn-primary-4, .btn-primary-5, .btn-primary-6, .btn-primary-7 {
-    @include primary-button-2;
     
-   
+    
+       height:70%;
   
    
     }
