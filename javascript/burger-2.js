@@ -28,7 +28,7 @@ function openNav() {
     document.getElementById("tail").style.marginLeft = "-260px";
     document.getElementById("foot").style.marginRight = "270px";
     document.getElementById("foot").style.marginLeft = "-260px";
-    document.getElementById("contain").style.marginLeft = "-220px";
+    
   
 }
    
