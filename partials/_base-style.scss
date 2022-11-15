@@ -8,12 +8,21 @@
   
  body {
   font-family:$main-page-font-family;
-  padding-bottom:0px;
-  margin-bottom:0px;
-  min-height:100vh;
- 
-  width:100%;
+  padding-right:0px;
+  margin-right:0px;
 
+  overflow-x: hidden;
+ width:100%;
+
+
+
+}
+
+html
+{
+  padding-bottom:0;
+  margin-bottom:0;
+  height:100%;
 }
 
 
