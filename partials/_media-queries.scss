@@ -425,6 +425,11 @@
     padding-left:4px;
     margin-bottom: 50px;
   }
+
+  strong
+  {
+    padding-top:30px;
+  }
   
   #cells
   {
@@ -1145,16 +1150,16 @@ nav {
     grid-column-gap:  0.5%;
 
     margin: 0;
-    width:105vw
+    width:110vw
 }
 
 .nav-item {
   display: inline-block;
-
  
-  
-  width:100%;
+  width: 100%;
+  margin: 0 auto;
   padding-left:0px;
+  
  
 }
 
@@ -1506,6 +1511,12 @@ background-color:$main-color;
 
   @media screen and (min-width: 1025px) {
 
+    .page-image
+  {
+    width:120vw;
+  }
+
+  
     .main-blocks-2 .primary-inner h3
     {
       padding-bottom:220px;
@@ -1560,7 +1571,7 @@ background-color:$main-color;
     .nav
     {
       padding-left:90px;
-      padding-right:90px;
+      padding-right:160px;
     }
     .caption-text
     {
@@ -1681,9 +1692,26 @@ background-color:$main-color;
   
     .container-2
    {
-    display:grid;
-    grid-template-columns: 35% 10% 10% 20% auto;
-    padding-left:20px;
+
+
+       
+    display: grid;
+ 
+    
+   
+   
+    
+    padding-top: 10px;
+    
+    padding-right:12%;
+ 
+ 
+
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap:  0.5%;
+
+    margin: 0;
+    width:110vw
    }
     
    .search-bar
@@ -1698,7 +1726,11 @@ background-color:$main-color;
    }
 
 
-
+   nav
+   {
+    width:120vw;
+    padding-right:20px;
+   }
   
 
 
@@ -1721,6 +1753,10 @@ background-color:$main-color;
      padding-top:22px;
    }
    
+   .main-carousel
+   {
+    width:120vw;
+   }
   }
 
   @media screen and (min-width: 1260px) 
@@ -1732,11 +1768,32 @@ background-color:$main-color;
     }
     .main-blocks-2
     {
-      margin-right:280px
+      width: 95%;
+   height:80%;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-column-gap: 1%;
+   grid-row-gap: 1%;
+   position:relative;
+   right:4.1%;
     }
-    .btn-primary-4 h3
+   .main-block-2 .primary-inner h3
+   {
+    margin-left:12px;
+   }
+   
+    
+   
+    
+    .btn-primary-4 .primary-inner h3, .btn-primary-5 .primary-inner h3
     {
      margin-bottom:10px;
+     margin-left:0px;
+    }
+
+    .btn-primary-6 .primary-inner h3, .btn-primary-7 .primary-inner h3
+    {
+      margin-left:5px;
     }
     
     .primary-inner #read
@@ -1814,7 +1871,7 @@ background-color:$main-color;
 
   #graph
   {
-    left:90px;
+    left:30px;
   }
 
   #hat
@@ -1850,18 +1907,29 @@ background-color:$main-color;
      position:relative;
      left:180px;
   }
-  .main-image
+  
+  .overlay-block
   {
-    width:180%;
+    height:563px;
   }
  
   
-  
-  
-  
+  .nav-item-1 {
+    display: inline-block;
+   
+    width: 100%;
+    margin: 0 auto;
+    padding-left:0px;
+    
+    
+   
   }
+  
+  
+  
 
 
 
 
 
+  }
