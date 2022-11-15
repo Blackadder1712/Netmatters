@@ -6,6 +6,7 @@
 
 
 {
+ 
   .main-blocks-2
   {
     padding-left:4%;
@@ -568,7 +569,7 @@
   
   .welcome
   {
-    padding-left:1%;
+    padding-left:50px;
     padding-right:12%;
   }
   
@@ -805,9 +806,10 @@
     
     width: 110vw;
   }
-  .welcome
+  .clients
   {
-  
+   padding-left:20px;
+   padding-top:25px
   }
 
   .main-blocks
@@ -1511,9 +1513,25 @@ background-color:$main-color;
 
   @media screen and (min-width: 1025px) {
 
+    .cards
+    {
+      padding-right: 10%;
+    }
+    .welcome
+    {
+      padding-bottom:20px;
+      width:150vw;
+    }
+
     .page-image
   {
     width:120vw;
+  }
+
+  .mb-3
+  {
+    display:grid;
+    grid-template-columns: auto auto;
   }
 
   
@@ -1571,7 +1589,7 @@ background-color:$main-color;
     .nav
     {
       padding-left:90px;
-      padding-right:160px;
+      padding-right:20%;
     }
     .caption-text
     {
@@ -1580,6 +1598,8 @@ background-color:$main-color;
       padding-right:60px;
 
     }
+   
+   
 
     .img-text
     {
@@ -1711,7 +1731,7 @@ background-color:$main-color;
     grid-column-gap:  0.5%;
 
     margin: 0;
-    width:110vw
+    width:120vw
    }
     
    .search-bar
@@ -1910,7 +1930,7 @@ background-color:$main-color;
   
   .overlay-block
   {
-    height:563px;
+    height:62.5%;
   }
  
   
@@ -1926,7 +1946,10 @@ background-color:$main-color;
   }
   
   
-  
+  .container-2
+  {
+    width:110vw;
+  }
 
 
 
