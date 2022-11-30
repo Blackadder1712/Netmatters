@@ -957,7 +957,7 @@ nav {
   display: flex;
   flex-direction: column;
   border-color: #ccc;
-  border: solid gray thin;
+  border: solid #ccc thin;
 }
 
 .card-title-1, .card-title-2, .card-title-3 {
@@ -1225,8 +1225,8 @@ hr {
   }
   .contact {
     padding-top: 15px;
-    padding-right: 10px;
-    padding-left: 16px;
+    padding-right: 6px;
+    padding-left: 6px;
     padding-bottom: 15px;
     display: inline-block;
     text-align: center;
@@ -1241,8 +1241,8 @@ hr {
   }
   .support {
     padding-top: 15px;
-    padding-right: 10px;
-    padding-left: 16px;
+    padding-right: 6px;
+    padding-left: 6px;
     padding-bottom: 15px;
     display: inline-block;
     text-align: center;
