@@ -40,6 +40,93 @@
  
 }
 
+.main-buttons
+{
+  
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+
+.button
+{
+border-radius: 15px;
+border-style: solid;
+border-color: #ccc;
+border-width:1px;
+margin-bottom:25px;
+text-align:center;
+padding-bottom:17px;
+transition:0.5 ease;
+
+
+}
+
+ .h21
+{
+  font-size:20px;
+  letter-spacing:1.2px;
+  line-height: 23px;
+  text-align:center;
+  font-family: sans-serif;
+  font-weight:400;
+  color:#444;
+  
+
+}
+
+.primary-inner h3
+{
+  font-size:14px;
+  line-height: 22px;
+  margin-bottom: 13px;
+  font-weight: 400;
+  color:#444;
+  font-family: sans-serif;
+}
+
+.button a
+{
+  text-decoration: none;
+}
+
+.primary-inner
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+  padding:30px;
+  justify-content:space-around;
+}
+
+.primary-inner i
+{
+  width: 65px;
+  height:65px;
+  align-self:center;
+  position:relative;
+  line-height: 62px;
+  font-size:30px;
+  border-radius: 100%;
+  color:white;
+}
+
+.primary-inner h3
+{
+  margin-bottom:13px;
+  font-size:14px;
+  line-height:22px;
+  font-weight:400;
+  color:#444;
+  font-family:sans-serif;
+}
 .ham-bar
 {
   width:70%;
@@ -57,6 +144,69 @@
 
 
 }
+
+.button:hover
+{
+  border-color: transparent;
+  top:-10px;
+  transition: .5s ease !important;
+}
+
+.read
+{
+  color:white;
+  text-decoration:none;
+  font-family:sans-serif;
+  text-align:center;
+  font-size:17px;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:18px;
+  padding-right:18px;
+  border-radius:3px;
+}
+
+#read
+{
+  background-color:$hover-color-blue;
+}
+
+
+#read-2
+{
+  background-color:$hover-color-bright-blue;
+}
+
+
+#read-3
+{
+  background-color:$hover-color-bright-green;
+}
+
+
+#read-4
+{
+  background-color:$hover-color-red;
+}
+
+
+#read-5
+{
+  background-color:$hover-color-purple;
+}
+
+
+#read-6
+{
+  background-color:$hover-color-pink;
+}
+
+
+#read-7
+{
+  background-color:$hover-color-red;
+}
+
 
 .ham
 {
@@ -189,151 +339,6 @@ padding-top:5px;
  }
 
  
-.btn-primary:hover .h21 {
-  color: white;
-}
-
-.btn-primary:hover h3, .btn-primary-2:hover h3, .btn-primary-3:hover h3,.btn-primary-4:hover h3, .btn-primary-5:hover h3,
-.btn-primary-6:hover h3, .btn-primary-7:hover h3 {
-  color: white;
-}
-
-.btn-primary:hover
-{
-  position:relative;
- border-color: transparent;
- top:-10px;
- transition: .5s ease !important;
-}
-
-#one:hover{
-  background-color: $hover-color-blue;
-
-  
-}
-
-#two:hover {
-  background-color: $hover-color-bright-blue;
-  color: white;
-}
-
-#three:hover 
-{
-  background-color: $hover-color-bright-green;
-  color: white;
- 
-}
-
-#four:hover 
-{
-  background-color: $hover-color-red;
-  color: white;
-}
-
-
-
-#five:hover 
-{
-  background-color: $hover-color-purple;
-  color: white;
-}
-
-
-#six:hover 
-{
-  background-color: $hover-color-pink;
-  color: white;
-}
-
-#seven:hover 
-{
-  background-color: $hover-color-red;
-  color: white;
-}
-
-.btn-primary:hover #cells
-{
-  background-color: white;
-  color: $hover-color-blue;
-}
-
-.btn-primary:hover #computer
-{
-  background-color: white;
-  color: $hover-color-bright-blue;
-}
-
-.btn-primary:hover #graph
-{
-  background-color: white;
-  color: $hover-color-bright-green;
-}
-
-.btn-primary:hover #mob
-{
-  background-color: white;
-  color: $hover-color-red;
-}
-
-.btn-primary:hover #code
-{
-  background-color: white;
-  color: $hover-color-purple;
-}
-
-.btn-primary:hover #half
-{
-  background-color: white;
-  color: $hover-color-pink;
-}
-
-.btn-primary:hover #hat
-{
-  background-color: white;
-  color: $hover-color-red;
-}
-
-.btn-primary:hover #read
-{
-  background-color: white;
-  color: $hover-color-blue;
-}
-
-.btn-primary:hover #read-2
-{
-  background-color: white;
-  color: $hover-color-bright-blue;
-}
-
-.btn-primary:hover #read-3
-{
-  background-color: white;
-  color: $hover-color-bright-green;
-}
-
-.btn-primary:hover #read-4
-{
-  background-color: white;
-  color: $hover-color-red;
-}
-
-.btn-primary:hover #read-5
-{
-  background-color: white;
-  color: $hover-color-purple;
-}
-
-.btn-primary:hover #read-6
-{
-  background-color: white;
-  color: $hover-color-pink;
-}
-
-.btn-primary:hover #read-7
-{
-  background-color: white;
-  color: $hover-color-red;
-}
 
 
 
@@ -345,91 +350,44 @@ padding-top:5px;
 
 
 
- .read
- {
- 
-  color:white;
-  text-decoration: none;
-  font-family: sans-serif;
-  text-align:center;
-  font-size: 17px;
-  padding-top:15px;
-  padding-bottom: 15px;
-  padding-left:18px;
-  padding-right:18px;
-  border-radius: 3px;
- }
-
- #read
- {
-  background-color: $hover-color-blue;
- }
-
- #read-2
- {
-  background-color:$hover-color-bright-blue;
- }
-
- #read-3
- {
-  background-color:$hover-color-bright-green;
- }
-
- #read-4
- {
-  background-color:$hover-color-red;
- }
-
- #read-5
- {
-  background-color:$hover-color-purple;
- }
-
- #read-6
- {
-  background-color:$hover-color-pink;
- }
-
- #read-7
- {
-  background-color:$hover-color-red;
- }
 
 
 
 
 
- #read
- {
-  background-color: $hover-color-blue;
- }
 
- .main-buttons
- {
-   margin-left:15px;
-   margin-right:15px;
-   display:flex;
-   flex-direction: column;
-   justify-content: space-between;
 
-  
- }
 
- .btn-primary
- {
-   border-radius: 15px;
-   border-style: solid;
-   border-color: #ccc;
-   border-width: 1px;
-   margin-bottom: 25px;
-   text-align: center;
-   padding-bottom:17px;
-   transition: .5s ease;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-property: all;
- }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  .email-form
  {
@@ -555,18 +513,17 @@ padding-top:5px;
 
  
 
- .primary-inner
+ .button
  {
   display:flex;
   flex-direction:column;
   justify-content: space-around;
   gap:20px;
-  padding:30px;
 
 
  }
 
- .primary-inner i
+ .button i
  {
   width: 65px;
   height:65px;
@@ -579,6 +536,7 @@ padding-top:5px;
 
   color:white;
  }
+
 
  #cells
  {
@@ -610,16 +568,8 @@ padding-top:5px;
   background-color: $hover-color-red;
  }
 
- .h21
- {
-   font-family: sans-serif;
-   color: #444;
-   font-weight: 400;
-   font-size: 20px;
-   letter-spacing: 1.2px;
 
- }
- .primary-inner h3
+ .button h3
  {
     font-size: 14px;
     line-height: 22px;
@@ -633,6 +583,198 @@ padding-top:5px;
  {
   background-color: $hover-color-purple;
  }
+
+ #one:hover
+ {
+  background-color:$hover-color-blue;
+ }
+
+ #one:hover #cells
+ {
+  background-color:white;
+  color:$hover-color-blue;
+ }
+
+ #one:hover .h21
+ {
+  color:white;
+ }
+
+ #one:hover h3
+ {
+  color:white;
+ }
+
+ #one:hover #read
+ {
+  color:$hover-color-blue;
+  background-color: white;
+ }
+
+ #two:hover
+ {
+  background-color:$hover-color-bright-blue;
+ }
+
+ #two:hover #computer
+ {
+  background-color:white;
+  color:$hover-color-bright-blue;
+ }
+
+ #two:hover .h21
+ {
+  color:white;
+ }
+
+ #two:hover h3
+ {
+  color:white;
+ }
+
+ #two:hover #read-2
+ {
+  color:$hover-color-bright-blue;
+  background-color: white;
+ }
+
+ #three:hover
+ {
+  background-color:$hover-color-bright-green;
+ }
+
+ #three:hover #graph
+ {
+  background-color:white;
+  color:$hover-color-bright-green;
+ }
+
+ #three:hover .h21
+ {
+  color:white;
+ }
+
+ #three:hover h3
+ {
+  color:white;
+ }
+
+ #three:hover #read-3
+ {
+  color:$hover-color-bright-green;
+  background-color: white;
+ }
+
+ #four:hover
+ {
+  background-color:$hover-color-red;
+ }
+
+ #four:hover #mob
+ {
+  background-color:white;
+  color:$hover-color-red;
+ }
+
+ #four:hover .h21
+ {
+  color:white;
+ }
+
+ #four:hover h3
+ {
+  color:white;
+ }
+
+ #four:hover #read-4
+ {
+  color:$hover-color-red;
+  background-color: white;
+ }
+
+ #five:hover
+ {
+  background-color:$hover-color-purple;
+ }
+
+ #five:hover #code
+ {
+  background-color:white;
+  color:$hover-color-purple;
+ }
+
+ #five:hover .h21
+ {
+  color:white;
+ }
+
+ #five:hover h3
+ {
+  color:white;
+ }
+
+ #five:hover #read-5
+ {
+  color:$hover-color-purple;
+  background-color: white;
+ }
+
+ #six:hover
+ {
+  background-color:$hover-color-pink;
+ }
+
+ #six:hover #half
+ {
+  background-color:white;
+  color:$hover-color-pink;
+ }
+
+ #six:hover .h21
+ {
+  color:white;
+ }
+
+ #six:hover h3
+ {
+  color:white;
+ }
+
+ #six:hover #read-6
+ {
+  color:$hover-color-pink;
+  background-color: white;
+ }
+
+ #seven:hover
+ {
+  background-color:$hover-color-red;
+ }
+
+#seven:hover #hat
+{
+  background-color: white;
+  color:$hover-color-red
+}
+
+ #seven:hover .h21
+ {
+  color:white;
+ }
+
+ #seven:hover h3
+ {
+  color:white;
+ }
+
+ #seven:hover #read-7
+ {
+  color:$hover-color-red;
+  background-color: white;
+ }
+ 
+
+
 
 
  body
