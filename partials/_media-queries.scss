@@ -76,6 +76,40 @@
 
 @media screen and (min-width: 768px)
  {
+    
+  #view-services
+{
+  display:none;
+}
+  .latest
+  {
+    position:relative;
+    left:10px;
+  }
+
+  .card-h
+  {
+    margin-top:20px;
+    display: flex;
+    flex-direction:row;
+
+  }
+
+  .view-all-2
+  {
+    display:flex;
+    border:none;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-weight:600;
+    color:#333645;
+    font-size: 28px;
+    letter-spacing: 1.4px;
+    margin-top:24px;
+    position:relative;
+    left:49%;
+
+  }
 
   .phone
   {
@@ -202,6 +236,11 @@
 
 @media screen and (min-width: 992px)
 {
+
+  .view-all-2
+  {
+    left:58%;
+  }
 
   #bespoke-top
 {
@@ -469,6 +508,12 @@
 {
 
   
+  .view-all-2
+  {
+    left:60%;
+  }
+
+  
  .page-image
  {
   opacity: 60%;
@@ -555,6 +600,11 @@
 @media screen and (min-width: 1260px)
 {
 
+  .latest
+  {
+    position:relative;
+    left:90px;
+  }
   .page-image
   {
     height:auto;
@@ -640,7 +690,7 @@ white-space: nowrap;
     flex-direction:row;
     flex-wrap: nowrap;
     padding-right:10%;
-    padding-left: 10%;
+ 
     width:100%;
 
   
