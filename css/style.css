@@ -854,7 +854,15 @@ hr {
   outline-color: rgba(0, 0, 0, 0.25);
 }
 
+.inner-content {
+  display: none;
+}
+
 #services-992 {
+  display: none;
+}
+
+#bespoke-top {
   display: none;
 }
 
@@ -1347,6 +1355,12 @@ hr {
   }
 }
 @media screen and (min-width: 992px) {
+  #bespoke-top {
+    display: block;
+  }
+  .title {
+    display: none;
+  }
   #services-992 {
     display: block;
   }
