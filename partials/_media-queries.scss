@@ -76,7 +76,11 @@
 
 @media screen and (min-width: 768px)
  {
-    
+
+  .view-all
+{
+  display:none;
+}    
   #view-services
 {
   display:none;
@@ -208,6 +212,11 @@
     width:50%;
   }
 
+  #card-text
+  {
+    padding-top:30px;
+  }
+
 
  
 
@@ -221,6 +230,7 @@
   padding-right:5%;
   height:45px;
   overflow-x: hidden;
+  margin-bottom:40px;
   
 }
   .offices
@@ -236,6 +246,14 @@
 
 @media screen and (min-width: 992px)
 {
+  
+  #card-text
+  {
+    padding-top:0px;
+  }
+  
+#main-card
+{padding-bottom:20px;}
 
   .view-all-2
   {

@@ -48,6 +48,7 @@
   padding: 1rem;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 3px;
 }
 
 .main-buttons {
@@ -598,7 +599,6 @@ hr {
   -top: 20px;
   align-self: center;
   width: 95%;
-  height: 50%;
 }
 
 .tail {
@@ -1092,6 +1092,22 @@ nav {
   margin-bottom: 20px;
 }
 
+#welcome:hover {
+  background-color: #121419;
+}
+
+#google:hover {
+  background-color: #4183d7;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+#trust:hover {
+  background-color: #2ecc71;
+}
+
 #welcome {
   background-color: #272936;
 }
@@ -1140,6 +1156,10 @@ nav {
   width: 100%;
   position: relative;
   top: -50px;
+}
+
+.second-view:hover {
+  text-decoration: underline;
 }
 
 .latest {
@@ -1324,6 +1344,9 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
+  .view-all {
+    display: none;
+  }
   #view-services {
     display: none;
   }
@@ -1411,6 +1434,9 @@ hr {
   .card-1, .card-2, .card-3 {
     width: 50%;
   }
+  #card-text {
+    padding-top: 30px;
+  }
   .small-logos-2 {
     display: flex;
     flex-direction: row;
@@ -1420,6 +1446,7 @@ hr {
     padding-right: 5%;
     height: 45px;
     overflow-x: hidden;
+    margin-bottom: 40px;
   }
   .offices {
     display: flex;
@@ -1428,6 +1455,12 @@ hr {
   }
 }
 @media screen and (min-width: 992px) {
+  #card-text {
+    padding-top: 0px;
+  }
+  #main-card {
+    padding-bottom: 20px;
+  }
   .view-all-2 {
     left: 58%;
   }
