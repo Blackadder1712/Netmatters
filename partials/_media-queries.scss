@@ -247,6 +247,10 @@
 @media screen and (min-width: 992px)
 {
   
+  .inner-content
+  {
+    display: none;
+  }
   #card-text
   {
     padding-top:0px;
@@ -260,10 +264,12 @@
     left:58%;
   }
 
-  #bespoke-top
+.inner-content-1
 {
-  display:block;
+  display: block;
 }
+
+
 .title
 {
   display: none;
@@ -289,6 +295,7 @@
     font-family: sans-serif;
     padding-left:10px;
     padding-right:10px;
+    flex-wrap: nowrap;
   }
 
   .nav-item
@@ -387,6 +394,20 @@
     
     text-decoration: none;
     
+  }
+
+  .contact:hover
+  {
+    background-color:#717279 ;
+  }
+
+ 
+
+
+
+  .support:hover
+  {
+    background-color: #287aff;
   }
    .support
   {
