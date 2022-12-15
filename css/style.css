@@ -1318,6 +1318,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .sidenav {
@@ -1455,9 +1456,7 @@ hr {
   .deck {
     display: flex;
     flex-direction: row;
-    width: auto;
-    padding-left: 5%;
-    padding-right: 5%;
+    max-width: 1170px;
   }
   .card-1, .card-2, .card-3 {
     width: 50%;
@@ -1765,6 +1764,17 @@ hr {
   }
 }
 @media screen and (min-width: 1260px) {
+  .small-logos-2 {
+    width: 100%;
+    padding: 0px;
+    justify-content: center;
+  }
+  .logo-box {
+    max-width: 1170px;
+  }
+  .deck {
+    max-width: 1170px;
+  }
   #w-holder {
     background-color: #333645;
   }
@@ -1818,9 +1828,11 @@ hr {
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
-  .deck {
-    margin-right: 20%;
-    margin-left: 20%;
+  .card-h {
+    max-width: 1170px;
+  }
+  .card-1, .card-2, .card-3 {
+    width: 33%;
   }
   .card-3 {
     display: flex;
