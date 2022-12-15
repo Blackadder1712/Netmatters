@@ -25,6 +25,7 @@
   background-color: white;
   transition: all 300ms ease-in-out;
   width: 100%;
+  max-width: 1170px;
 }
 
 .scrolling {
@@ -929,8 +930,6 @@ hr {
   text-align: center;
   color: white;
   margin-top: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .img-title {
@@ -1315,6 +1314,18 @@ hr {
   flex-direction: column;
 }
 
+.holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*Media Queries*/
 @media screen and (min-width: 576px) {
   .top-logo {
@@ -1472,6 +1483,14 @@ hr {
   }
 }
 @media screen and (min-width: 992px) {
+  .inner-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 95px;
+    align-items: center;
+    justify-content: center;
+  }
   .inner-content {
     display: none;
   }
@@ -1503,8 +1522,6 @@ hr {
     background-color: #333645;
     width: 100%;
     font-family: sans-serif;
-    padding-left: 10px;
-    padding-right: 10px;
     flex-wrap: nowrap;
   }
   .nav-item {
@@ -1754,10 +1771,6 @@ hr {
   }
   .page-image {
     height: auto;
-  }
-  .nav {
-    padding-left: 10%;
-    padding-right: 10%;
   }
   .form-control-1 {
     display: block;
