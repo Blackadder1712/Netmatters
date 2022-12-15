@@ -650,6 +650,15 @@
 
 @media screen and (min-width: 1260px)
 {
+  #w-holder
+  {
+    background-color: $main-color;
+  }
+  .welcome
+  {
+    max-width:1170px;
+    padding:0
+  }
 
   .latest
   {
@@ -708,8 +717,7 @@
   }
   .main-buttons
   {
-    padding-left:60px;
-    padding-right:60px;
+    max-width:1170px;
   }
   .main-blocks-2
   {
@@ -783,6 +791,8 @@ white-space: nowrap;
     gap:10%;
     padding-right:15%;
   }
+
+
    
 
 
