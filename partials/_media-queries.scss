@@ -207,10 +207,17 @@
     display:flex;
     flex-direction: row;
    max-width: 1170px;
+   align-items: center;
+   justify-items: center;
+   margin-left: 0;
+   margin-right:0;
+   padding-left:0px;
+   padding-right:0px;
  
   
 
   }
+
 
   .card-1, .card-2, .card-3
   {
@@ -601,7 +608,7 @@
   .deck
   {
     justify-content: space-around;
-    gap:30px;
+    gap:10px;
     margin-left:10px;
     margin-right:10px;
   }
@@ -611,25 +618,21 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:40px;
+    gap:120px;
     padding-left: 10%;
     padding-right:10%;
     height:65px;
     overflow-x: hidden;
+    max-width: 1170px;
     
   }
 
-  .footer
-  {
-    padding-left:5%;
-    padding-right:5%;
-  }
 
   hr
   {
     
-    width:90%;
-    background-color:$main-color;
+   max-width: 1170px;
+   
   }
   .offices
   {
@@ -655,10 +658,19 @@
 
 @media screen and (min-width: 1260px)
 {
+    .deck-box
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+   
   .shoe-box
   {
     background-color: $main-color;
+    
   }
+
   .small-logos-2
   {
     width:100%;
@@ -671,7 +683,9 @@
     max-width:1170px;
   }
   .deck
-  {max-width:1170px}
+  {max-width:1170px;
+  margin-left:auto;
+margin-right:auto}
   #w-holder
   {
     background-color: $main-color;
@@ -734,6 +748,21 @@
     position:relative;
     left:27%;
   }
+  
+  .footer
+  {
+    max-width: 1170px;
+    width: 100%;
+  }
+
+  hr 
+  {
+    max-width: 1170px;
+    width: 100%;
+    text-align: center;
+  }
+
+
 
   .fa-magnifying-glass
   {
