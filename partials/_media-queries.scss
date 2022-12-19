@@ -77,6 +77,11 @@
 @media screen and (min-width: 768px)
  {
 
+.logo-box
+{
+    display: flex;
+}
+
   .view-all
 {
   display:none;
@@ -650,6 +655,10 @@
 
 @media screen and (min-width: 1260px)
 {
+  .shoe-box
+  {
+    background-color: $main-color;
+  }
   .small-logos-2
   {
     width:100%;
@@ -666,6 +675,18 @@
   #w-holder
   {
     background-color: $main-color;
+  }
+
+  .tail-box
+  {
+    background-color: $main-color;
+  }
+
+  .tail
+  {
+    max-width:1170px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .welcome
   {
@@ -722,12 +743,20 @@
    color:white;
   }
 
+  .email-box
+ {
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd
+ }
+ 
+ .email-form
+ {
+ padding:0;
+ }
+
   
-  .email-form
-  {
-    padding-left:10%;
-    padding-right:10%;
-  }
+
   .main-buttons
   {
     max-width:1170px;

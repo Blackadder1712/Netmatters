@@ -15,6 +15,11 @@
   margin-top:150px;
 }
 
+.logo-box
+{
+  display:none
+}
+
  
  .container 
  {
@@ -414,13 +419,18 @@ padding-top:5px;
  {
   background-color: #ddd;
   font-family: sans-serif;
-  padding-left:15px;
-  padding-right:15px;
+  max-width: 1170px;
   padding-top:20px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
  
   
 
  }
+
+
 
  .email-form h1
  {
@@ -840,7 +850,7 @@ padding-top:5px;
   padding-left:20%;
   text-decoration: none;
   line-height: 30px;
-
+  width:100%;
 
   
 

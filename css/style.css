@@ -13,6 +13,10 @@
   margin-top: 150px;
 }
 
+.logo-box {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -282,9 +286,12 @@
 .email-form {
   background-color: #ddd;
   font-family: sans-serif;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1170px;
   padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .email-form h1 {
@@ -615,6 +622,7 @@ hr {
   padding-left: 20%;
   text-decoration: none;
   line-height: 30px;
+  width: 100%;
 }
 
 .tail-inner {
@@ -1373,6 +1381,9 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
+  .logo-box {
+    display: flex;
+  }
   .view-all {
     display: none;
   }
@@ -1764,6 +1775,9 @@ hr {
   }
 }
 @media screen and (min-width: 1260px) {
+  .shoe-box {
+    background-color: #333645;
+  }
   .small-logos-2 {
     width: 100%;
     padding: 0px;
@@ -1777,6 +1791,14 @@ hr {
   }
   #w-holder {
     background-color: #333645;
+  }
+  .tail-box {
+    background-color: #333645;
+  }
+  .tail {
+    max-width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .welcome {
     max-width: 1170px;
@@ -1817,9 +1839,13 @@ hr {
     font-size: 22px;
     color: white;
   }
+  .email-box {
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+  }
   .email-form {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 0;
   }
   .main-buttons {
     max-width: 1170px;
