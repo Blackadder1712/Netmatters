@@ -1,5 +1,13 @@
 const hamMenu2 = document.querySelector(".hamburger-menu-2");
 
+const cover = document.querySelector("#cover");
+
+cover.addEventListener("click",() =>
+{
+  
+        closeNav();
+  
+})
 
 
 hamMenu2.addEventListener("click",() =>
@@ -28,6 +36,13 @@ function openNav() {
     document.getElementById("tail").style.marginLeft = "-260px";
     document.getElementById("foot").style.marginRight = "270px";
     document.getElementById("foot").style.marginLeft = "-260px";
+    document.getElementById("cover").style.backgroundColor = "black";
+ 
+
+
+
+
+    
     
   
 }
@@ -45,7 +60,11 @@ function openNav() {
         document.getElementById("tail").style.marginLeft = "0";
         document.getElementById("foot").style.marginRight = "0";
         document.getElementById("foot").style.marginLeft = "0";
+        document.getElementById("cover").style.backgroundColor = "transparent";
+ 
       }
+
+      
    
 
     

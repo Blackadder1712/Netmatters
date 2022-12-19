@@ -883,6 +883,14 @@ hr {
   outline-color: rgba(0, 0, 0, 0.25);
 }
 
+.cover {
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  z-index: 100;
+  opacity: 50%;
+}
+
 .inner-content-1 {
   display: none;
 }

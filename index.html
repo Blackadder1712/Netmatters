@@ -25,61 +25,60 @@
 </head>
 
 <body>
+    <div class="cover" id="cover"></div>
+    <div class="netmatters-work" id="netmatters-work">
 
-  <div class="netmatters-work" id="netmatters-work">
 
 
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="cookie-content">
+          <div class="cookie-inner">
+            <h1>Cookie Policy</h1>
+            <p>Our website uses cookies. This helps us provide you with a good experience on our website.
+              To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings".
+              For a detailed explanation, click on "Privacy Policy" otherwise click "Accept Cookies" to enter.</p>
+            <div class="cookie-btn">
 
-      <!-- Modal content -->
-      <div class="cookie-content">
-        <div class="cookie-inner">
-          <h1>Cookie Policy</h1>
-          <p>Our website uses cookies. This helps us provide you with a good experience on our website.
-            To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings".
-            For a detailed explanation, click on "Privacy Policy" otherwise click "Accept Cookies" to enter.</p>
-          <div class="cookie-btn">
+              <button id="cookie-1">CHANGE SETTINGS</button>
+              <button id="cookie-2">ACCEPT COOKIES</button>
 
-            <button id="cookie-1">CHANGE SETTINGS</button>
-            <button id="cookie-2">ACCEPT COOKIES</button>
+            </div>
+
+
 
           </div>
 
 
 
-        </div>
 
-
-
-
-      </div>
-
-    </div>
-
-    <!--Top netmatters logo, phone button, hamburger button and search bar-->
-
-  
-  <div class="holder">
-    <header class="container " id="contain">
-
-
-
-      <img src="img/netmatters-logo.png" class="top-logo" alt="netmatters-logo">
-
-      <div class="header-contact">
-        <div class="support">
-          <a href="#"><i class="fa-solid fa-computer-mouse"></i> SUPPORT</a>
-
-        </div>
-
-        <div class="contact">
-          <a href="#"><i class="fa-regular fa-paper-plane"></i> CONTACT</a>
         </div>
 
       </div>
 
+      <!--Top netmatters logo, phone button, hamburger button and search bar-->
+
+
+      <div class="holder">
+        <header class="container " id="contain">
+
+
+
+          <img src="img/netmatters-logo.png" class="top-logo" alt="netmatters-logo">
+
+          <div class="header-contact">
+            <div class="support">
+              <a href="#"><i class="fa-solid fa-computer-mouse"></i> SUPPORT</a>
+
+            </div>
+
+            <div class="contact">
+              <a href="#"><i class="fa-regular fa-paper-plane"></i> CONTACT</a>
+            </div>
+
+          </div>
 
 
 
@@ -87,14 +86,44 @@
 
 
 
-      <button class="phone"><i class="fa-2x fa-solid fa-phone-volume"></i></button>
 
-      <div class="ham">
-        <div class="hamburger-menu">
-          <div class="ham-bar bar-top"></div>
-          <div class="ham-bar bar-mid"></div>
-          <div class="ham-bar bar-bottom"></div>
-        </div>
+          <button class="phone"><i class="fa-2x fa-solid fa-phone-volume"></i></button>
+
+          <div class="ham">
+            <div class="hamburger-menu">
+              <div class="ham-bar bar-top"></div>
+              <div class="ham-bar bar-mid"></div>
+              <div class="ham-bar bar-bottom"></div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="search-bar">
+
+
+            <div class="header-search">
+              <input type="text" class="form-control-1" placeholder="Search..." aria-label="Search"
+                aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
+
+
+
+
+
+            </div>
+          </div>
+
+
+
+        </header>
       </div>
 
 
@@ -105,26 +134,6 @@
 
 
 
-      <div class="search-bar">
-
-
-        <div class="header-search">
-          <input type="text" class="form-control-1" placeholder="Search..." aria-label="Search"
-            aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-              class="fa-solid fa-magnifying-glass"></i></button>
-
-
-
-
-
-        </div>
-      </div>
-
-
-
-    </header>
-  </div>
 
 
 
@@ -135,111 +144,90 @@
 
 
 
+      <!--navigational menu that appear in vp's bigger than  992px -->
 
+      <div class="scrolling">
 
+        <nav class="nav">
 
-
-
-
-
-
-
-    <!--navigational menu that appear in vp's bigger than  992px -->
-
-    <div class="scrolling">
-
-      <nav class="nav">
-        
           <div class="inner-nav">
-              <div class="nav-item">
-                <div class="nav-link" id="bespoke"></div>
+            <div class="nav-item">
+              <div class="nav-link" id="bespoke"></div>
 
 
-                <i class="fa-solid fa-table-cells" id="small-table"></i>
+              <i class="fa-solid fa-table-cells" id="small-table"></i>
 
-                <small>BESPOKE</small>
-                SOFTWARE
+              <small>BESPOKE</small>
+              SOFTWARE
 
-              </div>
+            </div>
 
-              <div class="nav-item">
+            <div class="nav-item">
 
-                <div class="nav-link" id="desktop"></div>
+              <div class="nav-link" id="desktop"></div>
 
-                <i class="fa-solid fa-desktop" id="small-desktop"></i>
+              <i class="fa-solid fa-desktop" id="small-desktop"></i>
 
-                <small>IT</small>
-                SUPPORT
+              <small>IT</small>
+              SUPPORT
 
-              </div>
+            </div>
 
-              <div class="nav-item">
-                <div class="nav-link" id="chart"></div>
-                <i class="fa-solid fa-chart-simple" id="small-chart"></i>
+            <div class="nav-item">
+              <div class="nav-link" id="chart"></div>
+              <i class="fa-solid fa-chart-simple" id="small-chart"></i>
 
-                <small>DIGITAL</small>
+              <small>DIGITAL</small>
 
-                MARKETING
+              MARKETING
 
-              </div>
+            </div>
 
-              <div class="nav-item">
-                <div class="nav-link" id="phone"></div>
-                <i class="fa-solid fa-phone" id="small-phone"></i>
+            <div class="nav-item">
+              <div class="nav-link" id="phone"></div>
+              <i class="fa-solid fa-phone" id="small-phone"></i>
 
-                <small>TELECOMS</small>
-                SERVICES
-
-
-              </div>
-
-              <div class="nav-item">
-                <div class="nav-link"></div>
-                <i class="fa-solid fa-code" id="small-code"></i>
-                <small>WEB</small>
-                DESIGN
-
-              </div>
-
-              <div class="nav-item">
-                <div class="nav-link"></div>
-                <i class="fa-solid fa-shield-halved" id="small-shield"></i>
-                <small>CYBER</small>
-                SECURITY
-
-              </div>
+              <small>TELECOMS</small>
+              SERVICES
 
 
+            </div>
 
+            <div class="nav-item">
+              <div class="nav-link"></div>
+              <i class="fa-solid fa-code" id="small-code"></i>
+              <small>WEB</small>
+              DESIGN
 
-              <div class="nav-item">
-                <div class="nav-link" id="cap"></div>
-                <i class="fa-solid fa-graduation-cap" id="small-cap"></i>
-                <small>DEVELOPER</small>
-                COURSE
+            </div>
 
-              </div>
-           </div>    
-      
-      </nav>
+            <div class="nav-item">
+              <div class="nav-link"></div>
+              <i class="fa-solid fa-shield-halved" id="small-shield"></i>
+              <small>CYBER</small>
+              SECURITY
 
-      <!--main page image-->
-      <div class="Main-page">
-
-
-        <div class="main-carousel">
+            </div>
 
 
 
 
+            <div class="nav-item">
+              <div class="nav-link" id="cap"></div>
+              <i class="fa-solid fa-graduation-cap" id="small-cap"></i>
+              <small>DEVELOPER</small>
+              COURSE
+
+            </div>
+          </div>
+
+        </nav>
+
+        <!--main page image-->
+        <div class="Main-page">
 
 
-
-
-
-          <div class="main-image">
-
-            <img src="img/home-image.webp" class="page-image" alt="main netmatters image">
+          <div class="main-carousel">
 
 
 
@@ -247,144 +235,167 @@
 
 
 
-          
-            <div class="caption-text">
 
 
-              
+            <div class="main-image">
+
+              <img src="img/home-image.webp" class="page-image" alt="main netmatters image">
+
+
+
+
+
+
+
+
+              <div class="caption-text">
+
+
+
                 <div class="img-title">The East Of England's Leading Technology Company </div>
 
 
                 <div class="img-text">Performance-driven digital and technology services with complete transparency.
                 </div>
-  
+
                 <a href="" class="caption-button" id="east-button">FIND OUT MORE <i class="fa-solid fa-arrow-right"></i>
                 </a>
-  
-
-              
 
 
 
 
 
-            </div>
-            <div class="main-image">
-              <img src="img/bespoke.webp" class="page-image" alt="bespoke netmatters image">
-            
-              <div class="caption-text" id="bespoke-caption">
-  
-  
-                <div class="img-title">Bespoke Software </div>
-  
-  
-  
-                <div class="img-text">Bring your Business together with solutions that grow with you. </div>
-  
-  
-                <div class="caption-buttons">
-                  <a href="" class="caption-button" id="bespoke-button">FIND OUT MORE<i
-                      class="fa-solid fa-arrow-right"></i></a>
-  
+
+
+
+              </div>
+              <div class="main-image">
+                <img src="img/bespoke.webp" class="page-image" alt="bespoke netmatters image">
+
+                <div class="caption-text" id="bespoke-caption">
+
+
+                  <div class="img-title">Bespoke Software </div>
+
+
+
+                  <div class="img-text">Bring your Business together with solutions that grow with you. </div>
+
+
+                  <div class="caption-buttons">
+                    <a href="" class="caption-button" id="bespoke-button">FIND OUT MORE<i
+                        class="fa-solid fa-arrow-right"></i></a>
+
+                  </div>
+
                 </div>
-  
+
+
+
+
+
+
+
+
+
               </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+              <div class="main-image">
+
+                <img src="img/IT.webp" class="page-image" alt="IT SUPPORTimage">
+
+
+                <div class="caption-text" id="IT-caption">
+
+                  <div class="img-title"> IT Support</div>
+
+
+                  <div class="img-text">Fast and cost-effective IT support. </div>
+
+                  <a href="" class="caption-button" id="IT-button">FIND OUT MORE<i
+                      class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+
+
+
+              </div>
+              <div class="main-image">
+
+
+                <img src="img/Digital.webp" class="page-image" alt="Digital Marketing image">
+
+
+
+
+                <div class="caption-text" id="digital-caption">
+
+                  <div class="img-title">Digital Marketing </div>
+
+
+                  <div class="img-text">Generating your new business through <br>
+                    result-driven marketing activities. </div>
+
+                  <a href="" class="caption-button" id="digital-button">FIND OUT MORE<i
+                      class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+
+
+
+              </div>
+
+
+
+
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="main-image">
 
-              <img src="img/IT.webp" class="page-image" alt="IT SUPPORTimage">
-  
-  
-              <div class="caption-text" id="IT-caption">
-  
-                <div class="img-title"> IT Support</div>
-  
-  
-                <div class="img-text">Fast and cost-effective IT support. </div>
-  
-                <a href="" class="caption-button" id="IT-button">FIND OUT MORE<i class="fa-solid fa-arrow-right"></i></a>
-  
-              </div>
-  
-  
-  
-            </div>
-            <div class="main-image">
+              <img src="img/telecoms.webp" class="page-image" alt="telecoms  image">
 
 
-              <img src="img/Digital.webp" class="page-image" alt="Digital Marketing image">
-  
-  
-  
-  
-              <div class="caption-text" id="digital-caption">
-  
-                <div class="img-title">Digital Marketing </div>
-  
-  
-                <div class="img-text">Generating your new business through <br>
-                  result-driven marketing activities. </div>
-  
-                <a href="" class="caption-button" id="digital-button">FIND OUT MORE<i
+
+
+
+
+              <div class="caption-text" id="telecom-caption">
+
+                <div class="img-title">Telecoms Services </div>
+
+
+                <div class="img-text">A new approach to connectivity, see how<br> we can help your business. </div>
+
+                <a href="" class="caption-button" id="telecom-button">FIND OUT MORE<i
                     class="fa-solid fa-arrow-right"></i></a>
-  
+
               </div>
-  
-  
-  
-            </div>
-  
-  
 
-
-          </div>
-
-          
-
-        
-
-
-
-
-
-
-
-          
-
-         
-
-          <div class="main-image">
-
-            <img src="img/telecoms.webp" class="page-image" alt="telecoms  image">
-
-
-
-
-
-
-            <div class="caption-text" id="telecom-caption">
-
-              <div class="img-title">Telecoms Services </div>
-
-
-              <div class="img-text">A new approach to connectivity, see how<br> we can help your business. </div>
-
-              <a href="" class="caption-button" id="telecom-button">FIND OUT MORE<i
-                  class="fa-solid fa-arrow-right"></i></a>
 
             </div>
 
 
-          </div>
+
+
+
+
+
+            <div class="main-image">
+
+              <img src="img/web.jpg" class="page-image" alt="Web design image">
 
 
 
@@ -392,17 +403,7 @@
 
 
 
-          <div class="main-image">
-
-            <img src="img/web.jpg" class="page-image" alt="Web design image">
-
-
-
-
-
-
-
-            <div class="holder">
+              <div class="holder">
                 <div class="caption-text" id="web-caption">
 
                   <div class="img-title">Web Design </div>
@@ -410,12 +411,55 @@
 
                   <div class="img-text">For businesses looking to make a strong<br>and effective first impression. </div>
 
-                  <a href="" class="caption-button" id="web-button">FIND OUT MORE<i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="" class="caption-button" id="web-button">FIND OUT MORE<i
+                      class="fa-solid fa-arrow-right"></i></a>
 
                 </div>
+              </div>
+
+
             </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="main-image">
+              <img src="img/cyber.webp" class="page-image" alt="bespoke netmatters image">
+
+
+
+
+
+
+              <div class="caption-text" id="security-caption">
+
+                <div class="img-title">Cyber Security</div>
+
+
+                <div class="img-text">Keeping businesses and their customers<br>sensitive information protected. </div>
+
+                <a href="" class="caption-button" id="security-button">FIND OUT MORE <i
+                    class="fa-solid fa-arrow-right"></i></a>
+
+              </div>
+
+
+            </div>
           </div>
 
 
@@ -436,38 +480,7 @@
 
 
 
-          <div class="main-image">
-            <img src="img/cyber.webp" class="page-image" alt="bespoke netmatters image">
-
-
-
-
-
-
-            <div class="caption-text" id="security-caption">
-
-              <div class="img-title">Cyber Security</div>
-
-
-              <div class="img-text">Keeping businesses and their customers<br>sensitive information protected. </div>
-
-              <a href="" class="caption-button" id="security-button">FIND OUT MORE <i
-                  class="fa-solid fa-arrow-right"></i></a>
-
-            </div>
-
-
-          </div>
         </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -481,19 +494,8 @@
       </div>
 
 
-
-
-
-
-
-
-
-
-    </div>
-
-
-    <!--Main page navigation buttons-->
-    <div class="holder">
+      <!--Main page navigation buttons-->
+      <div class="holder">
         <main class="main-buttons">
           <strong>Our Services</strong>
 
@@ -737,45 +739,45 @@
 
 
         </main>
-    </div>
+      </div>
 
-    <div class="second-view">
+      <div class="second-view">
 
-      <button type="button" class="view-all" id="view-services">View All<i class="fa-solid fa-arrow-right">
-        </i> </button>
-
-
-
-    </div>
+        <button type="button" class="view-all" id="view-services">View All<i class="fa-solid fa-arrow-right">
+          </i> </button>
 
 
+
+      </div>
 
 
 
 
-    <!--The small partner logos-->
-
-    <div class="small-logos">
-      <img src="img/carbon-charter.jpg" class="logo" alt="charter logo">
-      <img src="img/PPC_logo.jpg" class="logo" alt="prompt payment logo">
-
-      <img src="img/princess-royal-training.jpg" class="logo" alt="princes royal logo">
-
-      <img src="img/future-50.jpg" class="logo" alt="future-50 logo">
-      <img src="img/qms.jpg" class="logo" alt="qms logo">
-      <img src="img/iso_27001.jpg" class="logo" alt="qms-logo">
-      <img src="img/skills-of-tomorrow.jpg" class="logo" alt="skills of tomorrow logo">
-      <img src="img/google.jpg" class="logo" alt="google logo">
-      <img src="img/investing-in-future-growth.jpg" class="logo" alt="future growth logo">
 
 
-    </div>
+      <!--The small partner logos-->
+
+      <div class="small-logos">
+        <img src="img/carbon-charter.jpg" class="logo" alt="charter logo">
+        <img src="img/PPC_logo.jpg" class="logo" alt="prompt payment logo">
+
+        <img src="img/princess-royal-training.jpg" class="logo" alt="princes royal logo">
+
+        <img src="img/future-50.jpg" class="logo" alt="future-50 logo">
+        <img src="img/qms.jpg" class="logo" alt="qms logo">
+        <img src="img/iso_27001.jpg" class="logo" alt="qms-logo">
+        <img src="img/skills-of-tomorrow.jpg" class="logo" alt="skills of tomorrow logo">
+        <img src="img/google.jpg" class="logo" alt="google logo">
+        <img src="img/investing-in-future-growth.jpg" class="logo" alt="future growth logo">
+
+
+      </div>
 
 
 
 
-    <!--Netmatters info and client review -->
-    <div class="holder" id="w-holder">
+      <!--Netmatters info and client review -->
+      <div class="holder" id="w-holder">
         <section class="welcome">
 
 
@@ -802,7 +804,8 @@
 
             <!--Read more button-->
 
-            <button type="button" class="btn btn-primary-welcome" id="welcome">READ MORE <i class="fa-solid fa-arrow-right">
+            <button type="button" class="btn btn-primary-welcome" id="welcome">READ MORE <i
+                class="fa-solid fa-arrow-right">
               </i> </button>
 
           </div>
@@ -853,19 +856,19 @@
 
 
         </section>
-    </div>
+      </div>
 
-    <!--Image and text cards-->
-    
-            <div class="card-h">
-              <div class="latest">Latest News</div>
-              <div class="view-all-2">View all<i class="fa-solid fa-arrow-right"></i></div>
+      <!--Image and text cards-->
+
+      <div class="card-h">
+        <div class="latest">Latest News</div>
+        <div class="view-all-2">View all<i class="fa-solid fa-arrow-right"></i></div>
 
 
-            </div>
-             
- 
-       
+      </div>
+
+
+
       <div class="deck-box">
         <div class="deck">
           <div class="card-1">
@@ -876,7 +879,8 @@
 
             <div class="card-body">
               <h5 class="card-title-1">The Benefits of a Modern Intranet</h5>
-              <p class="card-text" id="main-card">We Read a Bold Claim the Other Day That the Employee Intranet Was Dead. We
+              <p class="card-text" id="main-card">We Read a Bold Claim the Other Day That the Employee Intranet Was Dead.
+                We
                 couldnt Have
                 Disagreed M... </p>
               <a href="#" class="btn btn-primary-card1">READ MORE</a>
@@ -889,7 +893,7 @@
               <div class="postedby">
 
 
-                <img class="card-logo"  src="img/netmatters-ltd.webp" alt="netmatters logo">
+                <img class="card-logo" src="img/netmatters-ltd.webp" alt="netmatters logo">
 
 
 
@@ -1013,8 +1017,8 @@
 
         </div>
       </div>
- 
-   
+
+
 
 
 
@@ -1056,21 +1060,21 @@
 
 
 
-      <div class="holder">
-        <div class="logo-box">
-            <div class="small-logos-2">
-              <img src="img/busseys.png" class="logo" alt="charter logo">
-              <img src="img/crane.png" class="logo" alt="prompt payment logo">
+    <div class="holder">
+      <div class="logo-box">
+        <div class="small-logos-2">
+          <img src="img/busseys.png" class="logo" alt="charter logo">
+          <img src="img/crane.png" class="logo" alt="prompt payment logo">
 
-              <img src="img/beat.png" class="logo" alt="princes royal logo">
+          <img src="img/beat.png" class="logo" alt="princes royal logo">
 
-              <img src="img/diver.png" class="logo" alt="future-50 logo">
+          <img src="img/diver.png" class="logo" alt="future-50 logo">
 
 
 
-            </div>
-        </div>    
-      </div>  
+        </div>
+      </div>
+    </div>
 
 
 
@@ -1136,7 +1140,8 @@
 
 
 
-              Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#">Privacy
+              Please tick this box if you wish to recieve marketing information from us. Please see our <a
+                href="#">Privacy
                 Policy</a>
               for more information on how we keep your data safe.
             </div>
@@ -1150,8 +1155,8 @@
 
 
         </div>
+      </div>
     </div>
-   </div>
 
     <!--Page footer information -->
     <div class="tail-box">
@@ -1285,52 +1290,55 @@
 
 
 
-  </div>
-
-
-  
+    </div>
 
 
 
 
 
 
-  <!--Copyright Information-->
-  <div class="shoe-box">
-    <div class="holder">
-      <div class="footer" id="foot">
+
+
+
+    <!--Copyright Information-->
+    <div class="shoe-box">
+      <div class="holder">
+        <div class="footer" id="foot">
 
 
 
 
 
-        <div class="copyright">
+          <div class="copyright">
 
-          <h4><i class="fa-regular fa-copyright"></i>Copyright
-            Netmatters 2022. All rights reserved. - Sitemap</h4>
+            <h4><i class="fa-regular fa-copyright"></i>Copyright
+              Netmatters 2022. All rights reserved. - Sitemap</h4>
+
+          </div>
+
+
+          <div class="socials">
+
+            <i class="fa-brands fa-facebook" id="facebook"></i>
+            <i class="fa-brands fa-twitter" id="twitter"></i>
+            <i class="fa-brands fa-instagram" id="insta"></i>
+            <i class="fa-brands fa-linkedin-in" id="link"></i>
+
+
+
+
+
+
+          </div>
+
 
         </div>
-
-
-        <div class="socials">
-
-          <i class="fa-brands fa-facebook" id="facebook"></i>
-          <i class="fa-brands fa-twitter" id="twitter"></i>
-          <i class="fa-brands fa-instagram" id="insta"></i>
-          <i class="fa-brands fa-linkedin-in" id="link"></i>
-
-
-
-
-
-
-        </div>
-
-
       </div>
     </div>
-  </div>
 
+
+
+                       
 
 
 
@@ -1376,14 +1384,14 @@
 
 
     <div class="inner-content-1" id="TELECOM-top">
-      <a href="index.html"  class="icon">>></a>
+      <a href="index.html" class="icon">>></a>
       <a href="index.html" class="sub4">TELECOMS SERVICES</a>
 
     </div>
 
 
     <div class="inner-content-1" id="WEB-top">
-      <a href="index.html"  class="icon">>></a>
+      <a href="index.html" class="icon">>></a>
       <a href="index.html" class="sub4">WEB DESIGN</a>
 
     </div>
@@ -1394,7 +1402,7 @@
     </div>
 
     <div class="inner-content-1" id="DEVELOPER-top">
-      <a href="index.html"  class="icon">>></a>
+      <a href="index.html" class="icon">>></a>
       <a href="index.html" class="sub4">DEVELOPER COURSE</a>
 
     </div>
@@ -1590,7 +1598,7 @@
 
 
     <div class="sections">
-      <button class="sub-1" >TRAINING</button>
+      <button class="sub-1">TRAINING</button>
 
 
     </div>
@@ -1653,7 +1661,7 @@
 
 
     <div class="sections">
-      <button class="sub-1" >OUR COMPANY</button>
+      <button class="sub-1">OUR COMPANY</button>
 
 
     </div>
@@ -1715,7 +1723,7 @@
     </div>
 
     <div class="sections">
-      <button class="sub-1" >COVID RISK ASSESSMENTS</button>
+      <button class="sub-1">COVID RISK ASSESSMENTS</button>
 
 
     </div>
@@ -1754,7 +1762,7 @@
 
 
 
-  
+
 
 
 
