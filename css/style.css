@@ -909,7 +909,19 @@ hr {
   padding-right: 5px;
 }
 
-.work-2 {
+#telecom-caption {
+  margin-top: 100px;
+}
+
+#web-caption {
+  margin-top: 100px;
+}
+
+#security-caption {
+  margin-top: 120px;
+}
+
+#telecoms-cap .work-2 {
   width: 100%;
 }
 
