@@ -1,10 +1,10 @@
 
 $(function(){
     $('.main-carousel').slick({
-      autoplay: true,
+      autoplay: false,
       slideToShow: 1,
       autoplaySpeed:2000,
-      arrows: true,
+      arrows: false,
       dots: true,
       
       speed: 2000,

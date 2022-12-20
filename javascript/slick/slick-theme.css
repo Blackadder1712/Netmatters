@@ -129,7 +129,7 @@
     width: 100%;
     padding: 0;
     margin: 0;
-
+    font-size:15px;
     list-style: none;
 
     text-align: center;
@@ -157,11 +157,11 @@
     width: 20px;
     height: 20px;
     padding: 5px;
-
+    
     cursor: pointer;
     color:white;
     color: transparent;
-    border: 0;
+
     outline: none;
     background: transparent;
 }
@@ -180,7 +180,7 @@
     font-family: 'slick';
     font-size: 6px;
     line-height: 20px;
-
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -192,7 +192,8 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: white;
+    font-size: 15px;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +201,6 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: white;
+    font-size: 15px;
 }

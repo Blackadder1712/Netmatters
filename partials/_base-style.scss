@@ -1213,6 +1213,18 @@ padding-top:5px;
 {
   margin-top: 100px;
 }
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+  outline: 2px solid white;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+.slick-dots li button:before {
+  color: orange;
+}
+
 
 #web-caption
 {
@@ -1221,7 +1233,7 @@ padding-top:5px;
 
 #security-caption
 {
-  margin-top: 120px;
+  margin-top: 100px;
 
 }
 
@@ -1294,7 +1306,7 @@ padding-top:5px;
 
 .img-title
 {
-  font-size:50px;
+  font-size:45px;
   font-weight:600;
   font-family: sans-serif;
   letter-spacing: .4px;

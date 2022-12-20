@@ -913,12 +913,24 @@ hr {
   margin-top: 100px;
 }
 
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 0.75;
+  outline: 2px solid white;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+.slick-dots li button:before {
+  color: orange;
+}
+
 #web-caption {
   margin-top: 100px;
 }
 
 #security-caption {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 #telecoms-cap .work-2 {
@@ -971,7 +983,7 @@ hr {
 }
 
 .img-title {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 600;
   font-family: sans-serif;
   letter-spacing: 0.4px;
