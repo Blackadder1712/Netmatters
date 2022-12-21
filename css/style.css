@@ -26,6 +26,78 @@
   display: none;
 }
 
+.pop-ups {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  max-width: 1170px;
+  position: absolute;
+  margin-bottom: 280px;
+  padding-right: 60px;
+}
+
+.popped-1, .popped-2, .popped-3, .popped-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70px;
+}
+
+#busseys:hover.popped-1 {
+  display: flex;
+}
+
+.popped-1 {
+  margin-top: 80px;
+  margin-left: 0;
+}
+
+.popped-4 {
+  margin-right: 0;
+}
+
+.pop {
+  background-color: #333645;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-width: 30px 30px 0 30px;
+  border-color: #333645 transparent transparent transparent;
+  border-style: solid;
+}
+
+.p-title {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1.4;
+  line-height: 1.4;
+}
+
+hr {
+  background-color: white;
+  border-color: white;
+  border: 2px solid white;
+}
+
+.line-box {
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-bottom: 20px;
+}
+
+.p-text {
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1.4;
+  line-height: 1.4;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -1246,6 +1318,7 @@ nav {
 
 .card-1, .card-2, .card-3 {
   position: relative;
+  padding-bottom: 30px;
   font-family: sans-serif;
   margin-top: 30px;
   letter-spacing: 0.4px;
@@ -1253,12 +1326,9 @@ nav {
   line-height: 1.4;
   display: flex;
   flex-direction: column;
-  border-width: 1px;
-  border-style: solid;
-  border-color: hsla(0deg, 0%, 100%, 0.1);
-  outline-width: 1px;
-  outline-style: solid;
-  outline-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   position: relative;
 }
 .card-1:hover, .card-2:hover, .card-3:hover {
@@ -1285,8 +1355,9 @@ nav {
 }
 
 .card-body {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 30px;
 }
 
 .card-text, .card-text-2, .card-text-3 {
@@ -1300,6 +1371,12 @@ nav {
 hr {
   border-color: rgb(196, 190, 190);
   border-style: solid;
+}
+
+.posted-by-netmatters strong {
+  color: #333645;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .btn-primary-card1, .btn-primary-card2, .btn-primary-card3 {
@@ -1347,6 +1424,8 @@ hr {
 
 .posted-by-netmatters h6 {
   color: gray;
+  font-size: 15px;
+  padding-top: 5px;
 }
 
 .holder {
