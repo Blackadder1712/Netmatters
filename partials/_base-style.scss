@@ -591,16 +591,27 @@ z-index: 110;
   
  }
 
+ .tick input
+ {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+ }
 
- #flexCheckDefault
+
+  .tick
     { position: relative;
 
     border-radius:3px;
-    height:32px;
-    width:32px;
+    height:37px;
+    width:42px;
+    margin-top:2px;
+    margin-left:2px;
     
     margin-right:20px;
-    border-width: 10px;
+    border-width: 3px;
     border-style: solid;
     border-color:#333645;
     font-weight: 600;
@@ -609,7 +620,48 @@ z-index: 110;
   
  }
 
+ .checkmark
+ {
+  position: absolute;
+  top: 0;
+  left: 0;
 
+  height:35px;
+  width: 35px;
+ 
+ }
+
+
+
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.tick input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.tick .checkmark:after {
+  left: 12px;
+  top: 5px;
+  width: 6px;
+  height: 15px;
+  border: solid white;
+ 
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.tick input:checked ~ .checkmark {
+  background-color: $main-color;
+}
 
  #button-sub
  {
