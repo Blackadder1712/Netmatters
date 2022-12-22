@@ -88,6 +88,167 @@
 @media screen and (min-width: 768px)
  {
 
+  .deck-box
+  {
+    margin-left: 10px;
+    margin-right:10px;
+  }
+
+  .pop-ups
+{
+  z-index:100;
+  display:flex;
+  flex-direction:row;
+  gap:5%;
+  margin-left:10px;
+  margin-right:10px;
+  
+ 
+
+}
+
+.popped-1, .popped-2, .popped-3, .popped-4 
+{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index:300;
+
+
+ 
+ 
+  
+}
+
+.logo
+{
+  height:auto;
+  width:100%;
+}
+
+.busseys:hover .popped-1
+{
+  display: flex;
+  position: absolute;
+
+
+
+ 
+
+
+}
+
+.popped-1
+{
+  margin-bottom:50px;
+
+ 
+}
+
+.crane:hover .popped-2
+{
+  display: flex;
+ 
+}
+
+.beat:hover .popped-3
+{
+  display:flex;
+
+}
+
+.north:hover .popped-4
+{
+  display:flex;
+
+}
+
+.popped-1
+{
+  margin-top: -200px;
+ 
+}
+.popped-2
+{
+  margin-top:-240px;
+  margin-right:60px;
+}
+
+.popped-3
+{
+  margin-top:-220px;
+}
+.popped-4
+{
+  margin-right:0;
+  margin-top: -240px;
+}
+
+
+
+.pop
+{
+  background-color: $main-color;
+  color:white;
+  text-align: center;
+  font-family:sans-serif ;
+  padding:20px;
+  z-index: 400;
+  position:relative;
+
+  
+}
+
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-width: 30px 30px 0 30px;
+	border-color: $main-color transparent transparent transparent;
+	border-style: solid;
+}
+
+
+
+.p-title
+{
+  font-size: 20px;
+  font-weight:200;
+  letter-spacing: 1.4;
+  line-height: 1.4;
+ 
+}
+
+hr
+{ background-color:white;
+  border-color:white;
+  border:2px solid white;
+  
+}
+
+.line-box
+{
+  padding-left:40%;
+padding-right:40%;
+padding-bottom:20px;
+}
+
+
+.p-text
+{
+  font-size: 15px;
+  font-weight:200;
+  letter-spacing: 1.4;
+  line-height: 1.4;
+
+}
+
+
+
+
+ 
+
   #east
   {
     margin-top:80px ;
@@ -104,6 +265,7 @@
     display: block;
     overflow-x: hidden;
 }
+
 
   .view-all
 {
@@ -681,6 +843,22 @@
 
 @media screen and (min-width: 1260px)
 {
+
+  .popped-1
+  {
+    position: relative;
+    z-index: 300;
+  }
+
+
+
+  .pop-ups
+  {
+    width:100%;
+    height:100%;
+    max-width: 1170px;
+    gap:10%;
+  }
   .caption-text
   {
     padding-left: 0;
