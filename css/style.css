@@ -293,6 +293,23 @@
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
+.form-control-1:focus {
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+#exampleFormControlInput1:focus {
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+  outline: none;
+}
+
+#exampleFormControlInput2:focus {
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+  outline: none;
+}
+
 .btn-outline-secondary {
   color: none;
   background-color: transparent;
