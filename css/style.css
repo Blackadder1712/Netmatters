@@ -80,7 +80,7 @@
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 3px;
-  z-index: 110;
+  z-index: 1200;
 }
 
 .main-buttons {
@@ -1442,6 +1442,18 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 190;
+  opacity: 0.6;
+  display: none;
+  background-color: black;
 }
 
 /*Media Queries*/

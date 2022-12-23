@@ -1,6 +1,10 @@
 
 
 const hamMenu = document.querySelector(".hamburger-menu ");
+let overlay = document.querySelector("#overlay");
+let netmatters = document.querySelector("#netmatters-work");
+
+
 
 
 
@@ -57,6 +61,8 @@ function openNav() {
     document.getElementById("tail").style.marginLeft = "-260px";
     document.getElementById("foot").style.marginRight = "270px";
     document.getElementById("foot").style.marginLeft = "-260px";
+    document.getElementById("overlay").style.display = "none";
+
   
 
 
@@ -76,9 +82,33 @@ function openNav() {
         document.getElementById("tail").style.marginLeft = "0";
         document.getElementById("foot").style.marginRight = "0";
         document.getElementById("foot").style.marginLeft = "0";
+        
        
        
       }
+
+overlay.addEventListener("click",() =>
+{
+  
+        closeNav();
+   
+})
+
+ 
+hamMenu.addEventListener("click", () =>
+{
+ 
+    if(netmatters.style.marginLeft = "-260px")
+    {
+        overlay.style.display="block";
+    }
+
+})
+
+   
+
+      
+    
    
 
     

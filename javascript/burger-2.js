@@ -1,8 +1,14 @@
+
+
 const hamMenu2 = document.querySelector(".hamburger-menu-2");
 
-const cover = document.querySelector("#cover");
+let overlay = document.querySelector("#overlay")
 
-cover.addEventListener("click",() =>
+let cards = document.querySelector("#foot")
+
+
+
+overlay.addEventListener("click",() =>
 {
   
         closeNav();
@@ -63,6 +69,7 @@ function openNav() {
 
       }
 
+  
       
    
 
