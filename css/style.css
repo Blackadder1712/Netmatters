@@ -1287,7 +1287,6 @@ nav {
   line-height: 1.1;
   font-weight: 600;
   font-size: 35px;
-  padding-left: 3%;
 }
 
 .view-all-2 {
@@ -1605,14 +1604,12 @@ hr {
   #view-services {
     display: none;
   }
-  .latest {
-    position: relative;
-    left: 10px;
-  }
   .card-h {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
   .view-all-2 {
     display: flex;
@@ -1623,9 +1620,6 @@ hr {
     color: #333645;
     font-size: 28px;
     letter-spacing: 1.4px;
-    margin-top: 24px;
-    position: relative;
-    left: 49%;
   }
   .phone {
     display: none;
@@ -2047,10 +2041,6 @@ hr {
   .welcome {
     max-width: 1170px;
     padding: 0;
-  }
-  .latest {
-    position: relative;
-    left: 90px;
   }
   .page-image {
     height: auto;
