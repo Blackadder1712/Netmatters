@@ -164,6 +164,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.6s, opacity 0.8s, top 0.6s;
+  z-index: 700;
 }
 
 .read {
@@ -212,7 +213,7 @@
   position: relative;
   top: -9px;
   padding-top: 5px;
-  z-index: 110;
+  z-index: 600;
 }
 
 .bar-top {
@@ -1446,14 +1447,17 @@ hr {
 }
 
 #overlay {
-  position: absolute;
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
   top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 190;
-  opacity: 0.6;
-  display: none;
-  background-color: black;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 110; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
 
 /*Media Queries*/

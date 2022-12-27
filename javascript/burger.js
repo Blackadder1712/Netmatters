@@ -61,7 +61,9 @@ function openNav() {
     document.getElementById("tail").style.marginLeft = "-260px";
     document.getElementById("foot").style.marginRight = "270px";
     document.getElementById("foot").style.marginLeft = "-260px";
-    document.getElementById("overlay").style.display = "none";
+    document.getElementById("overlay").style.width = "100%";
+
+    
 
   
 
@@ -82,6 +84,7 @@ function openNav() {
         document.getElementById("tail").style.marginLeft = "0";
         document.getElementById("foot").style.marginRight = "0";
         document.getElementById("foot").style.marginLeft = "0";
+        document.getElementById("overlay").style.width = "0px";
         
        
        
@@ -98,9 +101,15 @@ overlay.addEventListener("click",() =>
 hamMenu.addEventListener("click", () =>
 {
  
-    if(netmatters.style.marginLeft = "-260px")
+    if(document.getElementById("overlay").style.width = "100%")
     {
         overlay.style.display="block";
+        console.log("done")
+    }
+    else
+    {
+        overlay.style.display="none";
+        console.log("not")
     }
 
 })
