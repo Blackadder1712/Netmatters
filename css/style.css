@@ -1043,6 +1043,12 @@ hr {
   width: 100%;
 }
 
+.btn-header {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
 .main-carousel {
   width: 100%;
   height: 650px;
@@ -1325,6 +1331,10 @@ nav {
   margin-top: 60px;
 }
 
+#view-services-2 {
+  display: none;
+}
+
 .deck {
   display: flex;
   flex-direction: column;
@@ -1526,6 +1536,15 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
+  .btn-header {
+    justify-content: space-between;
+    width: 100%;
+  }
+  #view-services-2 {
+    display: flex;
+    position: relative;
+    top: -20px;
+  }
   .deck-box {
     margin-left: 10px;
     margin-right: 10px;
@@ -1629,10 +1648,7 @@ hr {
     overflow-x: hidden;
   }
   .view-all {
-    display: none;
-  }
-  #view-services {
-    display: none;
+    display: flex;
   }
   .card-h {
     margin-top: 20px;
@@ -1960,7 +1976,7 @@ hr {
 }
 @media screen and (min-width: 1025px) {
   .main-carousel {
-    height: 5px;
+    height: 550px;
   }
   .holder {
     display: flex;
@@ -2023,6 +2039,9 @@ hr {
   }
 }
 @media screen and (min-width: 1260px) {
+  .main-carousel {
+    height: 650px;
+  }
   .popped-1 {
     position: relative;
     z-index: 300;

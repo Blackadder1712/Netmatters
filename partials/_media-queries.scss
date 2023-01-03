@@ -88,6 +88,19 @@
 @media screen and (min-width: 768px)
  {
 
+  .btn-header
+  {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #view-services-2
+  {
+    display: flex;
+    position: relative;
+    top: -20px;
+  }
+
   .deck-box
   {
     margin-left: 10px;
@@ -267,14 +280,13 @@ padding-bottom:20px;
 }
 
 
-  .view-all
+.view-all
 {
-  display:none;
-}    
-  #view-services
-{
-  display:none;
+  display: flex;
+  
+
 }
+
   
 
   .card-h
@@ -760,12 +772,12 @@ padding-bottom:20px;
 
 @media screen and (min-width: 1025px)
 {
-
   .main-carousel
-{
 
-  height:5px;
-}
+  {
+    height: 550px
+  }
+ 
   
 
   
@@ -863,6 +875,13 @@ padding-bottom:20px;
 @media screen and (min-width: 1260px)
 {
 
+  .main-carousel
+
+  {
+    height: 650px
+  }
+ 
+
   .popped-1
   {
     position: relative;
@@ -881,7 +900,8 @@ padding-bottom:20px;
   .caption-text
   {
     padding-left: 0;
-    padding-right:0
+    padding-right:0;
+
   }
   #east
   {

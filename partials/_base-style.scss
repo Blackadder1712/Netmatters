@@ -1380,6 +1380,12 @@ z-index: 600;
   width:100%;
 }
 
+.btn-header
+{
+  margin-bottom : 50px;
+  display:flex;
+  flex-direction: row;
+}
 .main-carousel
 {
   width:100%;
@@ -1737,6 +1743,11 @@ nav
 #view-services
 {
   margin-top: 60px;
+}
+
+#view-services-2
+{
+display: none;
 }
 .deck
 {
