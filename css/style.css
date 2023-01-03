@@ -743,7 +743,7 @@ hr {
   padding-right: 0%;
 }
 
-.yarmouth, .wymondham, .cambridge, .services {
+.yarmouth, .wymondham, .cambridge, .about {
   padding-top: 20px;
 }
 
@@ -751,12 +751,22 @@ hr {
   padding-bottom: 20px;
 }
 
-.tail a, .tail h4 {
+.tail h4 {
   text-decoration: none;
   color: white;
   font-family: sans-serif;
-  font-weight: 200;
-  font-size: 12px;
+  font-weight: 520;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.tail a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 520;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .tail h3 {
@@ -776,6 +786,10 @@ hr {
   margin-top: 10px;
 }
 
+.tail a h5 {
+  font-size: 13px;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -784,8 +798,10 @@ hr {
   color: white;
   font-family: sans-serif;
   letter-spacing: 0.4;
+  width: 100%;
   padding-left: 10px;
   padding-right: 3%;
+  border-top: solid 1px rgb(221, 221, 221);
 }
 
 .copyright {
@@ -1525,9 +1541,6 @@ hr {
   .yarmouth {
     padding-top: 20px;
   }
-  .about {
-    padding-top: 50px;
-  }
   .tail h5 {
     font-size: 10px;
   }
@@ -2037,6 +2050,11 @@ hr {
     padding-left: 20%;
     padding-right: 3%;
   }
+  .shoe-box {
+    background-color: #333645;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1260px) {
   .main-carousel {
@@ -2071,9 +2089,6 @@ hr {
   .deck-box {
     justify-content: center;
     align-items: center;
-  }
-  .shoe-box {
-    background-color: #333645;
   }
   .small-logos-2 {
     width: 100%;
@@ -2178,14 +2193,6 @@ hr {
   .tail .offices {
     padding-right: 0px;
     padding-left: 2%;
-  }
-  .tail .services {
-    position: relative;
-    top: -18px;
-  }
-  .tail .about {
-    position: relative;
-    top: -5px;
   }
   .tail .yarmouth {
     position: relative;

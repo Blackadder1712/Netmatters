@@ -37,6 +37,8 @@ body
 
 
 
+
+
 .pop-ups
 {
   display: none;
@@ -1013,7 +1015,7 @@ z-index: 600;
 
  }
 
- .yarmouth, .wymondham, .cambridge, .services
+ .yarmouth, .wymondham, .cambridge,  .about
  {
   padding-top:20px;
  }
@@ -1023,14 +1025,27 @@ z-index: 600;
   padding-bottom:20px;
  }
 
- .tail a, .tail h4
+ .tail h4
  {
   text-decoration: none;
   color:white;
   font-family: sans-serif;
-  font-weight: 200;
-  font-size: 12px;
+  font-weight: 520;
+  font-size: 15px;
+  line-height: 1.6;
  }
+
+ 
+ .tail a
+ {
+  text-decoration: none;
+  color:white;
+  font-family: sans-serif;
+  font-weight: 520;
+  font-size: 13px;
+  line-height: 1.6;
+ }
+
 
  .tail h3
 
@@ -1050,8 +1065,14 @@ z-index: 600;
   color:white;
   font-family: sans-serif;
   margin-top:10px;
+  
+  
  }
 
+ .tail a h5
+ {
+  font-size: 13px;
+ }
 
 .footer
 {
@@ -1062,9 +1083,10 @@ z-index: 600;
  color:white;
  font-family: sans-serif;
  letter-spacing: .4;
-
+ width: 100%;
  padding-left: 10px;
  padding-right:3%;
+ border-top: solid 1px rgb(221, 221, 221)
  
 }
 

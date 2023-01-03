@@ -69,10 +69,7 @@
   {
     padding-top:20px;
   }
-  .about
-  {
-    padding-top:50px;
-  }
+
 
   .tail h5
   {
@@ -792,6 +789,8 @@ padding-bottom:20px;
 }
 
 
+
+
   
   .view-all-2
   {
@@ -869,6 +868,13 @@ padding-bottom:20px;
   padding-right:3%;
    
   }
+
+  .shoe-box
+  {
+    background-color: $main-color;
+    width:100%;
+    justify-content: space-between;
+  }
 }
 
 
@@ -930,11 +936,7 @@ padding-bottom:20px;
     }
 
    
-  .shoe-box
-  {
-    background-color: $main-color;
-    
-  }
+
 
   .small-logos-2
   {
@@ -1087,17 +1089,8 @@ white-space: nowrap;
     padding-left: 2%;
   }
 
-  .services
-  {
-    position:relative;
-    top:-18px;
-  }
-  .about
-  {
-    position:relative;
-    top:-5px;
+ 
 
-  }
 
 
   .yarmouth
