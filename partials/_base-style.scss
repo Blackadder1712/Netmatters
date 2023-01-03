@@ -10,11 +10,15 @@
   
  }
 
- #web
+body
  {
   overflow : auto;
   height: 100%
  }
+
+ 
+
+
 
 
  .cover
@@ -551,13 +555,18 @@ z-index: 600;
   width: 0;
  }
 
+ .card-body
+ {
+  overflow-x: none;
+ }
+
 
   .tick
-    { position: relative;
+    { position: absolute;
 
     border-radius:3px;
-    height:37px;
-    width:42px;
+    height:32px;
+    width:32px;
     margin-top:2px;
     margin-left:2px;
     
@@ -610,6 +619,11 @@ z-index: 600;
 
 }
 
+
+
+
+
+
 .tick input:checked ~ .checkmark {
   background-color: $main-color;
 }
@@ -633,12 +647,17 @@ z-index: 600;
    margin-top:25px;
  }
 
-
+ .box
+ {
+  position: absolute;
+  margin-right:5px;
+ }
  .email-text
  {
    font-weight: 600;
    line-height:32px;
    letter-spacing: .4px;
+   margin-left: 60px;
  }
  .email-text a
  {
@@ -972,7 +991,7 @@ z-index: 600;
  {
   display: flex;
   flex-direction: column;
-  gap:20px;
+
   align-items: stretch;
   padding-left:0px;
   padding-bottom:30px;
@@ -1666,6 +1685,7 @@ nav
   display:flex;
   flex-direction: column;
   margin-top:25px;
+  margin-left:10px;
 }
 
 .second-view
@@ -1878,7 +1898,7 @@ hr
 
 .holder
 {
-  display: flex;
+  display: hidden;
   align-items: center;
   justify-content: center;
   width:100%

@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-#web {
+body {
   overflow: auto;
   height: 100%;
 }
@@ -396,11 +396,15 @@
   width: 0;
 }
 
+.card-body {
+  overflow-x: none;
+}
+
 .tick {
-  position: relative;
+  position: absolute;
   border-radius: 3px;
-  height: 37px;
-  width: 42px;
+  height: 32px;
+  width: 32px;
   margin-top: 2px;
   margin-left: 2px;
   margin-right: 20px;
@@ -460,10 +464,16 @@
   margin-top: 25px;
 }
 
+.box {
+  position: absolute;
+  margin-right: 5px;
+}
+
 .email-text {
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0.4px;
+  margin-left: 60px;
 }
 
 .email-text a {
@@ -720,7 +730,6 @@ hr {
 .tail-inner {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: stretch;
   padding-left: 0px;
   padding-bottom: 30px;
@@ -1272,6 +1281,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 25px;
+  margin-left: 10px;
 }
 
 .second-view {
@@ -1438,7 +1448,7 @@ hr {
 }
 
 .holder {
-  display: flex;
+  display: hidden;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -1483,7 +1493,6 @@ hr {
   }
   .posted-by-netmatters {
     position: relative;
-    right: 250px;
   }
   .tail-inner {
     display: grid;
@@ -1507,7 +1516,7 @@ hr {
     padding-top: 20px;
   }
   .about {
-    padding-top: 25px;
+    padding-top: 50px;
   }
   .tail h5 {
     font-size: 10px;
@@ -1629,7 +1638,7 @@ hr {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
   }
   .view-all-2 {
@@ -1950,6 +1959,15 @@ hr {
   }
 }
 @media screen and (min-width: 1025px) {
+  .main-carousel {
+    height: 5px;
+  }
+  .holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   .view-all-2 {
     left: 60%;
   }

@@ -36,7 +36,7 @@
   .posted-by-netmatters
 {
   position:relative;
-  right:250px;
+ 
 }
 
   .tail-inner
@@ -71,7 +71,7 @@
   }
   .about
   {
-    padding-top:25px;
+    padding-top:50px;
   }
 
   .tail h5
@@ -282,7 +282,7 @@ padding-bottom:20px;
     margin-top:20px;
     display: flex;
     flex-direction:row;
-    width:100%;
+    width: 90%;
     justify-content: space-between;
    
 
@@ -298,6 +298,7 @@ padding-bottom:20px;
     color:#333645;
     font-size: 28px;
     letter-spacing: 1.4px;
+ 
     
  
     
@@ -760,6 +761,24 @@ padding-bottom:20px;
 @media screen and (min-width: 1025px)
 {
 
+  .main-carousel
+{
+
+  height:5px;
+}
+  
+
+  
+
+  
+.holder
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%
+}
+
 
   
   .view-all-2
@@ -1057,6 +1076,7 @@ white-space: nowrap;
   {
     position:relative;
     top:-5px;
+
   }
 
 
