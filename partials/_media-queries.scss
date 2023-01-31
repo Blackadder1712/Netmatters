@@ -11,6 +11,15 @@
 @media screen and (min-width: 576px)
 {
 
+  #sticky-holder
+  {
+    height:165px;
+  }
+
+
+
+
+
   #bespoke-caption, #IT-caption, #digital-caption, #telecom-caption, #web-caption, #security-caption
   {
     margin-top: 120px;
@@ -84,6 +93,11 @@
 
 @media screen and (min-width: 768px)
  {
+
+  #sticky-holder
+  {
+    height:125px;
+  }
 
   .btn-header
   {
@@ -364,7 +378,7 @@ padding-bottom:20px;
     background-color: #999aa2;
     width:80px;
     height:55px;
-    border-radius:3px;
+    border-radius:0px 3px 3px 0px;
   }
 
   .form-control-1
@@ -456,6 +470,15 @@ padding-bottom:20px;
 @media screen and (min-width: 992px)
 {
 
+  #sticky-holder
+  {
+    height:115px;
+  }
+
+  .Main-page
+  {
+    padding-top: 0;
+  }
   .inner-nav
   {
 
@@ -516,12 +539,15 @@ padding-bottom:20px;
     background-color: $main-color;
     width:100%;
     font-family: sans-serif;
-   
+   z-index: 101;
     flex-wrap: nowrap;
-    margin-top:-40px;
+   
   }
 
-
+ .scrolling
+ {
+  padding-top: 110px;
+ }
 
   .nav-item
   {
@@ -792,6 +818,7 @@ padding-bottom:20px;
 
 
 
+
   
   .view-all-2
   {
@@ -988,7 +1015,7 @@ margin-right:auto}
    width:98%;
    line-height:1.4;
    font-size:14px;
-   color:white;
+   color: #999aa2;
    background-color:white;
    outline:1px solid hsla(0,0%,100%,.2);
    border:2px solid rgba(0,0,0,.1)
