@@ -35,8 +35,12 @@ document.querySelector('#cookie-2').addEventListener("click", () =>
 
 cookieMessage = () =>
 {
-  if(!getCookie("cookie")) //check if our cookie doesnt exist
+  if(!getCookie("cookie"))
+  { //check if our cookie doesnt exist
    document.querySelector("#myModal").style.display = "block"; //if no cookie exists bring up modal
+  }
+  
+
 }
 
 window.addEventListener("load", cookieMessage);// bring up this function on every page load
