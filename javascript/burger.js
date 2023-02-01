@@ -9,6 +9,7 @@ let netmatters = document.querySelector("#netmatters-work");
 
 
 
+
 hamMenu.addEventListener("click",() =>
 {
     if(
@@ -53,6 +54,11 @@ function openNav() {
     document.getElementById("mypanel").style.width = "260px";
     document.getElementById("web").style.marginRight = "260px";
     document.getElementById("web").style.marginLeft ="-260px";
+    document.getElementById("web").style.overflowY ="auto";
+    document.getElementById("web").style.height ="100%";
+    document.getElementById("body").style.overflow ="hidden";
+    document.getElementById("html").style.height = "100%";
+   
 
    
   
@@ -75,6 +81,10 @@ function openNav() {
        
      
         document.getElementById("overlay").style.display = "none";
+            document.getElementById("web").style.height ="auto";
+          document.getElementById("body").style.overflow ="auto";
+          document.getElementById("html").style.height = "auto";
+   
  
         
        

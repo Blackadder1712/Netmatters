@@ -134,16 +134,18 @@ body
 .button
 {
 border-radius: 15px;
-border-style: solid;
-border-color: #ccc;
-border-width:1px;
+border:1px solid rgba(0,0,0,.45);
 margin-bottom:25px;
 text-align:center;
 padding-bottom:17px;
 transition:0.5 ease;
+box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
 
 
 }
+
+
+
 
  .h21
 {
@@ -171,6 +173,7 @@ transition:0.5 ease;
 .button a
 {
   text-decoration: none;
+  border: 1px solid hsla(0,0%,100%,.05);
 }
 
 .primary-inner
@@ -687,7 +690,8 @@ z-index: 600;
   flex-direction:column;
   justify-content: space-around;
   gap:20px;
-  box-shadow: 0 3px 35px rgb(0 0 0 /10%);
+  border:1px solid #ccc;
+  transition: .5s ease !important;
 
   &:hover
   {
@@ -1861,19 +1865,22 @@ display: none;
  display:flex;
  flex-direction:column;
  justify-content: space-around;  
- gap:10px;
+
  padding-left:15px;
  padding-right:15px;
  margin-bottom:105px
  
 }
 
-
+#image-3
+{
+  height:223px;
+}
 
 .card-1, .card-2, .card-3
 {
   position:relative;
-  padding-bottom:30px;
+  
   
   font-family: sans-serif;
   margin-top:30px;
@@ -1882,10 +1889,11 @@ display: none;
   line-height:1.4;
   display:flex;
   flex-direction:column;
-  border:1px solid #ccc;
+  
   border-bottom-left-radius: 3px ;
   border-bottom-right-radius: 3px;
   position: relative;
+  transition: .5s ease !important;
   &:hover
   {
     position: relative;
@@ -1899,12 +1907,11 @@ display: none;
 
 
 
-
 .card-title-1,.card-title-2, .card-title-3
 {
   font-weight: 600;
   margin-bottom:15px;
-  margin-top:15px;
+  
   color: #926fb1;
   line-height:1.6;
   font-size:20px;
@@ -1912,20 +1919,26 @@ display: none;
 
 .card-title-1
 {
+
   color: $hover-color-blue;
+ 
 }
 
 .card-title-2,.card-title-3
 {
   color: #926fb1;
 }
-.card-body
-{
-  padding-left:26px;
-  padding-right:26px;
-  padding-top: 30px;
 
+.card-type
+{
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
 }
+
+
 
 
  
@@ -1984,9 +1997,7 @@ hr
   margin-top:25px;
   display:flex;
   flex-direction:row;
-  margin-left:25px;
-  margin-right:25px;
-  margin-bottom:25px;
+ 
   gap:20px;
   margin-top: 30px;
   padding-top: 30px;
@@ -1995,15 +2006,10 @@ hr
 
 
 
-.posted-by-netmatters
+.posted-by-netmatters strong
 {
-  font-size:20px;
-  position:relative;
-
-  display:flex;
-  justify-content: space-between;
-  flex-direction: column;
-
+  font-weight: 600;
+    color: #333645;
 }
 
 .posted-by-netmatters h6

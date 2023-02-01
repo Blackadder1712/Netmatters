@@ -430,7 +430,8 @@ padding-bottom:20px;
 
   .card-1, .card-2, .card-3
   {
-    width:50%;
+    width:100%;
+    height: 100%;
   }
 
   #card-text
@@ -854,13 +855,6 @@ padding-bottom:20px;
     left:65%
   }
 
-  .deck
-  {
-    justify-content: space-around;
-    gap:10px;
-    margin-left:10px;
-    margin-right:10px;
-  }
 
   .small-logos-2
   {
@@ -908,6 +902,10 @@ padding-bottom:20px;
 
 @media screen and (min-width: 1260px)
 {
+  .card-title-1
+  {
+    font-size: 20px;
+  }
 
   .main-carousel
 
@@ -961,6 +959,7 @@ padding-bottom:20px;
     {
         justify-content: center;
         align-items: center;
+        
     }
 
    
@@ -977,7 +976,10 @@ padding-bottom:20px;
   .deck
   {max-width:1170px;
   margin-left:auto;
-margin-right:auto}
+  margin-right:auto;
+  gap:35px;
+ 
+}
   #w-holder
   {
     background-color: $main-color;
