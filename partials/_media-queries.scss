@@ -11,6 +11,24 @@
 @media screen and (min-width: 576px)
 {
 
+  .cookie-content {
+
+    position:relative;
+  background-color:#fff;
+  border:1px solid;
+  border-radius:5px;
+    margin-top: 15%;
+    margin-left:10%;
+    margin-right:15%;
+    margin-bottom:15%;
+    padding: 20px;
+ 
+    width: 70%; /* Could be more or less, depending on screen size */
+    height:82%;
+    outline:initial;
+  
+  }
+
   #sticky-holder
   {
     height:165px;

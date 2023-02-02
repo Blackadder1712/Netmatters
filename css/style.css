@@ -9,6 +9,46 @@
   margin: 0;
 }
 
+#facebook:hover {
+  background-color: #4267B2;
+  border-radius: 50%;
+  padding: 7px 10px 10px;
+}
+
+#twitter:hover {
+  background-color: #1DA1F2;
+  border-radius: 50%;
+  padding: 7px 10px 10px;
+}
+
+#insta:hover {
+  background-color: rgb(240, 93, 118);
+  border-radius: 50%;
+  padding: 7px 10px 10px;
+}
+
+#link:hover {
+  background-color: #006192;
+  border-radius: 50%;
+  padding: 7px 10px 10px;
+}
+
+.about h4:hover {
+  text-decoration: underline;
+}
+
+.services h4:hover {
+  text-decoration: underline;
+}
+
+.copyright h5 {
+  text-decoration: underline;
+}
+
+.offices h5 {
+  text-decoration: underline;
+}
+
 body {
   overflow: auto;
   height: 100%;
@@ -824,7 +864,7 @@ hr {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-  gap: 8px;
+  gap: 30%;
 }
 
 .sidenav {
@@ -1184,8 +1224,9 @@ nav {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
 }
 
 .cookie-content {
@@ -1196,23 +1237,33 @@ nav {
   margin: auto; /* 15% from the top and centered */
   padding: 20px;
   margin-top: 15%;
-  width: 90%; /* Could be more or less, depending on screen size */
+  width: 85%; /* Could be more or less, depending on screen size */
+  height: 87%;
+  outline: initial;
 }
 
 .cookie-content h1 {
   font-family: sans-serif;
   letter-spacing: 0.4px;
   font-weight: 400;
-  padding-left: 20px;
+  line-height: 1.4;
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #333645;
 }
 
 .cookie-content p {
   position: relative;
-  padding: 20px;
   letter-spacing: 0.4px;
   line-height: 1.8;
   color: #666;
-  font-size: 16px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .cookie-inner {
@@ -1231,11 +1282,30 @@ nav {
   padding: 5px 15px;
   border-radius: 3px;
   background-color: #999aa2;
-  border-color: #999aa2;
+  border: 1px solid transparent;
   color: white;
   font-weight: 400;
   text-align: center;
   box-shadow: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#cookie-2 {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  border-radius: 3px;
+  background-color: #7e57a0;
+  border: 1px solid transparent;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .modal {
@@ -1584,6 +1654,20 @@ hr {
 
 /*Media Queries*/
 @media screen and (min-width: 576px) {
+  .cookie-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+    padding: 20px;
+    width: 70%; /* Could be more or less, depending on screen size */
+    height: 82%;
+    outline: initial;
+  }
   #sticky-holder {
     height: 165px;
   }
