@@ -26,6 +26,23 @@ hamMenu.addEventListener("click",() =>
         closeNav();
     }
 });
+
+overlay.addEventListener("click",() =>
+{
+    if(
+    hamMenu.classList.toggle("active"))
+    {
+        openNav();
+       
+    }
+
+    
+
+    else
+    {
+        closeNav();
+    }
+});
     
 
     

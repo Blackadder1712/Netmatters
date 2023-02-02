@@ -94,6 +94,11 @@
 @media screen and (min-width: 768px)
  {
 
+  .second-view
+  {
+    display:none;
+  }
+
   #sticky-holder
   {
     height:125px;
@@ -420,8 +425,9 @@ padding-bottom:20px;
    justify-items: center;
    margin-left: 0;
    margin-right:0;
-   padding-left:0px;
-   padding-right:0px;
+   padding-left:20px;
+   padding-right:20px;
+   gap:30px;
  
   
 
@@ -430,8 +436,9 @@ padding-bottom:20px;
 
   .card-1, .card-2, .card-3
   {
-    width:100%;
+    width:50%;
     height: 100%;
+    
   }
 
   #card-text
@@ -1150,13 +1157,27 @@ white-space: nowrap;
   }
 
 
-   
+
+
+  .page-image
+  {
+    height:650px
+  }
 
 
   
 
 
 
+}
+
+@media screen and ( min-width:1270px)
+{
+
+  .holder-p
+  {
+    margin-top:0%;
+  }
 }
 
 

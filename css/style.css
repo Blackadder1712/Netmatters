@@ -361,6 +361,7 @@ body {
   background-color: white;
   border: none;
   margin-bottom: 25px;
+  padding-left: 10px;
 }
 
 .fa-asterisk {
@@ -416,10 +417,10 @@ body {
 
 .checkmark {
   position: absolute;
-  top: 0;
+  top: -1;
   left: 0;
-  height: 35px;
-  width: 35px;
+  height: 29px;
+  width: 30px;
 }
 
 .checkmark:after {
@@ -433,8 +434,8 @@ body {
 }
 
 .tick .checkmark:after {
-  left: 12px;
-  top: 5px;
+  left: 10px;
+  top: 3px;
   width: 6px;
   height: 15px;
   border: solid white;
@@ -1454,6 +1455,14 @@ nav {
   position: relative;
   top: -10px;
   transition: 0.5s ease !important;
+  cursor: pointer;
+}
+
+.card-2 .card-image {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
 .card-title-1, .card-title-2, .card-title-3 {
@@ -1496,7 +1505,7 @@ hr {
 .posted-by-netmatters strong {
   color: #333645;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .btn-primary-card1, .btn-primary-card2, .btn-primary-card3 {
@@ -1536,10 +1545,13 @@ hr {
   color: #333645;
 }
 
-.posted-by-netmatters h6 {
+.date {
   color: gray;
   font-size: 15px;
   padding-top: 5px;
+  font-weight: 500;
+  font-family: sans-serif;
+  line-height: 1.1;
 }
 
 .holder {
@@ -1621,6 +1633,9 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
+  .second-view {
+    display: none;
+  }
   #sticky-holder {
     height: 125px;
   }
@@ -1816,11 +1831,12 @@ hr {
     justify-items: center;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
   }
   .card-1, .card-2, .card-3 {
-    width: 100%;
+    width: 50%;
     height: 100%;
   }
   #card-text {
@@ -2292,6 +2308,14 @@ hr {
     padding-left: 0px;
     gap: 10%;
     padding-right: 15%;
+  }
+  .page-image {
+    height: 650px;
+  }
+}
+@media screen and (min-width: 1270px) {
+  .holder-p {
+    margin-top: 0%;
   }
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

@@ -522,6 +522,7 @@ z-index: 600;
   background-color: white;
   border:none;
   margin-bottom:25px;
+  padding-left:10px;
  }
  
  .fa-asterisk
@@ -551,6 +552,8 @@ z-index: 600;
   flex-direction:row;
   
  }
+
+ 
 
  .tick input
  {
@@ -589,11 +592,11 @@ z-index: 600;
  .checkmark
  {
   position: absolute;
-  top: 0;
+  top: -1;
   left: 0;
 
-  height:35px;
-  width: 35px;
+  height:29px;
+  width: 30px;
  
  }
 
@@ -612,8 +615,8 @@ z-index: 600;
 }
 
 .tick .checkmark:after {
-  left: 12px;
-  top: 5px;
+  left: 10px;
+  top: 3px;
   width: 6px;
   height: 15px;
   border: solid white;
@@ -1877,7 +1880,7 @@ display: none;
   height:223px;
 }
 
-.card-1, .card-2, .card-3
+.card-1,.card-2, .card-3
 {
   position:relative;
   
@@ -1900,9 +1903,25 @@ display: none;
     
     top:-10px;
     transition: .5s ease !important;
+    cursor: pointer;
   }
 
+
+
 }
+
+.card-2 .card-image
+{
+  box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+
+  
+}
+
+
+
 
 
 
@@ -1932,7 +1951,7 @@ display: none;
 .card-type
 {
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; 
   border-radius: 3px;
   padding: 30px;
   box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
@@ -1967,8 +1986,10 @@ hr
 {
   color: #333645;
   font-size: 15px;
-  font-weight:800;
+  font-weight: 600;
+    
 }
+
 .btn-primary-card1, .btn-primary-card2, .btn-primary-card3{
   color: white;
   border-radius: 3px;
@@ -2012,11 +2033,14 @@ hr
     color: #333645;
 }
 
-.posted-by-netmatters h6
+.date
 {
   color: gray;
   font-size:15px;
-  padding-top:5px
+  padding-top:5px;
+  font-weight: 500;
+  font-family: sans-serif;
+  line-height: 1.1;
 }
 
 

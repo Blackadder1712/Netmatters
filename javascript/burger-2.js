@@ -30,6 +30,10 @@ hamMenu2.addEventListener("click",() =>
     }
 });
 
+
+
+
+
 function openNav() {
     document.getElementById("mypanel").style.width = "260px";
     document.getElementById("netmatters-work").style.marginRight = "260px";
