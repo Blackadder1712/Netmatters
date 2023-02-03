@@ -1637,6 +1637,31 @@ nav
   justify-content:center ;
 }
 
+.cookie-pref
+{
+  display:flex;
+  flex-direction:column;
+  max-width:1170px;
+  justify-content: center;
+  font-family: sans-serif;
+  padding:30px;
+ 
+}
+
+.cookie-pref h1
+{
+  font-size:40px;
+  float: left;
+ 
+}
+
+.cookie-pref p
+{
+  margin:auto;
+  margin-bottom:20px;
+  font-size:20px
+}
+
 .cookie-content {
 
   position:relative;
@@ -1647,10 +1672,12 @@ border-radius:5px;
   padding: 20px;
  margin-top:15%;
   width: 85%; /* Could be more or less, depending on screen size */
-  height:87%;
+
   outline:initial;
 
 }
+
+
 
 
 .cookie-content h1

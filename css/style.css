@@ -1230,6 +1230,26 @@ nav {
   justify-content: center;
 }
 
+.cookie-pref {
+  display: flex;
+  flex-direction: column;
+  max-width: 1170px;
+  justify-content: center;
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+.cookie-pref h1 {
+  font-size: 40px;
+  float: left;
+}
+
+.cookie-pref p {
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
 .cookie-content {
   position: relative;
   background-color: #fff;
@@ -1239,7 +1259,6 @@ nav {
   padding: 20px;
   margin-top: 15%;
   width: 85%; /* Could be more or less, depending on screen size */
-  height: 87%;
   outline: initial;
 }
 
@@ -1660,13 +1679,12 @@ hr {
     background-color: #fff;
     border: 1px solid;
     border-radius: 5px;
-    margin-top: 15%;
-    margin-left: 10%;
+    margin-top: 10%;
+    margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 15%;
     padding: 20px;
     width: 70%; /* Could be more or less, depending on screen size */
-    height: 82%;
     outline: initial;
   }
   #sticky-holder {
@@ -1718,6 +1736,23 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
+  .cookie-content {
+    margin: auto;
+    margin-top: 15%;
+  }
+  .cookie-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-content: center;
+    justify-content: space-around;
+  }
+  #cookie-1, #cookie-2 {
+    font-size: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 1.4;
+  }
   .second-view {
     display: none;
   }
@@ -1945,6 +1980,12 @@ hr {
   }
 }
 @media screen and (min-width: 992px) {
+  #cookie-1, #cookie-2 {
+    font-size: 17px;
+    padding-left: 70px;
+    padding-right: 70px;
+    letter-spacing: 1.4;
+  }
   #sticky-holder {
     height: 115px;
   }
@@ -2238,6 +2279,9 @@ hr {
   }
 }
 @media screen and (min-width: 1260px) {
+  .cookie-content {
+    max-width: 700px;
+  }
   .card-title-1 {
     font-size: 20px;
   }
