@@ -112,6 +112,12 @@
 @media screen and (min-width: 768px)
  {
 
+   .title
+   {
+    margin-top: 3px;
+   }
+
+
   .cookie-content
   {
     margin:auto;
@@ -521,6 +527,19 @@ padding-bottom:20px;
 @media screen and (min-width: 992px)
 {
 
+  .icon
+  {
+    font-size: 7px;
+  line-height: 2;
+  font-weight:800;
+
+  
+  }
+  .sidenav
+  {
+    padding-top:0px;
+  }
+
   #cookie-1, #cookie-2
   {
     font-size:17px;
@@ -571,7 +590,9 @@ padding-bottom:20px;
 
 .inner-content-1
 {
-  display: block;
+  display: grid;
+  grid-template-columns: 8px auto;
+
 }
 
 

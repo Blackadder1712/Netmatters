@@ -869,7 +869,7 @@ hr {
 }
 
 .sidenav {
-  height: 100%; /* 100% Full-height */
+  height: 100%;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 110; /* Stay on top */
@@ -885,7 +885,14 @@ hr {
   color: #666;
 }
 
+.side-inner {
+  top: 0;
+  overflow-y: scroll;
+  background-color: #333645;
+}
+
 .title {
+  background-color: #333645;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -902,6 +909,7 @@ hr {
   margin-bottom: 20px;
   width: 90%;
   font-family: sans-serif;
+  margin-left: 10px;
 }
 
 .title h2 {
@@ -965,8 +973,8 @@ hr {
   align-self: center;
   font-family: sans-serif;
   border-width: 1px;
-  border-style: solid;
-  border-color: #272936;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+  border-top: 1px solid hsla(0deg, 0%, 100%, 0.05);
   width: 90%;
   text-align: center;
   line-height: 22px;
@@ -1005,6 +1013,7 @@ hr {
 .inner-content-1 {
   display: flex;
   flex-direction: row;
+  gap: 15px;
   align-items: flex-start;
   width: 100%;
   color: #333645;
@@ -1012,7 +1021,7 @@ hr {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 5px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 525;
   border-width: 1px;
   border-style: solid;
@@ -1038,7 +1047,7 @@ hr {
 
 .sections {
   width: 100%;
-  background-color: #333645;
+  background-color: #121419;
   outline-width: 1px;
   outline-style: solid;
   outline-color: rgba(0, 0, 0, 0.25);
@@ -1655,7 +1664,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #333645;
 }
 
 #overlay {
@@ -1736,6 +1745,9 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
+  .title {
+    margin-top: 3px;
+  }
   .cookie-content {
     margin: auto;
     margin-top: 15%;
@@ -1980,6 +1992,14 @@ hr {
   }
 }
 @media screen and (min-width: 992px) {
+  .icon {
+    font-size: 7px;
+    line-height: 2;
+    font-weight: 800;
+  }
+  .sidenav {
+    padding-top: 0px;
+  }
   #cookie-1, #cookie-2 {
     font-size: 17px;
     padding-left: 70px;
@@ -2013,7 +2033,8 @@ hr {
     left: 58%;
   }
   .inner-content-1 {
-    display: block;
+    display: grid;
+    grid-template-columns: 8px auto;
   }
   .title {
     display: none;
