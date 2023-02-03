@@ -1013,7 +1013,6 @@ hr {
 .inner-content-1 {
   display: flex;
   flex-direction: row;
-  gap: 15px;
   align-items: flex-start;
   width: 100%;
   color: #333645;
@@ -1352,7 +1351,7 @@ nav {
   height: 65px;
   overflow-x: hidden;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .small-logos-2 {
@@ -1493,7 +1492,8 @@ nav {
 
 .latest {
   font-family: sans-serif;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   line-height: 1.1;
   font-weight: 600;
   font-size: 35px;
@@ -1901,6 +1901,7 @@ hr {
     color: #333645;
     font-size: 28px;
     letter-spacing: 1.4px;
+    margin-top: 25px;
   }
   .phone {
     display: none;
@@ -1943,6 +1944,7 @@ hr {
     grid-template-columns: auto auto;
     grid-template-columns: auto auto;
     grid-column-gap: 2%;
+    margin-bottom: 50px;
   }
   .fa-magnifying-glass {
     color: white;
