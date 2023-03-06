@@ -63,8 +63,8 @@
 
       <!--Top netmatters logo, phone button, hamburger button and search bar-->
 
-    
-          <div class="lorry" id="sticky-holder">
+   
+         <!-- <div class="lorry" id="sticky-holder">
 
             <div class="holder">
             
@@ -131,7 +131,7 @@
 
                 </header>
             </div>
-          </div>
+          </div>-->
             
    
 

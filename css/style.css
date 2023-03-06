@@ -167,7 +167,7 @@ body {
 
 .button a {
   text-decoration: none;
-  border: 1px solid hsla(0deg, 0%, 100%, 0.05);
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
 }
 
 .primary-inner {
@@ -335,7 +335,7 @@ body {
   font-family: sans-serif;
   color: #555;
   background-color: rgba(0, 0, 0, 0.1);
-  outline: 1px solid hsla(0deg, 0%, 100%, 0.2);
+  outline: 1px solid hsla(0, 0%, 100%, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -900,7 +900,7 @@ hr {
   text-decoration: none;
   border-width: 1px;
   border-style: solid;
-  border-color: hsla(0deg, 0%, 100%, 0.1);
+  border-color: hsla(0, 0%, 100%, 0.1);
   outline-width: 1px;
   outline-style: solid;
   outline-color: rgba(0, 0, 0, 0.25);
@@ -974,7 +974,7 @@ hr {
   font-family: sans-serif;
   border-width: 1px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.45);
-  border-top: 1px solid hsla(0deg, 0%, 100%, 0.05);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.05);
   width: 90%;
   text-align: center;
   line-height: 22px;
@@ -1003,7 +1003,7 @@ hr {
   line-height: 1;
   border-width: 1px;
   border-style: solid;
-  border-color: hsla(0deg, 0%, 100%, 0.1);
+  border-color: hsla(0, 0%, 100%, 0.1);
   outline-width: 1px;
   outline-style: solid;
   outline-color: rgba(0, 0, 0, 0.25);
@@ -1024,7 +1024,7 @@ hr {
   font-weight: 525;
   border-width: 1px;
   border-style: solid;
-  border-color: hsla(0deg, 0%, 100%, 0.1);
+  border-color: hsla(0, 0%, 100%, 0.1);
   outline-width: 1px;
   outline-style: solid;
   outline-color: rgba(0, 0, 0, 0.25);
@@ -2377,7 +2377,7 @@ hr {
     font-size: 14px;
     color: #999aa2;
     background-color: white;
-    outline: 1px solid hsla(0deg, 0%, 100%, 0.2);
+    outline: 1px solid hsla(0, 0%, 100%, 0.2);
     border: 2px solid rgba(0, 0, 0, 0.1);
   }
   .btn-outline-secondary {
@@ -2470,4 +2470,4 @@ hr {
     margin-top: 0%;
   }
 }
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+{
+    "name": "amyvi/netmatters",
+    "autoload": {
+        "psr-4": {
+            "Amyvi\\Netmatters\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amy Vincent",
+            "email": "106971274+Blackadder1712@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
