@@ -1,6 +1,5 @@
-<?php include "db/connect.php";
-   $results = $db->query('SELECT * FROM netmatters articles')
-  ?>
+
+ 
 
 <!DOCTYPE html>
 <html lang="en" id="html">
@@ -26,7 +25,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="javascript/slick/slick-theme.css">
 
-
+  <?php 
+    require_once ("db/connect.php");
+   // $results = $handle->query('SELECT * FROM netmatters articles');
+    //var_dump($results);
+    //die();
+  
+  ?>
 
 </head>
 
@@ -1755,6 +1760,8 @@
   <script src="javascript/main.js"></script>
   <script src="javascript/sticky.js"></script>
 
+  
+
 
 
 
@@ -1764,3 +1771,4 @@
 
 
 </html>
+

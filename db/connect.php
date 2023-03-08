@@ -10,7 +10,7 @@
  {
    $handle = new PDO("mysql:host=$server; dbname=$db", "$username", "$password");
    $handle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   //echo "connected";
+   
  }
  catch(PDOException $e){
     die("Oops cannot connect to database");
