@@ -26,11 +26,22 @@
   <link rel="stylesheet" href="javascript/slick/slick-theme.css">
 
   <?php 
-    require_once ("db/connect.php");
-   // $results = $handle->query('SELECT * FROM netmatters articles');
-    //var_dump($results);
-    //die();
-  
+    require_once ("db/connect.php"); //connect to database 
+
+    try
+    {
+      $results = $db->query('SELECT * from netmatters_articles');// get the data from table 
+    }
+    catch(Exception $e)
+    {
+      echo $e->getMessage();
+      die();
+    }
+
+    $articles = $results->fetchAll(PDO::FETCH_ASSOC); //extract table data, indexed by column name , place in variable
+
+
+
   ?>
 
 </head>
@@ -929,23 +940,21 @@
 
       <div class="deck-box">
         <div class="deck">
-          <div class="card-1">
-            <img class="card-image" src="img/the-benefits-of.webp" alt="benefits of modern intranet">
 
-
-
+      <?php
+       foreach($articles as $article)
+       {
+            echo'<div class="card-'.$article["news_class"].'">
+              <img class="card-image" src='.$article["news_image"].' alt="benefits of modern intranet">
             <div class="card-type">
                 <div class="card-body">
-                  <h5 class="card-title-1">The Benefits of a Modern </h5>
-                  <p class="card-text" id="card-text">We Read a Bold Claim the Other Day That the Employee Intranet Was Dead.
-                    We
-                    couldnt Have
-                    Disagreed M... </p>
-                  <a href="#" class="btn btn-primary-card1">READ MORE</a>
+                  <h5 class="card-title-'.$article["news_class"].'">'.$article["news_title"]. '</h5>
+                  <p class="card-text" id="card-text">'.$article["news_info"].'
+                 </p>
+                  <a href="#" class="btn btn-primary-card'.$article["news_class"].'">READ MORE</a>
                  
                 </div>
-
-            
+         
                 <div class="card-footer">
 
                   <div class="postedby">
@@ -967,13 +976,16 @@
 
 
                 </div>
-            </div>
+             </div>
 
 
-          </div>
+           </div>'; 
+        }             
+      ?>
+       
 
 
-          <div class="card-2">
+          <!--<div class="card-2">
 
 
             <img class="card-image" src="img/richard.webp" alt="graduates">
@@ -1059,7 +1071,7 @@
 
 
 
-        </div>
+        </div>-->
       </div>
 
 
