@@ -123,13 +123,15 @@
 
         </nav>
 
-        <div class= "Main-page">
-          <div class="map-card" >
+        <div class= "Main-page-contact">
+
+          <div class = "contact-header">Our Offices</div>
+          
             <?php
               
               foreach($maps as $map)
                {
-                  echo' 
+                  echo' <div class="map-card" >
                           <img class="map-image" src='.$map["map_images"].' >
                           <div class="map-type">
                             <div class="map-body">
@@ -145,6 +147,7 @@
                             
                             </div>
                           </div>
+                        </div>  
                   
                       ';
 
