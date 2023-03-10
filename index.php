@@ -938,7 +938,7 @@
 
 
 
-      <div class="deck-box">
+      <div class="deck-box-map">
         <div class="deck">
 
       <?php
@@ -985,94 +985,9 @@
        
 
 
-          <!--<div class="card-2">
 
 
-            <img class="card-image" src="img/richard.webp" alt="graduates">
-
-
-            <div class="card-type">
-                  <div class="card-body">
-                    <h5 class="card-title-2">June Notables 2022</h5>
-                    <p class="card-text" id="card-text">Each month, every department recognises those who havegone above and
-                      beyond to
-                      deliver excellence w...
-                      </p>
-                    <a href="#" class="btn btn-primary-card2">READ MORE</a>
-
-                  </div>
-
-            
-                  <div class="card-footer">
-
-
-                    <div class="postedby">
-
-                      <img class="card-logo"  src="img/netmatters-ltd.webp" alt="netmatters logo">
-
-                    </div>
-
-
-                    <div class="posted-by-netmatters">
-
-
-                      <strong>Posted by Netmatters</strong>
-                      <div class="date">12th July 2022</div>
-                    </div>
-
-
-                  </div>
-            </div>
-
-          </div>
-
-
-          <div class="card-3">
-
-            <img class="card-image" id="image-3" src="img/scs-graduates-june.jpg" alt="graduates">
-
-
-            <div class="card-type">
-                  <div class="card-body">
-                    <h5 class="card-title-3">SCS Graduates June 2022</h5>
-                    <p class="card-text">The Netmatters SCS trainee scheme is completely unique to<br>
-                      Netmatters, it enables individuals of a va ...</p>
-                    <a href="#" class="btn btn-primary-card3">READ MORE</a>
-
-                  </div>
-                
-
-                  <div class="card-footer">
-
-
-                    <div class="postedby">
-
-                      <img class="card-logo" src="img/netmatters-ltd.webp" alt="netmatters logo">
-
-                    </div>
-
-                    <div class="posted-by-netmatters">
-
-
-                      <strong>Posted by Netmatters</strong>
-                      <div class="date">12th July 2022</div>
-                    </div>
-
-
-                  </div>
-            </div>
-
-
-
-
-
-
-          </div>
-
-
-
-        </div>-->
-      </div>
+     
 
 
 

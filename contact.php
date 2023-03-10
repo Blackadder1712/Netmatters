@@ -24,18 +24,18 @@
 
     <?php 
         require_once ("db/connect.php"); //connect to database 
-
-        try h
+        try
         {
-        $results = $db->query('SELECT * from netmatters_articles');// get the data from table 
+          $results = $db->query('SELECT * from netmatters_maps');// get the data from table 
         }
         catch(Exception $e)
         {
-        echo $e->getMessage();
-        die();
+          echo $e->getMessage();
+          die();
         }
-
-        $articles = $results->fetchAll(PDO::FETCH_ASSOC); //extract table data, indexed by column name , place in variable
+    
+        $maps = $results->fetchAll(PDO::FETCH_ASSOC); //extract table data, indexed by column name , place in variable
+   
 
 
 
@@ -124,10 +124,37 @@
         </nav>
 
         <div class= "Main-page">
-      
+          <?php
+            foreach($maps as $map)
+            {
+                echo' <div class="map-card">
+                        <img class="map-image" src='.$map["map_images"].' alt="benefits of modern intranet">
+                        <div class="map-type">
+                          <div class="map-body">
+                            <a href = "#"<h5 class="card-title-'.$map["map_class"].'">'.$map["map_title"]. '</h5></a>
+                            <p class="card-text" id="card-text">'.$map["map_info"].'
+                          </p>
+                            <a href="#" class="map-phone-'.$map["map_class"].'">'.$map["map_number"].'</a>
+                            <a href="#" class="btn btn-map-card">READ MORE</a>
+                            <div href="#" class="location">
+                            '.$map["location"].'
+                            </div>
+                            
+                          
+                          </div>
+                        </div>
+                
+                      </div>';
+
+              }     
+                  
+          ?>
+
+            
+        
         </div>
       </div>
-
+      <?php include 'Reusable/footer.php';?>
       
     </body>
 
