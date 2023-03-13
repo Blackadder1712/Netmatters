@@ -10,6 +10,7 @@
 
 @media screen and (min-width: 576px)
 {
+  
 
   .cookie-content {
 
@@ -111,6 +112,11 @@
 
 @media screen and (min-width: 768px)
  {
+
+  .contact-header
+  {
+    padding-top:145px;
+  }
 
    .title
    {
@@ -528,6 +534,43 @@ padding-bottom:20px;
 
 @media screen and (min-width: 992px)
 {
+
+  .nav-button
+  {
+    display:flex;
+  flex-direction: row;
+  padding-left:15px;
+  text-decoration:none;
+  
+
+
+    
+
+  }
+
+  .btn-map-home
+  {
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+    font-family: sans-serif;
+    font-size:13px;
+
+  }
+  .contact-header
+  {
+    background-color: transparent;
+    color: $main-color;
+    font-size:50px;
+    padding-top:90px;
+  }
+
+  .map-deck
+  {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-column-gap:2% ;
+  }
 
   .icon
   {
