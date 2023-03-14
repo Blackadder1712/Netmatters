@@ -197,14 +197,14 @@ body
 
  .con-info
  {
-  display:flex;
-  flex-direction:column;
-  align-self: center;
+  
+
   justify-content: center;
   margin:auto;
   max-width:1170px;
   margin-top: 30px;
-  margin:15px;
+  margin-left:15px;
+  margin-right:15px;
 
  }
 
@@ -783,6 +783,17 @@ z-index: 600;
  {
   display:flex;
   flex-direction: column;
+ }
+
+ .contact-all
+ {
+  display:flex;
+  flex-direction:column;
+  max-width:1170px;
+  justify-content: center;
+  margin:auto;
+  margin-bottom: 20px;
+  margin-top:20px;
  }
 
  

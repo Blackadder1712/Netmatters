@@ -1045,6 +1045,23 @@ padding-bottom:20px;
 @media screen and (min-width: 1260px)
 {
 
+  .contact-all
+  {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .con-info
+  {
+    order:2;
+  }
+  .email-box-2
+  {
+    order:1;
+  }
+
+
+
   .cookie-content
   {
     max-width:700px;

@@ -177,7 +177,7 @@
           </div>
 
           <div class= "contact-all"> 
-              <div class= "con-info">
+              <div class= "con-info" id="con-info">
                 <h1>Email us on:</h1>
                 <div class= "email-con">sales@netmatters.com</div>
                 <h1>Business hours:</h1>
