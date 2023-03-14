@@ -123,16 +123,17 @@
 
         </nav>
 
-        <div class="contact-top">
-          <div class="nav-button">
-              <a href="#" class=" btn-map-home">Home</a>
-              <div class="home">VIEW MORE</div>
-          </div>
+       
           
           <div class= "Main-page-contact">
-            <div class = "contact-header">Our Offices</div>
-          </div>
-        </div>
+           <div class="contact-top">
+                <div class="nav-button">
+                    <a href="#" class=" btn-map-home">Home /</a>
+                    <div class="home">  Our Offices</div>
+                </div>
+                <div class = "contact-header">Our Offices</div>
+              </div>
+           </div>
         
     
         
@@ -175,13 +176,130 @@
             ?>
           </div>
 
+          <div class= "contact-all"> 
+              <div class= "con-info">
+                <h1>Email us on:</h1>
+                <div class= "email-con">sales@netmatters.com</div>
+                <h1>Business hours:</h1>
+                <h1>Monday - Friday 07:00-18:00</h1>
+                <h1>Out of Hours IT Support <a class="arrow"><i class="fa-solid fa-chevron-down"></i></a></h1>
+              </div>
+
+                    <!--The Email-form-->
+              <div class="email-box-2">
+                <div class="holder">
+                  <div class="email-form-2" id="email-form">
+
+                   
+
+                    <div class= "email-sec">
+                        <div class="nameandemail-2" id="emails">
+                          <div class="email-3">
+                            <label for="exampleFormControlInput1" class="form-label">Your Name <i
+                                class="fa-solid fa-asterisk"></i></label>
+                            <input type="email" class="form-control-email" id="exampleFormControlInput1">
+
+
+                          </div>
+
+                          <div class="email-3">
+
+                            <label for="exampleFormControlInput2" class="form-label">Company Name </label>
+                            <input type="email" class="form-control-email" id="exampleFormControlInput2">
+
+
+
+                          </div>
+
+                          <div class="email-3">
+
+                            <label for="exampleFormControlInput2" class="form-label">Your Email <i
+                                class="fa-solid fa-asterisk"></i></label>
+                            <input type="email" class="form-control-email" id="exampleFormControlInput2">
+
+
+
+                          </div>
+
+                          <div class="email-3">
+
+                            <label for="exampleFormControlInput2" class="form-label">Your Telephone Number  <i
+                                class="fa-solid fa-asterisk"></i></label>
+                            <input type="email" class="form-control-email" id="exampleFormControlInput2">
+                          </div>  
+                    </div> 
+
+                      <div class="email-3">
+
+                        <label for="exampleFormControlInput2" class="form-label">Subject <i
+                            class="fa-solid fa-asterisk"></i></label>
+                        <input type="email" class="form-control-email" id="exampleFormControlInput2">
+                      </div>  
+
+                      <div class="email-3">
+
+                          <label for="exampleFormControlInput2" class="form-label">Message <i
+                              class="fa-solid fa-asterisk"></i></label>
+                          <input type="email" class="form-control-email" id="exampleFormControlInput2">
+                      </div>  
+
+                      
+
+
+
+
+
+
+                    </div>
+
+                    <div class="form-check">
+
+
+                      <div class="box">
+                        <label class="tick">
+
+                        <input type="checkbox">
+                        <span class="checkmark"></span> 
+
+                        </label>
+                      </div>
+
+
+
+                      <div class="email-text">
+
+
+
+                        Please tick this box if you wish to recieve marketing information from us. Please see our <a
+                          href="#">Privacy
+                          Policy</a>
+                        for more information on how we keep your data safe.
+                      </div>
+
+                    </div>
+
+
+                    <!--Subscribe Button-->
+                    <div class="sub">
+                      <button type="button" class="btn btn-primary-subscribe" id="contact-sub">SEND ENQUIRY</button>
+                      <h1 class="required"><i class="fa-solid fa-asterisk"></i> Fields Required</h1>
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+          </div>    
+
+
 
 
                  
 
               
           
-          </div>
+        
         </div>
       </div>
       <?php include 'Reusable/footer.php';?>
