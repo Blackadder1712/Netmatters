@@ -44,6 +44,7 @@
     </head>
     <body>
       <?php include 'Reusable/header.php';?>
+      <?php include 'email-form/signup.inc.php';?>
 
       
       <div class="scrolling">
@@ -186,110 +187,126 @@
               </div>
 
                     <!--The Email-form-->
+              <?php
+               $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
+               
+               if(strpos($fullUrl, "signup=empty") == true )//check url for string 
+               {
+                  echo "<p class='pop'>Not all fields completed</p>"; //display error 
+               }
+
+               else if(strpos($fullUrl, "signup=char") == true )//check url for string 
+               {
+                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
+               }
+
+               else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
+               {
+                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+               }
+              ?>
               <div class="email-box-2">
-                <div class="holder">
-                  <div class="email-form-2" id="email-form">
-
+                <div class="holder">                 
+                  <form action= "email-form/signup.inc.php" method="POST">
                    
+                    <div class="email-form-2" id="email-form">
 
-                    <div class= "email-sec">
-                        <div class="nameandemail-2" id="emails">
-                          <div class="email-3">
-                            <label for="exampleFormControlInput1" class="form-label">Your Name <i
-                                class="fa-solid fa-asterisk"></i></label>
-                            <input type="email" class="form-control-email" id="exampleFormControlInput1">
+                    
 
-
-                          </div>
-
-                          <div class="email-3">
-
-                            <label for="exampleFormControlInput2" class="form-label">Company Name </label>
-                            <input type="email" class="form-control-email" id="exampleFormControlInput2">
+                      <div class= "email-sec">
+                          <div class="nameandemail-2" id="emails">
+                            <div class="email-3">
+                              <label for="exampleFormControlInput1" class="form-label">Your Name <i
+                                  class="fa-solid fa-asterisk"></i></label>
+                              <input type="name" name="name" class="form-control-email" id="exampleFormControlInput1">
 
 
+                            </div>
 
-                          </div>
+                            <div class="email-3">
 
-                          <div class="email-3">
-
-                            <label for="exampleFormControlInput2" class="form-label">Your Email <i
-                                class="fa-solid fa-asterisk"></i></label>
-                            <input type="email" class="form-control-email" id="exampleFormControlInput2">
+                              <label for="exampleFormControlInput2" class="form-label">Company Name </label>
+                              <input type="company" name = "company" class="form-control-email" id="exampleFormControlInput2">
 
 
 
-                          </div>
+                            </div>
 
-                          <div class="email-3">
+                            <div class="email-3">
 
-                            <label for="exampleFormControlInput2" class="form-label">Your Telephone Number  <i
-                                class="fa-solid fa-asterisk"></i></label>
-                            <input type="email" class="form-control-email" id="exampleFormControlInput2">
-                          </div>  
-                    </div> 
+                              <label for="exampleFormControlInput2" class="form-label">Your Email <i
+                                  class="fa-solid fa-asterisk"></i></label>
+                              <input type="email" name = "email" class="form-control-email" id="exampleFormControlInput2">
 
-                      <div class="email-3">
 
-                        <label for="exampleFormControlInput2" class="form-label">Subject <i
-                            class="fa-solid fa-asterisk"></i></label>
-                        <input type="email" class="form-control-email" id="exampleFormControlInput2">
-                      </div>  
 
-                      <div class="email-3">
+                            </div>
 
-                          <label for="exampleFormControlInput2" class="form-label">Message <i
+                            <div class="email-3">
+
+                              <label for="exampleFormControlInput2" class="form-label">Your Telephone Number  <i
+                                  class="fa-solid fa-asterisk"></i></label>
+                              <input type="telephone" name = "telephone" class="form-control-email" id="exampleFormControlInput2">
+                            </div>  
+                      </div> 
+
+                        <div class="email-3">
+
+                          <label for="exampleFormControlInput2" class="form-label">Subject <i
                               class="fa-solid fa-asterisk"></i></label>
-                          <input type="email" class="form-control-email" id="exampleFormControlInput2">
-                      </div>  
+                          <input type="subject" name= "subject" class="form-control-email" id="exampleFormControlInput2">
+                        </div>  
 
-                      
+                        <div class="email-3">
+
+                            <label for="exampleFormControlInput2" class="form-label">Message <i
+                                class="fa-solid fa-asterisk"></i></label>
+                            <input type="message" name = "message" class="form-control-email" id="exampleFormControlInput2">
+                        </div>  
+
+                      </div>
+
+                      <div class="form-check">
+
+
+                        <div class="box">
+                          <label class="tick">
+
+                          <input type="checkbox">
+                          <span class="checkmark"></span> 
+
+                          </label>
+                        </div>
 
 
 
+                        <div class="email-text">
 
 
 
-                    </div>
+                          Please tick this box if you wish to recieve marketing information from us. Please see our <a
+                            href="#">Privacy
+                            Policy</a>
+                          for more information on how we keep your data safe.
+                        </div>
 
-                    <div class="form-check">
+                      </div>
 
 
-                      <div class="box">
-                        <label class="tick">
-
-                        <input type="checkbox">
-                        <span class="checkmark"></span> 
-
-                        </label>
+                      <!--Subscribe Button-->
+                      <div class="sub">
+                        <button type="submit" name ="submit" class="btn btn-primary-subscribe" id="contact-sub">SEND ENQUIRY</button>
+                        <h1 class="required"><i class="fa-solid fa-asterisk"></i> Fields Required</h1>
                       </div>
 
 
 
-                      <div class="email-text">
-
-
-
-                        Please tick this box if you wish to recieve marketing information from us. Please see our <a
-                          href="#">Privacy
-                          Policy</a>
-                        for more information on how we keep your data safe.
-                      </div>
-
                     </div>
-
-
-                    <!--Subscribe Button-->
-                    <div class="sub">
-                      <button type="button" class="btn btn-primary-subscribe" id="contact-sub">SEND ENQUIRY</button>
-                      <h1 class="required"><i class="fa-solid fa-asterisk"></i> Fields Required</h1>
-                    </div>
-
-
-
-                  </div>
+                 </form>  
                 </div>
               </div>
+
+
           </div>    
 
 
