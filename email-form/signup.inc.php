@@ -21,7 +21,7 @@
 
          else
         {
-            if(!preg_match("/^[a-zA-Z]*$/", $name))//check if name is legit 
+            if(!preg_match("/^[a-zA-Z- ]*$/", $name))//check if name is legit 
             {
                 header("Location: ../contact.php?signup=char");
                 exit();
@@ -35,7 +35,7 @@
                
             if(!filter_var($email, FILTER_VALIDATE_EMAIL))//check if email is legit 
             {
-                header("Location: ../contact.php?signup=invalidemail");
+                header("Location: ../contact.php?signup=email");
                 exit();
             }
             else

@@ -188,21 +188,52 @@
 
                     <!--The Email-form-->
               <?php
-               $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
+              /* $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";//get url to identify error
                
                if(strpos($fullUrl, "signup=empty") == true )//check url for string 
                {
                   echo "<p class='pop'>Not all fields completed</p>"; //display error 
+                  //exit();
                }
 
-               else if(strpos($fullUrl, "signup=char") == true )//check url for string 
+               if(strpos($fullUrl, "signup=char") == true )//check url for string 
                {
                   echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                 // exit();
                }
 
                else if(strpos($fullUrl, "signup=invalidtelephone") == true )//check url for string 
                {
                   echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                  //exit();
+               }*/
+
+               if(!isset($_GET['signup']))
+               {
+                //exit(); // exit if user not submitted form 
+               }
+               else
+               {
+                $signupCheck = $_GET['signup']; //check url
+                
+                if($signupCheck == "empty")
+                {
+                  echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
+                }
+                elseif($signupCheck == "char")
+                {
+                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                }
+                elseif($signupCheck == "invalidtelephone")
+                {
+                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                }
+
+                elseif($signupCheck == "email")
+                {
+                  echo "<p class='pop'>Please enter valid email</p>"; //display error 
+                }
+
                }
               ?>
               <div class="email-box-2">
