@@ -23,20 +23,22 @@
         {
             if(!preg_match("/^[a-zA-Z- ]*$/", $name))//check if name is legit 
             {
-                header("Location: ../contact.php?signup=char");
+                header("Location: ../contact.php?signup=char&company=$company&email=$email&telephone=$telephone&subject=$subject&message=$message"); //only get rid of incorrect input 
                 exit();
             }
 
             if(!preg_match("/^[0-9]*$/", $telephone))//
             {
-                header("Location: ../contact.php?signup=invalidtelephone");
+                header("Location: ../contact.php?signup=invalidtelephone&name=$name&company=$company&email=$email&subject=$subject&message=$message"); //only get rid of incorrect input 
+                
                 exit();
             }
                
             if(!filter_var($email, FILTER_VALIDATE_EMAIL))//check if email is legit 
             {
-                header("Location: ../contact.php?signup=email");
+                header("Location: ../contact.php?signup=email&name=$name&company=$company&telephone=$telephone&subject=$subject&message=$message"); //only get rid of incorrect input 
                 exit();
+             
             }
             else
             {

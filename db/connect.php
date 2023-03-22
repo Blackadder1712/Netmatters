@@ -5,12 +5,12 @@
  $password = "";
  $db = "netmatters_news";
 
- /*cpanel
- $server = "localhost";
+ //cpanel
+ /*$server = "localhost";
  $username = "amyvince_amy";
  $password = "f)5%)NNd.cpA";
- $db = "amyvince_netmatters";
-*/
+ $db = "amyvince_netmatters";*/
+
  //Check connection
  try
  {
