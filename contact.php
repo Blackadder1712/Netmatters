@@ -240,12 +240,12 @@
                     elseif($signupCheck == "success")
                     {
                       echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
-                      function info($values)
-                      {
+                 
                        try
                           {
+                            
                               $results = $db->prepare(
-                              "INSERT INTO `email_info`(`name`,`company`, `email`, `telephone`, `subject`, `message`) 
+                              "INSERT INTO email_info(name, company, email, telephone, subject, message) 
                               VALUES(?,  ?,  ?,  ?,  ?, ?);
                               ");
       
@@ -267,7 +267,7 @@
                                 $_SESSION['success']=false;
                               }
                           }
-                      };
+                 
                    
                     }
                     
