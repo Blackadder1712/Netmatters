@@ -2,7 +2,7 @@
 
   if(isset($_POST['submit'])) //check if form submitted
      {
-         //include_once 'connect.php';
+         include_once '../db/connect.php';
 
          $name = $_POST["name"];//one of these for each input
          $company = $_POST["company"];
@@ -42,15 +42,18 @@
             }
             else
             {
+
+
                 header("Location: ../contact.php?signup=success");
                 exit();
+                }
             };
             
        
       
         }
          
-   }   
+       
 
   /* else 
     {

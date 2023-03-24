@@ -213,32 +213,68 @@
                 //exit(); // exit if user not submitted form 
                }
                else
-               {
-                $signupCheck = $_GET['signup']; //check url
+              {
+               
+                    $signupCheck = $_GET['signup']; //check url
+               
                 
-                if($signupCheck == "empty")
-                {
-                  echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
+                    if($signupCheck == "empty")
+                    {
+                      echo "<p class='pop'>Not all fields completed</p>"; //display error // if form has empty url
+                    
+                    }
+                    elseif($signupCheck == "char")
+                    {
+                      echo "<p class='pop'>Please enter valid name</p>"; //display error 
+                    }
+                    elseif($signupCheck == "invalidtelephone")
+                    {
+                      echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
+                    }
+
+                    elseif($signupCheck == "email")
+                    {
+                      echo "<p class='pop'>Please enter valid email</p>"; //display error 
+                    }
+
+                    elseif($signupCheck == "success")
+                    {
+                      echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
+                      function info($values)
+                      {
+                       try
+                          {
+                              $results = $db->prepare(
+                              "INSERT INTO email_info(`name`,`company`, `email`, `telephone`, `subject`, `message`) 
+                              VALUES(?,  ?,  ?,  ?,  ?, ?);
+                              ");
+      
+                              $results->bindParam(1, $values["name"], PDO::PARAM_STR);
+                              $results->bindParam(2, $values["company"], PDO::PARAM_STR);
+                              $results->bindParam(3, $values["email"], PDO::PARAM_STR);
+                              $results->bindParam(4, $values["telephone"], PDO::PARAM_STR);
+                              $results->bindParam(5, $values["subject"], PDO::PARAM_STR);
+                              $results->bindParam(6, $values["message"], PDO::PARAM_STR);
+                          
+                              $results->execute();
+                              $_SESSION['success'] = true;
+                          }
+                       catch  (Exception $e)
+                          {
+                            
+                              {
+                                echo $e->getMessage();
+                                $_SESSION['success']=false;
+                              }
+                          }
+                      };
+                      info($values);
+                    }
+                    
+  
                 
-                }
-                elseif($signupCheck == "char")
-                {
-                  echo "<p class='pop'>Please enter valid name</p>"; //display error 
-                }
-                elseif($signupCheck == "invalidtelephone")
-                {
-                  echo "<p class='pop'>Please enter valid phone number</p>"; //display error 
-                }
-
-                elseif($signupCheck == "email")
-                {
-                  echo "<p class='pop'>Please enter valid email</p>"; //display error 
-                }
-
-                elseif($signupCheck == "success")
-                {
-                  echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
-                }
+              
+            
 
 
                }
@@ -295,6 +331,7 @@
                                   <input type="text" name="company" class="form-control-email" id="exampleFormControlInput1">
                                 </div>'; //display after submit if input correct    
                               }
+                            
 
                               
                               if(isset($_GET['email']))
