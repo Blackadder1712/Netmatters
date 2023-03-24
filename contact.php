@@ -245,7 +245,7 @@
                        try
                           {
                               $results = $db->prepare(
-                              "INSERT INTO email_info(`name`,`company`, `email`, `telephone`, `subject`, `message`) 
+                              "INSERT INTO `email_info`(`name`,`company`, `email`, `telephone`, `subject`, `message`) 
                               VALUES(?,  ?,  ?,  ?,  ?, ?);
                               ");
       
@@ -268,7 +268,7 @@
                               }
                           }
                       };
-                      info($values);
+                   
                     }
                     
   
