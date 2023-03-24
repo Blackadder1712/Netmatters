@@ -241,32 +241,7 @@
                     {
                       echo "<p class='pop'>Thankyou for your query! We shall contact you shortly !</p>"; //display error 
                  
-                       try
-                          {
-                            
-                              $results = $db->prepare(
-                              "INSERT INTO email_info(name, company, email, telephone, subject, message) 
-                              VALUES(?,  ?,  ?,  ?,  ?, ?);
-                              ");
-      
-                              $results->bindParam(1, $values["name"], PDO::PARAM_STR);
-                              $results->bindParam(2, $values["company"], PDO::PARAM_STR);
-                              $results->bindParam(3, $values["email"], PDO::PARAM_STR);
-                              $results->bindParam(4, $values["telephone"], PDO::PARAM_STR);
-                              $results->bindParam(5, $values["subject"], PDO::PARAM_STR);
-                              $results->bindParam(6, $values["message"], PDO::PARAM_STR);
-                          
-                              $results->execute();
-                              $_SESSION['success'] = true;
-                          }
-                       catch  (Exception $e)
-                          {
-                            
-                              {
-                                echo $e->getMessage();
-                                $_SESSION['success']=false;
-                              }
-                          }
+           
                  
                    
                     }
