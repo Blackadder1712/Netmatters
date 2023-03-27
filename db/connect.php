@@ -1,15 +1,15 @@
 <?php
- //local server info
+ /*local server info
  $server = "127.0.0.1";
  $username = "root";
  $password = "";
- $db = "netmatters_news";
+ $db = "netmatters_news";*/
 
- /*cpanel
+ //cpanel
  $server = "localhost";
  $username = "amyvince_amy";
  $password = "f)5%)NNd.cpA";
- $db = "amyvince_netmatters";*/
+ $db = "amyvince_netmatters";
 
  //Check connection
  try
